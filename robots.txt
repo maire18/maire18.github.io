@@ -1,0 +1,5 @@
+# Mary Rose Obsuna portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://daryroses.github.io/sitemap.xml
