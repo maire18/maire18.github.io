@@ -25,6 +25,15 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="samples.css">
   <style>
+    /* Page theme: The Litton Hotel palette (soft sky blue, charcoal, light gray, white) */
+    :root {
+      --canvas: #F7F7F7; --paper: #FFFFFF; --ink: #2E3031; --ink-2: #4D5154; --muted: #6B7075; --line: #E3E7EB; --line-soft: #EEF0F2;
+      --blue-50: #EEF5FB; --blue-100: #DCEAF5; --blue-200: #B9D3E8; --blue-400: #70A6D4; --blue-600: #3F7DBF; --blue-700: #2F6399;
+      --sage-50: #EEF5FB; --sage-100: #DCEAF5; --sage-400: #70A6D4; --sage-700: #2F6399;
+      --lav-50: #F2F7FC; --lav-100: #E3EEF8; --lav-400: #8DB8DE; --lav-700: #3F79B5;
+      --gold-50: #F4F5F6; --gold-100: #E6E7E8; --gold-400: #9A9EA2; --gold-700: #2E3031;
+      --rose-50: #EDEEEF; --rose-100: #D9DBDD; --rose-400: #6B7075; --rose-700: #2E3031;
+    }
     .kpis { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); margin-bottom: 24px; }
     @media (min-width: 820px) { .kpis { grid-template-columns: repeat(4, 1fr); } }
     .kpi .sub { display: block; margin-top: 6px; font-size: 13px; color: var(--muted); }
@@ -44,7 +53,7 @@
     .views button[aria-pressed="true"] { background: var(--paper); color: var(--blue-700); box-shadow: 0 1px 3px rgba(15, 40, 70, .1); }
     .search { position: relative; }
     .search input { min-height: 40px; width: min(260px, 100%); padding: 8px 14px 8px 36px; border: 1px solid var(--line); border-radius: 999px; font: 15px var(--sans); color: var(--ink); background: var(--paper); }
-    .search input:focus { outline: none; border-color: var(--blue-400); box-shadow: 0 0 0 3px rgba(91, 181, 238, .2); }
+    .search input:focus { outline: none; border-color: var(--blue-400); box-shadow: 0 0 0 3px rgba(112, 166, 212, .25); }
     .search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); }
     .co b { display: block; font-weight: 600; }
     .co small { color: var(--muted); font-size: 13px; }
@@ -104,7 +113,7 @@
     <article class="doc">
       <header class="doc-head">
         <div>
-          <p class="doc-kicker">Alder &amp; Finch Co. &middot; Sales pipeline</p>
+          <p class="doc-kicker">Quillbrook Supply Co. &middot; Sales pipeline</p>
           <h2 class="doc-title">Lead tracker, Q4 2026</h2>
         </div>
         <p class="doc-sub">Data as of Monday, October 5, 2026</p>
@@ -148,18 +157,18 @@
           <table>
             <thead><tr><th>Company and contact</th><th>Stage</th><th class="num">Value (&#8369;)</th><th>Owner</th><th>Source</th><th>Next step</th><th>Follow-up</th></tr></thead>
             <tbody id="leads">
-              <tr data-stage="proposal" data-follow="2026-10-02"><td class="co"><b>Kestrel Hardware</b><small>Ramon Lim</small></td><td><span class="pill p-blue">Proposal</span></td><td class="num">140,000</td><td><span class="owner"><span class="av av-c">CA</span>Carlo</span></td><td>Referral</td><td>Confirm decision date</td><td class="due">Oct 2</td></tr>
-              <tr data-stage="contacted" data-follow="2026-10-03"><td class="co"><b>Brightwell Logistics</b><small>Sam Chua</small></td><td><span class="pill p-lav">Contacted</span></td><td class="num">210,000</td><td><span class="owner"><span class="av av-c">CA</span>Carlo</span></td><td>LinkedIn</td><td>Send proposal draft</td><td class="due">Oct 3</td></tr>
-              <tr data-stage="proposal" data-follow="2026-10-05"><td class="co"><b>Bayside Packaging</b><small>Leo Santos</small></td><td><span class="pill p-blue">Proposal</span></td><td class="num">185,000</td><td><span class="owner"><span class="av av-c">CA</span>Carlo</span></td><td>Trade show</td><td>Follow up on proposal</td><td class="due">Oct 5</td></tr>
-              <tr data-stage="new" data-follow="2026-10-05"><td class="co"><b>Silverleaf Hotels</b><small>Grace Tan</small></td><td><span class="pill p-gray">New</span></td><td class="num">250,000</td><td><span class="owner"><span class="av av-i">IV</span>Ivy</span></td><td>LinkedIn</td><td>Send intro email</td><td class="due">Oct 5</td></tr>
-              <tr data-stage="negotiation" data-follow="2026-10-06"><td class="co"><b>Marlowe Foods</b><small>Ana Villanueva</small></td><td><span class="pill p-gold">Negotiation</span></td><td class="num">420,000</td><td><span class="owner"><span class="av av-i">IV</span>Ivy</span></td><td>Referral</td><td>Send revised pricing</td><td class="due">Oct 6</td></tr>
-              <tr data-stage="new" data-follow="2026-10-06"><td class="co"><b>Crestview Schools</b><small>Liza Aquino</small></td><td><span class="pill p-gray">New</span></td><td class="num">120,000</td><td><span class="owner"><span class="av av-i">IV</span>Ivy</span></td><td>Website</td><td>Qualify budget and timing</td><td class="due">Oct 6</td></tr>
-              <tr data-stage="contacted" data-follow="2026-10-07"><td class="co"><b>Northgate Pharmacy</b><small>Paolo Reyes</small></td><td><span class="pill p-lav">Contacted</span></td><td class="num">95,000</td><td><span class="owner"><span class="av av-j">JE</span>Jen</span></td><td>Cold email</td><td>Book discovery call</td><td class="due">Oct 7</td></tr>
-              <tr data-stage="contacted" data-follow="2026-10-08"><td class="co"><b>Pinecrest Clinics</b><small>Joy Mendoza</small></td><td><span class="pill p-lav">Contacted</span></td><td class="num">78,000</td><td><span class="owner"><span class="av av-j">JE</span>Jen</span></td><td>Website</td><td>Send case study</td><td class="due">Oct 8</td></tr>
-              <tr data-stage="negotiation" data-follow="2026-10-09"><td class="co"><b>Oakline Furniture</b><small>Mark Uy</small></td><td><span class="pill p-gold">Negotiation</span></td><td class="num">330,000</td><td><span class="owner"><span class="av av-c">CA</span>Carlo</span></td><td>Trade show</td><td>Legal review of terms</td><td class="due">Oct 9</td></tr>
-              <tr data-stage="won" data-follow="2026-10-12"><td class="co"><b>Harlow Retail</b><small>Kim Dela Cruz</small></td><td><span class="pill p-sage">Won</span></td><td class="num">610,000</td><td><span class="owner"><span class="av av-i">IV</span>Ivy</span></td><td>Website</td><td>Kickoff call</td><td class="due">Oct 12</td></tr>
-              <tr data-stage="won" data-follow="2026-10-15"><td class="co"><b>Tidewater Grocers</b><small>Bea Ramos</small></td><td><span class="pill p-sage">Won</span></td><td class="num">275,000</td><td><span class="owner"><span class="av av-i">IV</span>Ivy</span></td><td>Referral</td><td>Onboarding checklist</td><td class="due">Oct 15</td></tr>
-              <tr data-stage="lost" data-follow="2027-01-12"><td class="co"><b>Ember Cafe Group</b><small>Nico Garcia</small></td><td><span class="pill p-rose">Lost</span></td><td class="num">60,000</td><td><span class="owner"><span class="av av-j">JE</span>Jen</span></td><td>Instagram</td><td>Reconnect in Q1</td><td class="due">Jan 12</td></tr>
+              <tr data-stage="proposal" data-follow="2026-10-02"><td class="co"><b>Pinewick Hardware Supply</b><small>Ethan Walker</small></td><td><span class="pill p-blue">Proposal</span></td><td class="num">140,000</td><td><span class="owner"><span class="av av-c">MI</span>Michael</span></td><td>Referral</td><td>Confirm decision date</td><td class="due">Oct 2</td></tr>
+              <tr data-stage="contacted" data-follow="2026-10-03"><td class="co"><b>Tallowmere Freight Co.</b><small>Megan Brooks</small></td><td><span class="pill p-lav">Contacted</span></td><td class="num">210,000</td><td><span class="owner"><span class="av av-c">MI</span>Michael</span></td><td>LinkedIn</td><td>Send proposal draft</td><td class="due">Oct 3</td></tr>
+              <tr data-stage="proposal" data-follow="2026-10-05"><td class="co"><b>Cobbleton Packaging</b><small>Tyler Hayes</small></td><td><span class="pill p-blue">Proposal</span></td><td class="num">185,000</td><td><span class="owner"><span class="av av-c">MI</span>Michael</span></td><td>Trade show</td><td>Follow up on proposal</td><td class="due">Oct 5</td></tr>
+              <tr data-stage="new" data-follow="2026-10-05"><td class="co"><b>Marrowind Inn Group</b><small>Lauren Mitchell</small></td><td><span class="pill p-gray">New</span></td><td class="num">250,000</td><td><span class="owner"><span class="av av-i">AS</span>Ashley</span></td><td>LinkedIn</td><td>Send intro email</td><td class="due">Oct 5</td></tr>
+              <tr data-stage="negotiation" data-follow="2026-10-06"><td class="co"><b>Hollisford Foods</b><small>Rachel Coleman</small></td><td><span class="pill p-gold">Negotiation</span></td><td class="num">420,000</td><td><span class="owner"><span class="av av-i">AS</span>Ashley</span></td><td>Referral</td><td>Send revised pricing</td><td class="due">Oct 6</td></tr>
+              <tr data-stage="new" data-follow="2026-10-06"><td class="co"><b>Fernhollow Academy</b><small>Brandon Reed</small></td><td><span class="pill p-gray">New</span></td><td class="num">120,000</td><td><span class="owner"><span class="av av-i">AS</span>Ashley</span></td><td>Website</td><td>Qualify budget and timing</td><td class="due">Oct 6</td></tr>
+              <tr data-stage="contacted" data-follow="2026-10-07"><td class="co"><b>Ashcombe Family Pharmacy</b><small>Jessica Turner</small></td><td><span class="pill p-lav">Contacted</span></td><td class="num">95,000</td><td><span class="owner"><span class="av av-j">SA</span>Sarah</span></td><td>Cold email</td><td>Book discovery call</td><td class="due">Oct 7</td></tr>
+              <tr data-stage="contacted" data-follow="2026-10-08"><td class="co"><b>Willowmarch Clinics</b><small>Kevin Sullivan</small></td><td><span class="pill p-lav">Contacted</span></td><td class="num">78,000</td><td><span class="owner"><span class="av av-j">SA</span>Sarah</span></td><td>Website</td><td>Send case study</td><td class="due">Oct 8</td></tr>
+              <tr data-stage="negotiation" data-follow="2026-10-09"><td class="co"><b>Bramblewood Furniture Works</b><small>Amanda Price</small></td><td><span class="pill p-gold">Negotiation</span></td><td class="num">330,000</td><td><span class="owner"><span class="av av-c">MI</span>Michael</span></td><td>Trade show</td><td>Legal review of terms</td><td class="due">Oct 9</td></tr>
+              <tr data-stage="won" data-follow="2026-10-12"><td class="co"><b>Quarrystone Retail</b><small>Jason Bennett</small></td><td><span class="pill p-sage">Won</span></td><td class="num">610,000</td><td><span class="owner"><span class="av av-i">AS</span>Ashley</span></td><td>Website</td><td>Kickoff call</td><td class="due">Oct 12</td></tr>
+              <tr data-stage="won" data-follow="2026-10-15"><td class="co"><b>Larkhaven Grocers</b><small>Emily Foster</small></td><td><span class="pill p-sage">Won</span></td><td class="num">275,000</td><td><span class="owner"><span class="av av-i">AS</span>Ashley</span></td><td>Referral</td><td>Onboarding checklist</td><td class="due">Oct 15</td></tr>
+              <tr data-stage="lost" data-follow="2027-01-12"><td class="co"><b>Copperkettle Cafe Group</b><small>Ryan Parker</small></td><td><span class="pill p-rose">Lost</span></td><td class="num">60,000</td><td><span class="owner"><span class="av av-j">SA</span>Sarah</span></td><td>Instagram</td><td>Reconnect in Q1</td><td class="due">Jan 12</td></tr>
             </tbody>
           </table>
           <p class="empty" id="empty" hidden>No leads match this view.</p>
