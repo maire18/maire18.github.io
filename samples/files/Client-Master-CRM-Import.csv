@@ -1,0 +1,213 @@
+﻿client_id,first_name,last_name,email,mobile,city,province,client_type,property_type,budget_or_price_php,agent,lead_stage,pipeline_status,sources,first_inquiry_date,last_contact_date,inquiries,marketing_consent,record_status
+DJD-20001,Sam,Abad,sabad77@mail.example.com,+63 954 555 5236,Legazpi City,Albay,Investor,Lot Only,1000000,Dianne Reyes,Closed Won,Closed,FB,2024-06-01,2024-07-14,3,Yes,Complete
+DJD-20002,Yna,Briones,ybriones93@mail.example.com,+63 961 555 7016,Legazpi City,Albay,Buyer,Condominium,2150000,Joel Dizon,Contacted,Dormant,WEB,2024-06-04,2024-06-11,2,Yes,Complete
+DJD-20003,Jomar,Torres,,+63 977 555 1624,Virac,Catanduanes,Investor,Commercial,13500000,Paolo Lim,Closed Won,Closed,OH,2024-06-07,2024-06-25,6,Yes,Needs follow-up
+DJD-20004,Queenie,Reyes,queenie.reyes@example.com,+63 998 555 5834,Sorsogon City,Sorsogon,Buyer,House and Lot,5900000,Mika Santos,Closed Lost,Closed,WEB + FB + OH,2024-06-17,2024-10-02,8,Yes,Complete
+DJD-20005,Pauline,Cruz,pauline.cruz@example.com,+63 998 555 8264,Iriga City,Camarines Sur,Buyer,House and Lot,6400000,Joel Dizon,Contacted,Dormant,WEB,2024-06-18,2024-09-09,2,Yes,Complete
+DJD-20006,Daisy,Jimenez,daisy.jimenez@example.com,+63 977 555 2606,Iriga City,Camarines Sur,Buyer,House and Lot,6650000,Joel Dizon,Closed Won,Closed,FB,2024-06-22,2024-07-07,2,Yes,Complete
+DJD-20007,Wilma,Panganiban,wilma.panganiban@example.net,+63 920 555 9960,Daraga,Albay,Buyer,House and Lot,8550000,Joel Dizon,New,Dormant,FB,2024-06-25,2024-06-26,3,No,Complete
+DJD-20008,Noel,Flores,noel.flores@mail.example.com,+63 919 555 6484,Naga City,Camarines Sur,Renter,Condominium,34000,Paolo Lim,Negotiating,Hot,FB,2024-06-29,2026-09-24,3,,Needs follow-up
+DJD-20009,Liza,Ilagan,liza.ilagan@example.com,+63 977 555 5679,Pili,Camarines Sur,Seller,House and Lot,6600000,Mika Santos,Viewing Scheduled,Cold,OH,2024-07-03,2026-05-24,5,Yes,Complete
+DJD-20010,Olive,Gutierrez,olive.gutierrez@example.com,+63 977 555 2977,Naga City,Camarines Sur,Buyer,Lot Only,3500000,Paolo Lim,Closed Won,Closed,FB,2024-07-06,2024-08-28,5,Yes,Complete
+DJD-20011,Dan,Reyes,dan.reyes@example.com,+63 918 555 1054,Naga City,Camarines Sur,Buyer,House and Lot,4050000,Paolo Lim,New,Dormant,FB,2024-07-11,2024-07-12,1,Yes,Complete
+DJD-20012,Ronald,Uy,ronald.uy@example.com,+63 919 555 4081,Pili,Camarines Sur,Investor,Condominium,3950000,Paolo Lim,Contacted,Dormant,FB,2024-07-14,2024-08-19,1,Yes,Complete
+DJD-20013,Sarah,Ilagan,sarah.ilagan@example.com,+63 917 555 4747,Pili,Camarines Sur,Buyer,Condominium,4550000,Mika Santos,Closed Won,Closed,WEB,2024-07-18,2025-01-01,7,Yes,Complete
+DJD-20014,Ana,Abad,ana.abad@mail.example.com,+63 920 555 8332,Iriga City,Camarines Sur,Buyer,Condominium,2750000,Paolo Lim,Closed Won,Closed,WEB + OH,2024-07-20,2024-12-28,2,Yes,Complete
+DJD-20015,Tess,Ocampo,tess.ocampo@example.com,+63 918 555 2594,Masbate City,Masbate,Buyer,Condominium,3300000,Dianne Reyes,Closed Lost,Closed,FB,2024-07-28,2024-12-06,8,Yes,Complete
+DJD-20016,Mia,Aguilar,mia.aguilar@example.com,+63 918 555 1069,Naga City,Camarines Sur,Buyer,Condominium,2900000,Joel Dizon,Viewing Scheduled,Cold,WEB,2024-08-01,2026-06-22,3,No,Complete
+DJD-20017,Elmer,Jimenez,elmer.jimenez@example.com,+63 919 555 4606,Pili,Camarines Sur,Buyer,Lot Only,2900000,Dianne Reyes,Closed Won,Closed,WEB,2024-08-08,2024-08-14,6,Yes,Complete
+DJD-20018,Sheila,Fernandez,sheila.fernandez@example.com,+63 920 555 5902,Masbate City,Masbate,Buyer,Lot Only,1600000,Mika Santos,Viewing Scheduled,Hot,FB,2024-08-13,2026-09-16,8,Yes,Complete
+DJD-20019,Edwin,Mendoza,edwin.mendoza@example.org,+63 920 555 2628,Pili,Camarines Sur,Renter,House and Lot,27500,Dianne Reyes,Contacted,Dormant,FB,2024-08-16,2024-09-03,1,Yes,Complete
+DJD-20020,Grace,Samonte,gsamonte48@example.net,+63 917 555 3702,Naga City,Camarines Sur,Renter,Apartment,32500,Dianne Reyes,Contacted,Dormant,OH,2024-08-20,2024-11-29,1,Yes,Complete
+DJD-20021,Owen,Mendoza,owen.mendoza@example.com,+63 954 555 5069,Sorsogon City,Sorsogon,Buyer,Condominium,1850000,Paolo Lim,Contacted,Dormant,OH,2024-08-21,2024-12-23,2,Yes,Complete
+DJD-20022,Nico,Herrera,nico.herrera@example.com,+63 995 555 5707,Daraga,Albay,Buyer,House and Lot,4350000,Joel Dizon,Viewing Scheduled,Warm,WEB,2024-08-31,2026-08-25,2,Yes,Complete
+DJD-20023,Miguel,Gonzales,miguel.gonzales@example.com,+63 917 555 4971,Sorsogon City,Sorsogon,Buyer,Lot Only,2200000,Paolo Lim,Closed Won,Closed,OH,2024-09-02,2024-09-29,4,Yes,Complete
+DJD-20024,Cedric,Tolentino,cedric.tolentino@example.org,+63 928 555 6881,Naga City,Camarines Sur,Buyer,House and Lot,9300000,Joel Dizon,Contacted,Dormant,FB,2024-09-03,2024-10-02,2,Yes,Complete
+DJD-20025,Nico,Sison,nico.sison@example.com,+63 917 555 1225,Legazpi City,Albay,Buyer,House and Lot,3900000,Dianne Reyes,New,Dormant,FB + OH,2024-09-03,2024-09-03,3,Yes,Complete
+DJD-20026,Gerald,Navarro,gerald.navarro@example.com,+63 995 555 9859,Naga City,Camarines Sur,Seller,House and Lot,2900000,Joel Dizon,Closed Won,Closed,WEB,2024-09-05,2024-11-01,4,No,Complete
+DJD-20027,Jerome,Vergara,jerome.vergara@example.com,+63 945 555 4394,Sorsogon City,Sorsogon,Investor,Condominium,2850000,Dianne Reyes,Closed Won,Closed,WEB,2024-09-10,2024-11-25,8,No,Complete
+DJD-20028,Lester,Cuevas,lester.cuevas@example.com,+63 945 555 3944,Naga City,Camarines Sur,Buyer,Lot Only,3250000,Paolo Lim,Viewing Scheduled,Warm,FB,2024-09-11,2026-08-14,7,Yes,Complete
+DJD-20029,Pia,Castillo,pia.castillo@example.com,+63 939 555 0825,Pili,Camarines Sur,Investor,Lot Only,4400000,Joel Dizon,Viewing Scheduled,Hot,WEB,2024-09-19,2026-09-16,7,Yes,Complete
+DJD-20030,Mark,Rosales,mark.rosales@example.org,+63 995 555 5234,Tabaco City,Albay,Buyer,House and Lot,6450000,Paolo Lim,Viewing Scheduled,Hot,FB,2024-09-23,2026-09-23,4,No,Complete
+DJD-20031,Vic,Lim,vic.lim@example.com,+63 939 555 1245,Pili,Camarines Sur,Buyer,Condominium,5150000,Dianne Reyes,Closed Won,Closed,WEB,2024-09-25,2024-11-01,4,Yes,Complete
+DJD-20032,Nina,Fernandez,nina.fernandez@mail.example.com,+63 918 555 3454,Daraga,Albay,Renter,Condominium,21500,Dianne Reyes,Contacted,Dormant,WEB,2024-10-02,2025-03-06,1,Yes,Complete
+DJD-20033,Elmer,Velasco,elmer.velasco@example.com,+63 919 555 1406,Legazpi City,Albay,Seller,House and Lot,9250000,Joel Dizon,Contacted,Dormant,WEB,2024-10-02,2024-12-11,1,Yes,Complete
+DJD-20034,Ella,Valdez,ella.valdez@mail.example.com,+63 917 555 2856,Pili,Camarines Sur,Seller,House and Lot,7550000,Dianne Reyes,Closed Won,Closed,FB,2024-10-11,2025-01-01,7,Yes,Complete
+DJD-20035,Cedric,Ocampo,cedric.ocampo@mail.example.com,+63 998 555 8596,Naga City,Camarines Sur,Investor,Condominium,3200000,Mika Santos,Viewing Scheduled,Hot,WEB,2024-10-26,2026-09-09,4,Yes,Complete
+DJD-20036,Pia,Evangelista,pia.evangelista@example.net,+63 939 555 0328,Naga City,Camarines Sur,Seller,Lot Only,1750000,Paolo Lim,New,Dormant,WEB + OH,2024-11-06,2024-11-11,3,Yes,Complete
+DJD-20037,Cedric,Santiago,csantiago15@example.net,+63 945 555 1503,Legazpi City,Albay,Buyer,House and Lot,3050000,Mika Santos,Contacted,Dormant,WEB,2024-11-18,2024-11-20,1,Yes,Complete
+DJD-20038,Yna,Belmonte,yna.belmonte@example.com,+63 995 555 0235,Iriga City,Camarines Sur,Buyer,Condominium,2650000,Joel Dizon,Contacted,Dormant,WEB,2024-11-22,2024-11-24,1,Yes,Complete
+DJD-20039,Mia,Soriano,mia.soriano@example.com,+63 998 555 7643,Naga City,Camarines Sur,Buyer,Condominium,3850000,Joel Dizon,Contacted,Dormant,FB + OH,2024-11-24,2025-03-06,3,Yes,Complete
+DJD-20040,Francis,Morales,francis.morales@example.com,+63 920 555 0147,Naga City,Camarines Sur,Renter,Condominium,8000,Dianne Reyes,New,Dormant,WEB,2024-11-24,2024-11-24,2,No,Complete
+DJD-20041,Hazel,Pascual,hazel.pascual@example.net,+63 998 555 2737,Tabaco City,Albay,Renter,Apartment,27000,Mika Santos,Viewing Scheduled,Hot,WEB,2024-11-26,2026-09-11,7,Yes,Complete
+DJD-20042,Ella,Tan,ella.tan@example.net,+63 995 555 0622,Daraga,Albay,Renter,Apartment,32000,Paolo Lim,New,Dormant,WEB,2024-12-01,2024-12-05,1,Yes,Complete
+DJD-20043,Jerome,Domingo,jdomingo61@example.com,+63 918 555 9368,Daraga,Albay,Buyer,Condominium,3600000,Joel Dizon,Closed Lost,Closed,FB + OH,2024-12-03,2025-03-13,4,Yes,Complete
+DJD-20044,Pauline,Magno,pmagno7@mail.example.com,+63 928 555 4031,Naga City,Camarines Sur,Buyer,House and Lot,3750000,Dianne Reyes,Viewing Scheduled,Hot,OH,2024-12-05,2026-09-28,2,No,Complete
+DJD-20045,Flor,Agbayani,flor.agbayani@example.org,+63 998 555 1611,Legazpi City,Albay,Renter,Condominium,32500,Paolo Lim,Viewing Scheduled,Warm,WEB,2024-12-07,2026-08-20,2,Yes,Complete
+DJD-20046,Queenie,De Leon,queenie.deleon@example.com,+63 977 555 4761,Daet,Camarines Norte,Seller,House and Lot,5550000,Dianne Reyes,Contacted,Dormant,OH,2024-12-12,2025-01-31,1,Yes,Complete
+DJD-20047,Pia,Javier,,+63 920 555 3118,Sorsogon City,Sorsogon,Renter,House and Lot,18000,Joel Dizon,Closed Lost,Closed,OH,2024-12-12,2025-03-26,3,Yes,Needs follow-up
+DJD-20048,Ivan,Quiambao,iquiambao96@example.net,+63 961 555 8922,Legazpi City,Albay,Investor,Condominium,1800000,Mika Santos,Contacted,Dormant,OH,2024-12-15,2025-04-19,1,Yes,Complete
+DJD-20049,Mia,De Leon,mia.deleon@example.org,+63 977 555 3085,Naga City,Camarines Sur,Buyer,Condominium,4600000,Paolo Lim,Contacted,Dormant,FB,2024-12-29,2025-02-20,3,Yes,Complete
+DJD-20050,Hannah,Mendoza,,+63 995 555 6657,Canaman,Camarines Sur,Investor,Commercial,15850000,Paolo Lim,Viewing Scheduled,Cold,OH,2025-01-05,2026-06-08,4,Yes,Needs follow-up
+DJD-20051,Karla,Hidalgo,,+63 920 555 3752,Legazpi City,Albay,Buyer,House and Lot,2950000,Dianne Reyes,New,Dormant,FB,2025-01-08,2025-01-11,1,,Needs follow-up
+DJD-20052,Alvin,Abad,alvin.abad@example.com,+63 928 555 6746,Sorsogon City,Sorsogon,Buyer,House and Lot,4100000,Dianne Reyes,Contacted,Dormant,WEB + OH,2025-01-14,2025-03-18,3,Yes,Complete
+DJD-20053,Mia,Sison,,+63 998 555 6923,Sorsogon City,Sorsogon,Renter,Apartment,28000,Paolo Lim,New,Dormant,OH,2025-01-16,2025-01-19,1,Yes,Needs follow-up
+DJD-20054,Francis,Francisco,ffrancisco99@mail.example.com,+63 920 555 7392,Daraga,Albay,Buyer,Lot Only,1800000,Dianne Reyes,Viewing Scheduled,Hot,WEB,2025-01-18,2026-09-14,4,No,Complete
+DJD-20055,Pauline,Gonzales,pauline.gonzales@example.com,+63 928 555 7364,Legazpi City,Albay,Buyer,Condominium,3950000,Paolo Lim,Closed Won,Closed,OH,2025-01-21,2025-01-22,7,Yes,Complete
+DJD-20056,Miguel,Navarro,miguel.navarro@example.com,+63 928 555 8599,Naga City,Camarines Sur,Seller,Lot Only,3750000,Paolo Lim,Contacted,Dormant,WEB + OH,2025-01-24,2025-03-31,2,Yes,Complete
+DJD-20057,Marvin,Sison,marvin.sison@example.net,+63 939 555 1328,Pili,Camarines Sur,Buyer,House and Lot,7500000,Paolo Lim,Viewing Scheduled,Hot,WEB,2025-01-28,2026-09-09,2,No,Complete
+DJD-20058,Arnel,Santiago,arnel.santiago@example.net,+63 998 555 7875,Daraga,Albay,Buyer,House and Lot,4900000,Mika Santos,Closed Won,Closed,OH,2025-01-31,2025-04-23,8,Yes,Complete
+DJD-20059,Bernadette,Magno,bernadette.magno@example.com,+63 927 555 1794,Naga City,Camarines Sur,Buyer,Lot Only,800000,Dianne Reyes,Closed Lost,Closed,WEB,2025-02-01,2025-04-25,5,No,Complete
+DJD-20060,Tess,Quizon,tess.quizon@example.net,+63 998 555 8962,Legazpi City,Albay,Renter,Condominium,18000,Mika Santos,Viewing Scheduled,Hot,FB + OH,2025-02-01,2026-09-29,5,Yes,Complete
+DJD-20061,Elmer,Pascual,elmer.pascual@example.org,+63 919 555 8477,Naga City,Camarines Sur,Buyer,Condominium,3550000,Dianne Reyes,Closed Won,Closed,FB,2025-03-02,2025-03-30,2,,Needs follow-up
+DJD-20062,Jomar,Reyes,jomar.reyes@example.com,+63 995 555 4685,Legazpi City,Albay,Renter,Apartment,29500,Paolo Lim,New,Dormant,FB,2025-03-03,2025-03-06,1,Yes,Complete
+DJD-20063,Flor,Evangelista,flor.evangelista@mail.example.com,+63 918 555 6045,Naga City,Camarines Sur,Renter,Condominium,16500,Mika Santos,Closed Won,Closed,WEB,2025-03-15,2025-07-14,6,No,Complete
+DJD-20064,Nelia,Reyes,nelia.reyes@example.net,+63 920 555 5280,Naga City,Camarines Sur,Seller,Lot Only,2100000,Dianne Reyes,Negotiating,Hot,OH,2025-03-20,2026-09-20,5,Yes,Complete
+DJD-20065,Kevin,Rivera,kevin.rivera@example.com,+63 928 555 3804,Tabaco City,Albay,Renter,Apartment,30000,Paolo Lim,Contacted,Dormant,WEB,2025-03-20,2025-04-04,3,No,Complete
+DJD-20066,Dan,Cuevas,dan.cuevas@example.org,+63 977 555 6793,Sorsogon City,Sorsogon,Renter,Condominium,20500,Dianne Reyes,Closed Won,Closed,WEB,2025-03-26,2025-04-22,8,No,Complete
+DJD-20067,Lorna,Ramos,lorna.ramos@example.net,+63 919 555 8922,Tabaco City,Albay,Investor,Commercial,16100000,Dianne Reyes,Negotiating,Hot,FB,2025-03-31,2026-09-12,8,No,Complete
+DJD-20068,Clara,Nolasco,cnolasco90@mail.example.com,+63 919 555 6212,Tabaco City,Albay,Seller,Commercial,11550000,Mika Santos,Closed Won,Closed,FB,2025-04-01,2025-06-04,6,Yes,Complete
+DJD-20069,Ana,Velasco,ana.velasco@example.com,+63 945 555 4748,Naga City,Camarines Sur,Buyer,House and Lot,3100000,Mika Santos,Contacted,Dormant,WEB,2025-04-04,2025-04-23,1,Yes,Complete
+DJD-20070,Pauline,Domingo,,+63 945 555 6066,Pili,Camarines Sur,Seller,House and Lot,3500000,Dianne Reyes,Contacted,Dormant,FB,2025-04-06,2025-06-21,2,No,Needs follow-up
+DJD-20071,Daisy,Briones,daisy.briones@example.net,+63 919 555 5311,Legazpi City,Albay,Buyer,House and Lot,2900000,Mika Santos,New,Dormant,WEB,2025-04-11,2025-04-16,3,Yes,Complete
+DJD-20072,Janelle,Lacson,janelle.lacson@example.com,+63 918 555 6561,Iriga City,Camarines Sur,Seller,Lot Only,4350000,Dianne Reyes,Closed Lost,Closed,FB,2025-04-14,2025-05-15,5,Yes,Complete
+DJD-20073,Venus,Santiago,venus.santiago@example.org,+63 995 555 1491,Sorsogon City,Sorsogon,Renter,Condominium,11500,Joel Dizon,New,Dormant,FB,2025-04-15,2025-04-16,1,Yes,Complete
+DJD-20074,Pia,Bautista,pia.bautista@example.com,+63 919 555 7127,Naga City,Camarines Sur,Buyer,Lot Only,4400000,Dianne Reyes,Contacted,Dormant,FB,2025-04-15,2025-04-23,1,Yes,Complete
+DJD-20075,Sam,Pascual,sam.pascual@example.com,+63 917 555 5937,Naga City,Camarines Sur,Buyer,House and Lot,6250000,Dianne Reyes,Contacted,Dormant,FB,2025-04-16,2025-06-22,3,Yes,Complete
+DJD-20076,Karla,Soriano,karla.soriano@mail.example.com,+63 995 555 6967,Naga City,Camarines Sur,Renter,Condominium,21500,Joel Dizon,Closed Lost,Closed,WEB,2025-04-17,2025-11-22,3,No,Complete
+DJD-20077,Faye,Aguilar,faguilar64@example.com,+63 918 555 8005,Iriga City,Camarines Sur,Buyer,House and Lot,9200000,Joel Dizon,Closed Won,Closed,OH,2025-04-19,2025-05-13,3,Yes,Complete
+DJD-20078,Jerome,Pascual,jpascual77@mail.example.com,+63 977 555 4195,Naga City,Camarines Sur,Buyer,House and Lot,5550000,Dianne Reyes,New,Dormant,WEB,2025-05-02,2025-05-02,3,Yes,Complete
+DJD-20079,Noel,Cruz,noel.cruz@mail.example.com,+63 918 555 5368,Naga City,Camarines Sur,Investor,Condominium,2850000,Paolo Lim,Closed Won,Closed,FB,2025-05-05,2025-06-21,5,,Needs follow-up
+DJD-20080,Bianca,Lim,bianca.lim@example.com,+63 954 555 8003,Canaman,Camarines Sur,Renter,Apartment,30500,Dianne Reyes,Viewing Scheduled,Hot,OH,2025-05-05,2026-09-28,7,Yes,Complete
+DJD-20081,Precious,Ignacio,pignacio1@example.com,+63 918 555 6088,Naga City,Camarines Sur,Buyer,House and Lot,4800000,Joel Dizon,New,Dormant,WEB,2025-05-06,2025-05-06,2,No,Complete
+DJD-20082,Kristine,Cabrera,kristine.cabrera@example.com,+63 954 555 4011,Naga City,Camarines Sur,Renter,Apartment,8000,Paolo Lim,Viewing Scheduled,Warm,WEB,2025-05-14,2026-08-09,2,Yes,Complete
+DJD-20083,Cyril,Umali,cumali69@example.org,+63 917 555 3444,Sorsogon City,Sorsogon,Buyer,Condominium,3350000,Paolo Lim,New,Dormant,FB,2025-05-19,2025-05-19,3,Yes,Complete
+DJD-20084,Dennis,Aguilar,dennis.aguilar@mail.example.com,+63 998 555 5945,Masbate City,Masbate,Investor,Condominium,5150000,Dianne Reyes,Negotiating,Cold,FB,2025-05-20,2026-04-30,5,Yes,Complete
+DJD-20085,Arnel,Esguerra,arnel.esguerra@example.net,+63 927 555 8891,Legazpi City,Albay,Buyer,Condominium,5350000,Joel Dizon,Contacted,Dormant,WEB,2025-05-31,2025-08-05,2,Yes,Complete
+DJD-20086,Rafael,Ilagan,rafael.ilagan@example.com,+63 928 555 9507,Daet,Camarines Norte,Buyer,House and Lot,9200000,Joel Dizon,New,Dormant,WEB,2025-06-01,2025-06-08,1,Yes,Complete
+DJD-20087,Ella,Briones,ebriones27@mail.example.com,+63 939 555 0125,Sorsogon City,Sorsogon,Buyer,Lot Only,3550000,Dianne Reyes,Contacted,Dormant,WEB,2025-06-04,2025-06-05,3,Yes,Complete
+DJD-20088,Imelda,Lim,imelda.lim@example.org,+63 961 555 2551,Legazpi City,Albay,Investor,Lot Only,3100000,Paolo Lim,Viewing Scheduled,Cold,WEB,2025-06-07,2026-06-03,6,Yes,Complete
+DJD-20089,Francis,Cruz,francis.cruz@example.com,+63 927 555 5922,Daraga,Albay,Seller,Lot Only,3150000,Dianne Reyes,Closed Won,Closed,FB,2025-06-09,2025-11-22,7,Yes,Complete
+DJD-20090,Precious,Agbayani,precious.agbayani@example.org,+63 998 555 0048,Daraga,Albay,Seller,House and Lot,6050000,Joel Dizon,Viewing Scheduled,Cold,WEB,2025-06-12,2026-07-31,3,No,Complete
+DJD-20091,Odette,Panganiban,odette.panganiban@example.com,+63 928 555 1508,Virac,Catanduanes,Renter,Apartment,21000,Paolo Lim,Closed Won,Closed,FB + OH,2025-06-13,2026-01-09,7,Yes,Complete
+DJD-20092,Nina,Agbayani,nagbayani28@example.com,+63 920 555 3913,Daet,Camarines Norte,Buyer,Lot Only,3500000,Paolo Lim,New,Dormant,FB,2025-06-14,2025-06-15,2,No,Complete
+DJD-20093,Clara,Aquino,caquino26@example.com,+63 961 555 5974,Naga City,Camarines Sur,Buyer,Lot Only,2800000,Joel Dizon,Closed Won,Closed,WEB,2025-06-14,2025-09-20,7,Yes,Complete
+DJD-20094,Pia,Jimenez,,+63 918 555 5910,Canaman,Camarines Sur,Seller,House and Lot,4100000,,Closed Lost,Closed,OH,2025-06-18,2025-08-07,6,Yes,Needs follow-up
+DJD-20095,Janelle,Aquino,janelle.aquino@example.net,+63 918 555 2470,Iriga City,Camarines Sur,Seller,House and Lot,2900000,Dianne Reyes,Contacted,Dormant,WEB,2025-06-19,2025-06-30,3,Yes,Complete
+DJD-20096,Dennis,Vergara,dennis.vergara@example.com,+63 998 555 4029,Sorsogon City,Sorsogon,Seller,House and Lot,5900000,Paolo Lim,Closed Lost,Closed,FB,2025-06-20,2025-09-11,5,No,Complete
+DJD-20097,Vic,Uy,vic.uy@example.com,+63 998 555 3053,Naga City,Camarines Sur,Seller,Lot Only,4300000,Joel Dizon,New,Dormant,FB,2025-06-28,2025-07-03,3,,Needs follow-up
+DJD-20098,Gerald,Chua,gchua71@example.com,+63 918 555 9315,Iriga City,Camarines Sur,Buyer,Condominium,2550000,Paolo Lim,New,Dormant,WEB,2025-07-07,2025-07-11,1,Yes,Complete
+DJD-20099,Alvin,Rivera,arivera8@example.com,+63 977 555 7956,Pili,Camarines Sur,Seller,Commercial,6150000,Dianne Reyes,Closed Lost,Closed,FB,2025-07-12,2025-09-08,4,No,Complete
+DJD-20100,Imelda,Rosales,imelda.rosales@example.com,+63 917 555 4380,Daraga,Albay,Buyer,House and Lot,7650000,Joel Dizon,Contacted,Dormant,FB,2025-07-13,2025-08-19,3,,Needs follow-up
+DJD-20101,Carlo,Herrera,carlo.herrera@example.net,+63 939 555 1713,Daet,Camarines Norte,Seller,Commercial,18750000,Dianne Reyes,Viewing Scheduled,Hot,FB,2025-07-14,2026-09-09,4,No,Complete
+DJD-20102,Carlo,Agbayani,,+63 995 555 9852,Daraga,Albay,Buyer,House and Lot,2550000,Joel Dizon,Closed Lost,Closed,FB,2025-07-14,2025-08-30,6,,Needs follow-up
+DJD-20103,Zaldy,Rivera,zaldy.rivera@example.com,+63 928 555 6069,Iriga City,Camarines Sur,Seller,House and Lot,8700000,Paolo Lim,Closed Lost,Closed,WEB,2025-07-17,2025-10-25,3,No,Complete
+DJD-20104,Kevin,Valdez,kevin.valdez@mail.example.com,+63 917 555 0440,Sorsogon City,Sorsogon,Buyer,House and Lot,3300000,Dianne Reyes,Closed Won,Closed,FB + OH,2025-07-23,2025-09-02,7,Yes,Complete
+DJD-20105,Bernadette,Castillo,bcastillo11@example.com,+63 919 555 5663,Iriga City,Camarines Sur,Renter,Apartment,31500,Paolo Lim,Contacted,Dormant,WEB + FB,2025-07-23,2026-01-14,2,Yes,Complete
+DJD-20106,Noel,Torres,noel.torres@example.com,+63 918 555 2613,Naga City,Camarines Sur,Seller,House and Lot,5850000,Joel Dizon,Closed Lost,Closed,FB + OH,2025-07-23,2026-01-29,2,Yes,Complete
+DJD-20107,Lara,Cabrera,lara.cabrera@example.com,+63 945 555 4892,Legazpi City,Albay,Buyer,House and Lot,5350000,Paolo Lim,New,Dormant,WEB,2025-07-24,2025-07-30,1,No,Complete
+DJD-20108,Gelo,Manalo,gelo.manalo@example.com,+63 928 555 7233,Virac,Catanduanes,Renter,Apartment,32000,Dianne Reyes,Closed Lost,Closed,WEB,2025-08-02,2025-10-26,5,Yes,Complete
+DJD-20109,Ivan,Ignacio,ivan.ignacio@example.com,+63 917 555 4777,Daraga,Albay,Investor,Commercial,12600000,Joel Dizon,Contacted,Dormant,FB,2025-08-07,2025-10-02,1,No,Complete
+DJD-20110,Marites,Umali,marites.umali@mail.example.com,+63 995 555 4020,Naga City,Camarines Sur,Seller,Commercial,15150000,Mika Santos,Closed Lost,Closed,WEB,2025-08-07,2025-10-25,3,No,Complete
+DJD-20111,Cathy,Aquino,cathy.aquino@example.com,+63 939 555 9555,Sorsogon City,Sorsogon,Seller,House and Lot,5700000,Mika Santos,Closed Won,Closed,WEB,2025-08-08,2025-12-14,7,No,Complete
+DJD-20112,Queenie,Manalo,queenie.manalo@example.com,+63 995 555 5643,Tabaco City,Albay,Renter,House and Lot,17000,Paolo Lim,Viewing Scheduled,Cold,WEB,2025-08-09,2026-05-25,7,Yes,Complete
+DJD-20113,Liza,Tamayo,liza.tamayo@mail.example.com,+63 977 555 3492,Naga City,Camarines Sur,Buyer,Lot Only,1550000,Dianne Reyes,Contacted,Dormant,FB,2025-08-12,2025-09-01,1,Yes,Complete
+DJD-20114,Fritz,Santos,fritz.santos@example.net,+63 939 555 9274,Canaman,Camarines Sur,Buyer,House and Lot,6600000,Paolo Lim,Viewing Scheduled,Hot,FB,2025-08-15,2026-09-24,6,Yes,Complete
+DJD-20115,Faye,Uy,faye.uy@example.com,+63 977 555 7296,Legazpi City,Albay,Seller,House and Lot,4650000,Paolo Lim,Closed Lost,Closed,WEB,2025-08-24,2025-09-12,2,Yes,Complete
+DJD-20116,Imelda,Ramos,imelda.ramos@example.com,+63 919 555 3312,Pili,Camarines Sur,Buyer,Condominium,2450000,Mika Santos,Viewing Scheduled,Hot,FB,2025-08-25,2026-09-07,5,No,Complete
+DJD-20117,Nina,Aguilar,naguilar86@example.com,+63 939 555 3410,Naga City,Camarines Sur,Investor,Commercial,19300000,Paolo Lim,New,Dormant,WEB,2025-08-27,2025-09-02,1,Yes,Complete
+DJD-20118,Rafael,Umali,rafael.umali@example.net,+63 919 555 7546,Tabaco City,Albay,Seller,Lot Only,3750000,Paolo Lim,Viewing Scheduled,Hot,WEB + FB + OH,2025-08-31,2026-09-19,3,No,Complete
+DJD-20119,Olive,Lacson,olive.lacson@mail.example.com,+63 917 555 6714,Naga City,Camarines Sur,Buyer,Lot Only,1600000,Mika Santos,Contacted,Dormant,WEB + OH,2025-09-02,2025-09-17,2,No,Complete
+DJD-20120,Ivan,Navarro,inavarro60@mail.example.com,+63 927 555 5454,Legazpi City,Albay,Buyer,Condominium,4900000,Paolo Lim,Negotiating,Cold,FB + OH,2025-09-07,2026-07-15,2,Yes,Complete
+DJD-20121,Sarah,Hidalgo,,+63 954 555 6171,Pili,Camarines Sur,Buyer,House and Lot,5650000,Mika Santos,Closed Lost,Closed,FB,2025-09-07,2025-09-24,3,Yes,Needs follow-up
+DJD-20122,Nina,Torres,nina.torres@example.com,+63 920 555 4613,Naga City,Camarines Sur,Renter,Apartment,27000,Joel Dizon,Contacted,Dormant,FB,2025-09-11,2025-11-01,3,,Needs follow-up
+DJD-20123,Irene,Dela Cruz,irene.delacruz@mail.example.com,+63 961 555 9129,Daet,Camarines Norte,Buyer,House and Lot,9450000,Mika Santos,New,Dormant,FB,2025-09-20,2025-09-27,1,Yes,Complete
+DJD-20124,Precious,Roxas,precious.roxas@example.com,+63 977 555 8267,Legazpi City,Albay,Buyer,Lot Only,2500000,Dianne Reyes,New,Dormant,FB,2025-09-20,2025-09-24,3,Yes,Complete
+DJD-20125,Dan,Ocampo,dan.ocampo@example.com,+63 918 555 0977,Naga City,Camarines Sur,Buyer,Condominium,2400000,Joel Dizon,Viewing Scheduled,Hot,FB,2025-09-26,2026-09-18,2,Yes,Complete
+DJD-20126,Nico,Salazar,nico.salazar@example.com,+63 919 555 6769,Naga City,Camarines Sur,Buyer,Lot Only,1850000,Mika Santos,Negotiating,Hot,FB + OH,2025-09-30,2026-09-20,3,Yes,Complete
+DJD-20127,Rica,Bernal,rbernal62@example.net,+63 917 555 6715,Pili,Camarines Sur,Renter,House and Lot,34500,Joel Dizon,New,Dormant,OH,2025-10-01,2025-10-03,1,No,Complete
+DJD-20128,Teddy,Ocampo,tocampo39@example.com,+63 919 555 0783,Canaman,Camarines Sur,Buyer,Lot Only,3050000,Joel Dizon,New,Dormant,WEB,2025-10-02,2025-10-03,1,Yes,Complete
+DJD-20129,Ben,Agbayani,ben.agbayani@example.net,+63 977 555 8913,Daet,Camarines Norte,Buyer,Lot Only,2150000,Dianne Reyes,Closed Lost,Closed,FB,2025-10-19,2025-12-10,6,Yes,Complete
+DJD-20130,Zaldy,Nolasco,zaldy.nolasco@example.net,+63 954 555 5211,Canaman,Camarines Sur,Buyer,House and Lot,9450000,Joel Dizon,New,Dormant,FB,2025-10-20,2025-10-25,3,Yes,Complete
+DJD-20131,Carlo,Castillo,,+63 920 555 0079,Legazpi City,Albay,Buyer,House and Lot,6500000,Joel Dizon,Closed Lost,Closed,FB,2025-10-23,2025-11-28,4,Yes,Needs follow-up
+DJD-20132,Sarah,Tamayo,sarah.tamayo@example.net,+63 995 555 3775,Pili,Camarines Sur,Renter,Apartment,28500,Dianne Reyes,New,Dormant,WEB,2025-10-23,2025-10-28,2,No,Complete
+DJD-20133,Queenie,Esguerra,queenie.esguerra@example.com,+63 927 555 2466,Naga City,Camarines Sur,Investor,Commercial,13300000,Joel Dizon,Contacted,Cold,WEB,2025-10-25,2026-05-03,1,Yes,Complete
+DJD-20134,Marites,Quizon,mquizon96@mail.example.com,+63 961 555 4603,Iriga City,Camarines Sur,Investor,Lot Only,1100000,Dianne Reyes,Negotiating,Hot,FB,2025-10-25,2026-09-28,6,Yes,Complete
+DJD-20135,Ben,Aquino,ben.aquino@example.com,+63 919 555 7236,Pili,Camarines Sur,Investor,Lot Only,4250000,Mika Santos,Viewing Scheduled,Hot,WEB + FB + OH,2025-10-29,2026-09-25,7,Yes,Complete
+DJD-20136,Jessa,Robles,jrobles84@example.com,+63 995 555 0134,Naga City,Camarines Sur,Buyer,House and Lot,7100000,Dianne Reyes,New,Dormant,WEB,2025-10-31,2025-11-06,2,Yes,Complete
+DJD-20137,Ella,Sison,ella.sison@example.com,+63 939 555 2592,Naga City,Camarines Sur,Buyer,House and Lot,8800000,Joel Dizon,Viewing Scheduled,Cold,OH,2025-11-20,2026-07-11,3,Yes,Complete
+DJD-20138,Dennis,Tan,dennis.tan@example.net,+63 917 555 1328,Naga City,Camarines Sur,Buyer,House and Lot,5650000,Mika Santos,Contacted,Dormant,WEB,2025-11-26,2026-03-19,3,No,Complete
+DJD-20139,Ronald,Mendoza,ronald.mendoza@example.org,+63 995 555 3108,Masbate City,Masbate,Seller,Commercial,17150000,Mika Santos,Negotiating,Warm,WEB,2025-12-02,2026-08-09,5,Yes,Complete
+DJD-20140,Olive,Abad,olive.abad@example.net,+63 918 555 5392,Daraga,Albay,Buyer,Lot Only,2200000,Mika Santos,Viewing Scheduled,Hot,FB,2025-12-06,2026-09-10,6,,Needs follow-up
+DJD-20141,Cyril,Bernal,cbernal90@example.com,+63 927 555 0909,Daraga,Albay,Seller,Lot Only,3500000,Mika Santos,Closed Won,Closed,FB,2025-12-10,2026-04-15,4,Yes,Complete
+DJD-20142,Sheila,Mendoza,sheila.mendoza@example.org,+63 977 555 8708,Pili,Camarines Sur,Investor,Lot Only,3850000,Joel Dizon,New,Dormant,WEB + FB,2025-12-11,2025-12-18,3,Yes,Complete
+DJD-20143,Oscar,Pascual,oscar.pascual@example.com,+63 919 555 0240,Legazpi City,Albay,Seller,House and Lot,8300000,Dianne Reyes,Viewing Scheduled,Hot,FB,2025-12-12,2026-09-23,3,No,Complete
+DJD-20144,Ben,Uy,ben.uy@example.com,+63 998 555 9615,Naga City,Camarines Sur,Buyer,House and Lot,4800000,Mika Santos,New,Dormant,WEB,2025-12-12,2025-12-17,3,No,Complete
+DJD-20145,Leo,Sison,lsison83@example.net,+63 945 555 6156,Naga City,Camarines Sur,Seller,House and Lot,5450000,Mika Santos,Contacted,Cold,OH,2025-12-20,2026-05-31,2,No,Complete
+DJD-20146,Gelo,Umali,gelo.umali@example.com,+63 927 555 1269,Daet,Camarines Norte,Investor,Lot Only,1800000,Paolo Lim,Viewing Scheduled,Cold,FB,2025-12-21,2026-05-09,6,Yes,Complete
+DJD-20147,Olive,Esguerra,olive.esguerra@example.com,+63 917 555 1579,Legazpi City,Albay,Buyer,Lot Only,850000,Joel Dizon,Closed Won,Closed,WEB + OH,2025-12-28,2026-02-08,6,Yes,Complete
+DJD-20148,Jessa,Padilla,jessa.padilla@example.com,+63 995 555 6991,Naga City,Camarines Sur,Buyer,House and Lot,4150000,Joel Dizon,New,Dormant,WEB,2026-01-08,2026-01-12,1,No,Complete
+DJD-20149,Bea,Roxas,bea.roxas@example.com,+63 945 555 0020,Naga City,Camarines Sur,Renter,Apartment,22000,Joel Dizon,Negotiating,Hot,FB,2026-01-09,2026-09-21,6,,Needs follow-up
+DJD-20150,Vince,Lim,vince.lim@example.org,+63 977 555 0519,Naga City,Camarines Sur,Buyer,Lot Only,4500000,Paolo Lim,New,Dormant,WEB + FB,2026-01-11,2026-01-13,3,Yes,Complete
+DJD-20151,Ronald,Agbayani,ronald.agbayani@mail.example.com,+63 977 555 5297,Naga City,Camarines Sur,Buyer,House and Lot,9100000,Mika Santos,Negotiating,Warm,FB,2026-01-14,2026-08-29,7,Yes,Complete
+DJD-20152,Gelo,Panganiban,gelo.panganiban@example.net,+63 995 555 9417,Legazpi City,Albay,Investor,Lot Only,3750000,Paolo Lim,Closed Lost,Closed,WEB,2026-02-01,2026-03-08,6,Yes,Complete
+DJD-20153,Rodel,Chua,rodel.chua@example.com,+63 928 555 8062,Legazpi City,Albay,Buyer,House and Lot,8650000,Mika Santos,Viewing Scheduled,Cold,FB,2026-02-02,2026-07-05,7,,Needs follow-up
+DJD-20154,Ella,Flores,ella.flores@example.com,+63 977 555 4351,Naga City,Camarines Sur,Buyer,House and Lot,5400000,Paolo Lim,Closed Won,Closed,FB + OH,2026-02-08,2026-04-17,4,Yes,Complete
+DJD-20155,Dennis,Dela Cruz,dennis.delacruz@example.com,+63 927 555 4694,Naga City,Camarines Sur,Renter,Apartment,8500,Paolo Lim,Contacted,Dormant,WEB,2026-02-08,2026-02-16,1,Yes,Complete
+DJD-20156,Owen,Navarro,owen.navarro@example.com,+63 919 555 1945,Tabaco City,Albay,Buyer,Lot Only,4450000,Joel Dizon,New,Dormant,WEB,2026-02-11,2026-02-16,2,No,Complete
+DJD-20157,Jun,Domingo,jdomingo40@example.com,+63 945 555 7216,Legazpi City,Albay,Seller,House and Lot,4000000,Paolo Lim,Closed Won,Closed,OH,2026-02-15,2026-03-07,3,Yes,Complete
+DJD-20158,Nestor,Evangelista,nestor.evangelista@example.com,+63 917 555 3889,Legazpi City,Albay,Investor,Lot Only,3900000,Dianne Reyes,Contacted,Dormant,WEB + OH,2026-02-16,2026-02-20,3,No,Complete
+DJD-20159,Olive,Marquez,omarquez60@example.org,+63 961 555 5191,Pili,Camarines Sur,Buyer,House and Lot,5700000,Mika Santos,Negotiating,Cold,WEB,2026-02-26,2026-06-06,4,Yes,Complete
+DJD-20160,Marvin,Zamora,mzamora5@example.com,+63 939 555 6411,Pili,Camarines Sur,Buyer,Condominium,4400000,Paolo Lim,Contacted,Cold,FB,2026-03-02,2026-06-16,2,Yes,Complete
+DJD-20161,Cathy,Tamayo,ctamayo47@example.com,+63 998 555 8614,Naga City,Camarines Sur,Buyer,Lot Only,3150000,Dianne Reyes,New,Dormant,WEB + FB,2026-03-09,2026-03-16,3,No,Complete
+DJD-20162,Tristan,Dela Cruz,tristan.delacruz@example.com,+63 977 555 8083,Canaman,Camarines Sur,Buyer,House and Lot,4800000,Joel Dizon,Negotiating,Hot,WEB,2026-03-18,2026-09-12,2,Yes,Complete
+DJD-20163,Kristine,Zamora,,+63 919 555 5704,Pili,Camarines Sur,Buyer,House and Lot,6850000,Paolo Lim,Closed Lost,Closed,FB,2026-03-26,2026-05-09,8,Yes,Needs follow-up
+DJD-20164,Xander,Padilla,xpadilla35@example.com,+63 919 555 3856,Legazpi City,Albay,Seller,House and Lot,5150000,Dianne Reyes,Closed Won,Closed,FB,2026-03-27,2026-04-10,5,No,Complete
+DJD-20165,Rey,Gonzales,rey.gonzales@example.com,+63 939 555 6232,Naga City,Camarines Sur,Buyer,Condominium,3350000,Joel Dizon,Viewing Scheduled,Cold,FB,2026-04-03,2026-06-21,7,Yes,Complete
+DJD-20166,Liza,Rivera,liza.rivera@example.com,+63 961 555 7931,Canaman,Camarines Sur,Renter,House and Lot,14000,Paolo Lim,Viewing Scheduled,Cold,OH,2026-04-03,2026-06-01,8,Yes,Complete
+DJD-20167,Ben,Garcia,ben.garcia@example.com,+63 939 555 2638,Daet,Camarines Norte,Buyer,House and Lot,7050000,Joel Dizon,Negotiating,Hot,WEB,2026-04-13,2026-09-17,5,Yes,Complete
+DJD-20168,Rafael,Samonte,rafael.samonte@example.com,+63 918 555 9318,Naga City,Camarines Sur,Buyer,House and Lot,3600000,Mika Santos,Closed Lost,Closed,WEB,2026-04-15,2026-04-27,2,Yes,Complete
+DJD-20169,Ramon,Aguilar,ramon.aguilar@example.com,+63 977 555 3025,Naga City,Camarines Sur,Buyer,House and Lot,2500000,Mika Santos,Contacted,Cold,WEB + OH,2026-04-15,2026-07-02,3,Yes,Complete
+DJD-20170,Flor,Torres,flor.torres@example.net,+63 977 555 9435,Legazpi City,Albay,Renter,Condominium,24500,Paolo Lim,New,Cold,OH,2026-04-15,2026-04-15,3,No,Complete
+DJD-20171,Ramon,Pascual,ramon.pascual@mail.example.com,+63 928 555 0319,Legazpi City,Albay,Buyer,Condominium,5000000,Paolo Lim,Contacted,Cold,FB,2026-04-16,2026-04-30,2,Yes,Complete
+DJD-20172,Mark,Quiambao,mark.quiambao@example.net,+63 954 555 2953,Sorsogon City,Sorsogon,Seller,House and Lot,9250000,Dianne Reyes,New,Cold,WEB + OH,2026-04-17,2026-04-24,2,No,Complete
+DJD-20173,Jerome,Magno,jerome.magno@example.com,+63 920 555 6296,Naga City,Camarines Sur,Renter,Condominium,11000,Paolo Lim,Viewing Scheduled,Hot,FB + OH,2026-04-18,2026-09-26,5,No,Complete
+DJD-20174,Ella,Agbayani,ella.agbayani@example.com,+63 977 555 1382,Legazpi City,Albay,Buyer,Lot Only,1700000,Mika Santos,Contacted,Cold,WEB,2026-04-21,2026-05-07,1,Yes,Complete
+DJD-20175,Gemma,Agbayani,gemma.agbayani@example.net,+63 995 555 3321,Naga City,Camarines Sur,Buyer,Lot Only,2200000,Mika Santos,Contacted,Cold,OH,2026-04-25,2026-05-21,3,No,Complete
+DJD-20176,Marites,Pascual,mpascual32@example.com,,Naga City,Camarines Sur,Seller,House and Lot,6650000,,Closed Lost,Closed,OH,2026-04-28,2026-07-23,6,Yes,Needs follow-up
+DJD-20177,Hazel,Manalo,hazel.manalo@example.com,+63 954 555 6702,Daet,Camarines Norte,Seller,House and Lot,4800000,Dianne Reyes,Closed Won,Closed,WEB + OH,2026-04-29,2026-05-26,4,Yes,Complete
+DJD-20178,Tess,Salazar,tess.salazar@example.com,+63 995 555 8180,Naga City,Camarines Sur,Buyer,House and Lot,2900000,Mika Santos,Negotiating,Hot,OH,2026-05-17,2026-09-04,2,No,Complete
+DJD-20179,Cyril,Velasco,cyril.velasco@mail.example.com,+63 917 555 1723,Naga City,Camarines Sur,Seller,Commercial,6550000,Mika Santos,Negotiating,Cold,WEB,2026-05-23,2026-07-04,4,No,Complete
+DJD-20180,Dennis,Agbayani,dagbayani15@example.com,+63 927 555 6550,Naga City,Camarines Sur,Renter,Condominium,19500,Paolo Lim,Closed Won,Closed,WEB,2026-05-25,2026-05-26,3,Yes,Complete
+DJD-20181,Gemma,Sison,gemma.sison@example.com,+63 920 555 3347,Legazpi City,Albay,Investor,Lot Only,2200000,Mika Santos,New,Cold,FB,2026-06-02,2026-06-05,2,Yes,Complete
+DJD-20182,Francis,Rivera,francis.rivera@example.com,+63 998 555 4959,Naga City,Camarines Sur,Renter,Apartment,11000,Joel Dizon,Contacted,Warm,FB,2026-06-12,2026-08-03,3,,Needs follow-up
+DJD-20183,Nina,Hidalgo,nhidalgo73@example.org,+63 977 555 4701,Virac,Catanduanes,Investor,Condominium,3800000,Joel Dizon,New,Cold,WEB + FB,2026-06-14,2026-06-18,2,Yes,Complete
+DJD-20184,Rafael,Panganiban,,+63 918 555 0627,Sorsogon City,Sorsogon,Buyer,Lot Only,900000,,Viewing Scheduled,Warm,OH,2026-06-18,2026-08-29,4,No,Needs follow-up
+DJD-20185,Erika,Velasco,evelasco15@example.com,+63 918 555 6813,Legazpi City,Albay,Renter,Condominium,25000,Joel Dizon,Contacted,Cold,WEB,2026-06-26,2026-07-07,1,Yes,Complete
+DJD-20186,Clara,Cortez,ccortez56@example.com,+63 977 555 1422,Daraga,Albay,Buyer,Condominium,5150000,Paolo Lim,Viewing Scheduled,Cold,OH,2026-07-12,2026-07-18,3,Yes,Complete
+DJD-20187,Cyril,Quiambao,cyril.quiambao@mail.example.com,+63 939 555 4305,Tabaco City,Albay,Investor,Condominium,2150000,Mika Santos,Closed Won,Closed,WEB,2026-07-16,2026-09-22,6,Yes,Complete
+DJD-20188,Miguel,Tamayo,miguel.tamayo@example.net,+63 917 555 4841,Naga City,Camarines Sur,Buyer,House and Lot,7500000,Mika Santos,Contacted,Warm,WEB,2026-07-18,2026-08-17,2,Yes,Complete
+DJD-20189,Tonette,Encarnacion,tonette.encarnacion@example.net,+63 927 555 6358,Iriga City,Camarines Sur,Buyer,House and Lot,2500000,Joel Dizon,Viewing Scheduled,Warm,WEB,2026-07-19,2026-08-11,2,Yes,Complete
+DJD-20190,Tonette,Agbayani,tagbayani40@example.com,+63 920 555 1994,Tabaco City,Albay,Buyer,House and Lot,9250000,Joel Dizon,Contacted,Warm,FB,2026-07-20,2026-08-27,3,Yes,Complete
+DJD-20191,Vince,Valdez,vince.valdez@example.net,+63 995 555 4043,Naga City,Camarines Sur,Buyer,House and Lot,4550000,Joel Dizon,Contacted,Warm,FB,2026-07-22,2026-08-08,3,Yes,Complete
+DJD-20192,Jomar,Marquez,jmarquez37@mail.example.com,+63 927 555 6849,Sorsogon City,Sorsogon,Buyer,House and Lot,7000000,Joel Dizon,Negotiating,Cold,FB,2026-07-24,2026-07-25,3,Yes,Complete
+DJD-20193,Jun,Dela Cruz,jun.delacruz@example.com,+63 939 555 4614,Naga City,Camarines Sur,Buyer,House and Lot,2850000,Paolo Lim,Closed Lost,Closed,FB + OH,2026-07-24,2026-09-07,6,Yes,Complete
+DJD-20194,Irene,Uy,iuy66@example.com,+63 917 555 5343,Pili,Camarines Sur,Buyer,Condominium,2200000,Mika Santos,Closed Lost,Closed,OH,2026-08-02,2026-08-07,5,No,Complete
+DJD-20195,Oscar,Cruz,oscar.cruz@example.org,+63 928 555 7286,Legazpi City,Albay,Renter,Apartment,23500,Joel Dizon,Contacted,Warm,FB,2026-08-03,2026-09-27,2,,Needs follow-up
+DJD-20196,Hector,Galang,,+63 995 555 0230,Legazpi City,Albay,Buyer,House and Lot,3800000,Mika Santos,Contacted,Warm,FB,2026-08-04,2026-08-18,2,Yes,Needs follow-up
+DJD-20197,Bernadette,Cruz,bcruz27@example.com,+63 945 555 7737,Pili,Camarines Sur,Buyer,Condominium,2650000,Paolo Lim,Negotiating,Hot,FB,2026-08-10,2026-09-28,3,Yes,Complete
+DJD-20198,Lester,De Leon,lester.deleon@example.org,+63 919 555 4605,Iriga City,Camarines Sur,Buyer,Condominium,2000000,Dianne Reyes,New,Warm,FB,2026-08-15,2026-08-22,3,Yes,Complete
+DJD-20199,Faye,Hidalgo,fhidalgo67@example.org,+63 998 555 8663,Daet,Camarines Norte,Buyer,Lot Only,2200000,Joel Dizon,Closed Won,Closed,WEB,2026-08-22,2026-09-12,7,No,Complete
+DJD-20200,Faye,Esguerra,faye.esguerra@mail.example.com,+63 920 555 6081,Legazpi City,Albay,Buyer,Lot Only,850000,Dianne Reyes,Negotiating,Warm,WEB,2026-08-24,2026-08-26,2,Yes,Complete
+DJD-20201,Joy,Belmonte,joy.belmonte@example.com,+63 945 555 5626,Legazpi City,Albay,Renter,Condominium,33500,Dianne Reyes,Viewing Scheduled,Hot,WEB,2026-08-25,2026-09-04,8,No,Complete
+DJD-20202,Cedric,Briones,cbriones52@example.com,+63 917 555 7291,Legazpi City,Albay,Buyer,House and Lot,4600000,Paolo Lim,New,Warm,WEB,2026-08-25,2026-08-29,3,Yes,Complete
+DJD-20203,Yna,Villanueva,,+63 928 555 3019,Iriga City,Camarines Sur,Buyer,Condominium,3500000,,Negotiating,Hot,OH,2026-09-03,2026-09-14,4,No,Needs follow-up
+DJD-20204,Queenie,Bautista,queenie.bautista@example.com,+63 928 555 1672,Canaman,Camarines Sur,Seller,House and Lot,7250000,Mika Santos,Contacted,Warm,FB,2026-09-05,2026-09-14,1,,Needs follow-up
+DJD-20205,Flor,Cortez,flor.cortez@example.com,+63 919 555 9464,Daraga,Albay,Buyer,Condominium,3400000,Joel Dizon,Contacted,Warm,WEB + OH,2026-09-06,2026-09-13,2,Yes,Complete
+DJD-20206,Mia,Quizon,mia.quizon@example.org,+63 927 555 2240,Daet,Camarines Norte,Investor,Lot Only,4000000,Dianne Reyes,Negotiating,Hot,FB,2026-09-07,2026-09-29,2,Yes,Complete
+DJD-20207,Miguel,Agbayani,magbayani2@mail.example.com,+63 961 555 3833,Sorsogon City,Sorsogon,Renter,Apartment,23000,Joel Dizon,Viewing Scheduled,Hot,WEB,2026-09-07,2026-09-18,2,No,Complete
+DJD-20208,Vince,Ocampo,vince.ocampo@example.com,+63 954 555 7277,Naga City,Camarines Sur,Buyer,House and Lot,5400000,Paolo Lim,Contacted,Warm,WEB + OH,2026-09-09,2026-09-23,2,Yes,Complete
+DJD-20209,Mark,Ilagan,milagan27@example.com,+63 939 555 9212,Sorsogon City,Sorsogon,Seller,Lot Only,4050000,Paolo Lim,Viewing Scheduled,Hot,FB,2026-09-13,2026-09-13,7,No,Complete
+DJD-20210,Rey,Francisco,rfrancisco68@mail.example.com,+63 920 555 2682,Daraga,Albay,Buyer,House and Lot,2650000,Joel Dizon,Contacted,Warm,OH,2026-09-14,2026-09-17,1,Yes,Complete
+DJD-20211,Zaldy,Ilagan,zilagan61@example.org,+63 927 555 7582,Legazpi City,Albay,Renter,Apartment,13500,Mika Santos,Viewing Scheduled,Hot,WEB + FB,2026-09-24,2026-09-24,7,Yes,Complete
+DJD-20212,Abby,Robles,abby.robles@example.com,+63 998 555 5104,Pili,Camarines Sur,Renter,Apartment,26500,Mika Santos,New,Warm,FB,2026-09-25,2026-09-30,3,No,Complete

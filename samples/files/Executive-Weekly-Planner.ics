@@ -1,0 +1,348 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mary Rose Obsuna//Executive Weekly Planner Sample//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Director week of Oct 5 (sample)
+X-WR-TIMEZONE:Asia/Manila
+BEGIN:VTIMEZONE
+TZID:Asia/Manila
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:PST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:planner-20261005-01@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261005T083000
+DTEND;TZID=Asia/Manila:20261005T090000
+SUMMARY:[Focus time] Inbox and day review
+CATEGORIES:Focus time
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261005-02@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261005T090000
+DTEND;TZID=Asia/Manila:20261005T091500
+SUMMARY:Buffer
+CATEGORIES:Buffer
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261005-03@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261005T091500
+DTEND;TZID=Asia/Manila:20261005T100000
+SUMMARY:[Leadership] Leadership stand-up
+CATEGORIES:Leadership
+LOCATION:Board room
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261005-04@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261005T103000
+DTEND;TZID=Asia/Manila:20261005T120000
+SUMMARY:[Focus time] Q4 budget review (do not book)
+CATEGORIES:Focus time
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261005-05@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261005T133000
+DTEND;TZID=Asia/Manila:20261005T143000
+SUMMARY:[Clients] Client call: Marlowe Foods
+CATEGORIES:Clients
+LOCATION:Zoom
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261005-06@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261005T143000
+DTEND;TZID=Asia/Manila:20261005T144500
+SUMMARY:Buffer
+CATEGORIES:Buffer
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261005-07@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261005T150000
+DTEND;TZID=Asia/Manila:20261005T154500
+SUMMARY:[Leadership] 1:1 with Operations Lead
+CATEGORIES:Leadership
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261006-08@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261006T090000
+DTEND;TZID=Asia/Manila:20261006T103000
+SUMMARY:[Focus time] Supplier negotiation prep
+CATEGORIES:Focus time
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261006-09@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261006T110000
+DTEND;TZID=Asia/Manila:20261006T120000
+SUMMARY:[Clients] Vendor meeting: Bayside Packaging
+CATEGORIES:Clients
+LOCATION:Office\, Room 2
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261006-10@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261006T120000
+DTEND;TZID=Asia/Manila:20261006T121500
+SUMMARY:Buffer
+CATEGORIES:Buffer
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261006-11@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261006T121500
+DTEND;TZID=Asia/Manila:20261006T130000
+SUMMARY:[Travel and personal] Lunch
+CATEGORIES:Travel and personal
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261006-12@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261006T140000
+DTEND;TZID=Asia/Manila:20261006T150000
+SUMMARY:[Leadership] Interview: Finance Associate
+CATEGORIES:Leadership
+LOCATION:CV attached
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261006-13@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261006T153000
+DTEND;TZID=Asia/Manila:20261006T170000
+SUMMARY:[Focus time] Board deck\, first draft
+CATEGORIES:Focus time
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261007-14@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261007T074000
+DTEND;TZID=Asia/Manila:20261007T090500
+SUMMARY:[Travel and personal] Flight Manila to Cebu
+CATEGORIES:Travel and personal
+LOCATION:Booking reference in travel folder
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261007-15@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261007T103000
+DTEND;TZID=Asia/Manila:20261007T123000
+SUMMARY:[Clients] Site visit: Cebu warehouse
+CATEGORIES:Clients
+LOCATION:Cebu
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261007-16@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261007T123000
+DTEND;TZID=Asia/Manila:20261007T133000
+SUMMARY:[Leadership] Lunch with branch team
+CATEGORIES:Leadership
+LOCATION:Cebu
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261007-17@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261007T143000
+DTEND;TZID=Asia/Manila:20261007T153000
+SUMMARY:[Leadership] Branch performance review
+CATEGORIES:Leadership
+LOCATION:Cebu
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261007-18@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261007T181500
+DTEND;TZID=Asia/Manila:20261007T194000
+SUMMARY:[Travel and personal] Flight Cebu to Manila
+CATEGORIES:Travel and personal
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261008-19@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261008T090000
+DTEND;TZID=Asia/Manila:20261008T093000
+SUMMARY:[Leadership] Leadership stand-up
+CATEGORIES:Leadership
+LOCATION:Board room
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261008-20@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261008T100000
+DTEND;TZID=Asia/Manila:20261008T113000
+SUMMARY:[Focus time] Board deck\, final pass
+CATEGORIES:Focus time
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261008-21@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261008T130000
+DTEND;TZID=Asia/Manila:20261008T140000
+SUMMARY:[Clients] Quarterly review: Harlow Retail
+CATEGORIES:Clients
+LOCATION:Zoom
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261008-22@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261008T140000
+DTEND;TZID=Asia/Manila:20261008T141500
+SUMMARY:Buffer
+CATEGORIES:Buffer
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261008-23@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261008T150000
+DTEND;TZID=Asia/Manila:20261008T153000
+SUMMARY:[Leadership] Contract sign-offs
+CATEGORIES:Leadership
+LOCATION:3 documents ready
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261008-24@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261008T163000
+DTEND;TZID=Asia/Manila:20261008T180000
+SUMMARY:[Travel and personal] Personal time (blocked)
+CATEGORIES:Travel and personal
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261009-25@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261009T090000
+DTEND;TZID=Asia/Manila:20261009T100000
+SUMMARY:[Leadership] Weekly metrics review
+CATEGORIES:Leadership
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261009-26@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261009T100000
+DTEND;TZID=Asia/Manila:20261009T101500
+SUMMARY:Buffer
+CATEGORIES:Buffer
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261009-27@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261009T103000
+DTEND;TZID=Asia/Manila:20261009T113000
+SUMMARY:[Focus time] Board pre-read sent
+CATEGORIES:Focus time
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261009-28@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261009T130000
+DTEND;TZID=Asia/Manila:20261009T140000
+SUMMARY:[Leadership] Team town hall
+CATEGORIES:Leadership
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:planner-20261009-29@alderfinch.example
+DTSTAMP:20261002T000000Z
+DTSTART;TZID=Asia/Manila:20261009T150000
+DTEND;TZID=Asia/Manila:20261009T153000
+SUMMARY:[Focus time] Friday wrap-up with assistant
+CATEGORIES:Focus time
+LOCATION:Next week preview
+DESCRIPTION:Sample calendar by Mary Rose Obsuna. Fictional events for dem
+ onstration.
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

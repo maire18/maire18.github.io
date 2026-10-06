@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SLHNHKQ');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Executive Weekly Planner Sample | Mary Rose Obsuna</title>
+  <meta name="description" content="Sample executive weekly planner by virtual assistant Mary Rose Obsuna: color-coded meetings, protected focus time, buffers, priorities and a Friday wrap-up.">
+  <link rel="canonical" href="https://daryroses.github.io/samples/executive-weekly-planner.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Executive Weekly Planner Sample | Mary Rose Obsuna">
+  <meta property="og:description" content="A color-coded executive week with protected focus time, buffers and a Friday wrap-up.">
+  <meta property="og:url" content="https://daryroses.github.io/samples/executive-weekly-planner.html">
+  <meta property="og:image" content="https://daryroses.github.io/assets/img/portfolio/executive-weekly-planner.webp">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="samples.css">
+  <style>
+    .week { display: grid; gap: 12px; }
+    @media (min-width: 900px) { .week { grid-template-columns: repeat(5, 1fr); } }
+    .day { border: 1px solid var(--line); border-radius: var(--r); background: var(--canvas); padding: 10px; }
+    .day-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 4px 6px 10px; white-space: nowrap; }
+    .day-head strong { font-size: 15px; }
+    .day-head span { font-size: 13px; color: var(--muted); }
+    .ev { border-radius: 10px; padding: 8px 10px; margin-top: 6px; font-size: 14px; line-height: 1.35; }
+    .ev time { display: block; font-size: 12px; font-weight: 600; opacity: .85; margin-bottom: 2px; font-variant-numeric: tabular-nums; }
+    .ev b { font-weight: 600; }
+    .ev small { display: block; font-size: 12px; opacity: .8; margin-top: 2px; }
+    .e-lead { background: var(--blue-50); color: #163F8C; box-shadow: inset 0 0 0 1px var(--blue-100); }
+    .e-client { background: var(--gold-50); color: #3F4650; box-shadow: inset 0 0 0 1px var(--gold-100); }
+    .e-focus { background: var(--sage-50); color: #1D4FB0; box-shadow: inset 0 0 0 1px var(--sage-100); }
+    .e-away { background: var(--rose-50); color: #121417; box-shadow: inset 0 0 0 1px var(--rose-100); }
+    .e-buffer { border: 1.5px dashed var(--line); color: var(--muted); padding: 3px 10px; font-size: 12px; background: transparent; }
+    .legend .l-lead { background: var(--blue-200); } .legend .l-client { background: var(--gold-400); }
+    .legend .l-focus { background: var(--sage-400); } .legend .l-away { background: var(--rose-400); }
+    .legend .l-buffer { border: 1.5px dashed #b8c2cf; }
+    .stat-row { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); margin-bottom: 20px; }
+    @media (min-width: 720px) { .stat-row { grid-template-columns: repeat(4, 1fr); } }
+    .prio { list-style: none; padding: 0; display: grid; gap: 10px; counter-reset: p; }
+    .prio li { counter-increment: p; display: grid; grid-template-columns: 26px 1fr; gap: 8px; }
+    .prio li::before { content: counter(p); display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--gold-50); border: 1px solid var(--gold-100); color: var(--gold-700); font-weight: 700; font-size: 13px; }
+    .dl-list { display: grid; gap: 10px; }
+    .dl-list div { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; }
+    .dl-list dt { color: var(--ink-2); } .dl-list dd { margin: 0; font-weight: 600; white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SLHNHKQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header class="s-top">
+    <div class="wrap">
+      <a class="s-brand" href="../index.html#projects"><img src="../assets/img/logo-header.png" width="34" height="34" alt=""><span>Mary Rose Obsuna</span></a>
+      <div class="s-actions">
+        <a class="s-btn" href="../index.html#projects"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg><span class="lbl-long">Back to portfolio</span><span class="sr-only">Back to portfolio</span></a>
+        <button class="s-btn s-btn-solid" type="button" onclick="window.print()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="7" rx="1"/></svg>Print or save PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="s-intro">
+      <p class="eyebrow"><span class="tag">Sample work</span>Calendar management</p>
+      <h1>Executive Weekly Planner</h1>
+      <p class="lead">A full working week planned for a busy executive: meetings grouped by type, focus time protected, short buffers after calls and a Friday wrap-up that previews the week ahead.</p>
+      <dl class="s-facts">
+        <div><dt>Prepared for</dt><dd>Managing Director (fictional)</dd></div>
+        <div><dt>Tools</dt><dd>Google Calendar, Outlook</dd></div>
+        <div><dt>What it shows</dt><dd>Scheduling, prioritizing, planning ahead</dd></div>
+      </dl>
+      <p class="disclaimer">All names, companies and appointments on this page are fictional and used for demonstration only.</p>
+    </section>
+
+    <section class="files-panel" aria-labelledby="files-title">
+      <div class="files-head">
+        <h2 id="files-title">The real file</h2>
+        <p>Made in the actual tool. Download, open and use it.</p>
+      </div>
+      <ul class="files">
+          <li class="file">
+            <span class="fmt fmt-ics">ICS</span>
+            <div class="file-info">
+              <p class="file-name">Executive-Weekly-Planner.ics</p>
+              <p class="file-desc">Calendar file with all 29 events &middot; 10 KB</p>
+              <p class="file-how">Google Calendar: Settings, Import and export, Import. Outlook: open the file. Tip: import into a new, empty calendar so it stays separate.</p>
+            </div>
+            <a class="s-btn s-btn-solid file-dl" href="files/Executive-Weekly-Planner.ics" download><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download<span class="sr-only"> Executive-Weekly-Planner.ics</span></a>
+          </li>
+      </ul>
+    </section>
+
+    <article class="doc">
+      <header class="doc-head">
+        <div>
+          <p class="doc-kicker">Alder &amp; Finch Co. &middot; Office of the Managing Director</p>
+          <h2 class="doc-title">Week of October 5 to 9, 2026</h2>
+        </div>
+        <p class="doc-sub">Prepared Friday, October 2 &middot; Version 2</p>
+      </header>
+
+      <dl class="stat-row">
+        <div class="kpi"><dt>Meetings</dt><dd>13</dd></div>
+        <div class="kpi"><dt>Protected focus time</dt><dd>8 hrs</dd></div>
+        <div class="kpi"><dt>Buffers after calls</dt><dd>5</dd></div>
+        <div class="kpi"><dt>Travel days</dt><dd>1</dd></div>
+      </dl>
+
+      <div class="legend" style="margin-bottom:16px">
+        <span><i class="l-lead"></i>Leadership and team</span>
+        <span><i class="l-client"></i>Clients and partners</span>
+        <span><i class="l-focus"></i>Focus time</span>
+        <span><i class="l-away"></i>Travel and personal</span>
+        <span><i class="l-buffer"></i>Buffer</span>
+      </div>
+
+      <div class="week">
+          <section class="day" aria-label="Monday, October 5">
+            <div class="day-head"><strong>Monday</strong><span>Oct 5</span></div>
+            <div class="ev e-focus"><time>8:30 to 9:00</time><b>Inbox and day review</b></div>
+            <div class="ev e-buffer">Buffer, 15 min</div>
+            <div class="ev e-lead"><time>9:15 to 10:00</time><b>Leadership stand-up</b><small>Board room</small></div>
+            <div class="ev e-focus"><time>10:30 to 12:00</time><b>Q4 budget review</b><small>Do not book</small></div>
+            <div class="ev e-client"><time>1:30 to 2:30</time><b>Client call: Marlowe Foods</b><small>Zoom, link in invite</small></div>
+            <div class="ev e-buffer">Buffer, 15 min</div>
+            <div class="ev e-lead"><time>3:00 to 3:45</time><b>1:1 with Operations Lead</b></div>
+          </section>
+          <section class="day" aria-label="Tuesday, October 6">
+            <div class="day-head"><strong>Tuesday</strong><span>Oct 6</span></div>
+            <div class="ev e-focus"><time>9:00 to 10:30</time><b>Supplier negotiation prep</b></div>
+            <div class="ev e-client"><time>11:00 to 12:00</time><b>Vendor meeting: Bayside Packaging</b><small>Office, Room 2</small></div>
+            <div class="ev e-buffer">Buffer, 15 min</div>
+            <div class="ev e-away"><time>12:15 to 1:00</time><b>Lunch</b></div>
+            <div class="ev e-lead"><time>2:00 to 3:00</time><b>Interview: Finance Associate</b><small>CV attached to invite</small></div>
+            <div class="ev e-focus"><time>3:30 to 5:00</time><b>Board deck, first draft</b></div>
+          </section>
+          <section class="day" aria-label="Wednesday, October 7">
+            <div class="day-head"><strong>Wednesday</strong><span>Oct 7</span></div>
+            <div class="ev e-away"><time>7:40 to 9:05</time><b>Flight Manila to Cebu</b><small>Booking ref in travel folder</small></div>
+            <div class="ev e-client"><time>10:30 to 12:30</time><b>Site visit: Cebu warehouse</b></div>
+            <div class="ev e-lead"><time>12:30 to 1:30</time><b>Lunch with branch team</b></div>
+            <div class="ev e-lead"><time>2:30 to 3:30</time><b>Branch performance review</b></div>
+            <div class="ev e-away"><time>6:15 to 7:40</time><b>Flight Cebu to Manila</b></div>
+          </section>
+          <section class="day" aria-label="Thursday, October 8">
+            <div class="day-head"><strong>Thursday</strong><span>Oct 8</span></div>
+            <div class="ev e-lead"><time>9:00 to 9:30</time><b>Leadership stand-up</b></div>
+            <div class="ev e-focus"><time>10:00 to 11:30</time><b>Board deck, final pass</b></div>
+            <div class="ev e-client"><time>1:00 to 2:00</time><b>Quarterly review: Harlow Retail</b><small>Zoom</small></div>
+            <div class="ev e-buffer">Buffer, 15 min</div>
+            <div class="ev e-lead"><time>3:00 to 3:30</time><b>Contract sign-offs</b><small>3 documents ready</small></div>
+            <div class="ev e-away"><time>4:30 to 6:00</time><b>Personal time</b><small>Blocked</small></div>
+          </section>
+          <section class="day" aria-label="Friday, October 9">
+            <div class="day-head"><strong>Friday</strong><span>Oct 9</span></div>
+            <div class="ev e-lead"><time>9:00 to 10:00</time><b>Weekly metrics review</b></div>
+            <div class="ev e-buffer">Buffer, 15 min</div>
+            <div class="ev e-focus"><time>10:30 to 11:30</time><b>Board pre-read sent</b></div>
+            <div class="ev e-lead"><time>1:00 to 2:00</time><b>Team town hall</b></div>
+            <div class="ev e-focus"><time>3:00 to 3:30</time><b>Friday wrap-up with assistant</b><small>Next week preview</small></div>
+          </section>
+        </div>
+
+      <aside class="grid g3" style="margin-top:16px">
+          <div class="box">
+            <h3>Top priorities</h3>
+            <ol class="prio">
+              <li>Finalize the Q4 budget before Thursday</li>
+              <li>Send the board pre-read by Friday, 11:30</li>
+              <li>Close packaging terms with Bayside</li>
+            </ol>
+          </div>
+          <div class="box">
+            <h3>Deadlines</h3>
+            <dl class="dl-list">
+              <div><dt>Expense approvals</dt><dd>Tue, 5:00</dd></div>
+              <div><dt>Contract sign-offs</dt><dd>Thu, 3:00</dd></div>
+              <div><dt>Board pre-read</dt><dd>Fri, 11:30</dd></div>
+            </dl>
+          </div>
+          <div class="box box-tint">
+            <h3>Prepared for you</h3>
+            <ul class="check small">
+              <li>Agendas attached to every external meeting</li>
+              <li>Cebu flights, transfer and hotel confirmed</li>
+              <li>Interview CV and scorecard in the invite</li>
+              <li class="todo">Confirm Harlow attendees by Wednesday</li>
+            </ul>
+          </div>
+      </aside>
+
+      <section class="doc-section">
+        <h3 class="h2"><span class="num">1</span>How this calendar is set up</h3>
+        <div class="grid g3">
+          <div class="box"><h3>Color by purpose</h3><p class="small muted">Four colors, one per type of time, so the balance of the week is visible at a glance.</p></div>
+          <div class="box"><h3>Protected focus blocks</h3><p class="small muted">Focus time is marked busy and new requests are offered the next open slot instead.</p></div>
+          <div class="box"><h3>Buffers after calls</h3><p class="small muted">Fifteen minutes after external calls for notes, follow-ups and a short reset.</p></div>
+        </div>
+      </section>
+
+      <section class="doc-section">
+        <h3 class="h2"><span class="num">2</span>Friday wrap-up: next week at a glance</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Day</th><th>Key item</th><th>Prep needed</th><th>Owner</th></tr></thead>
+            <tbody>
+              <tr><td>Mon, Oct 12</td><td>Harlow Retail kickoff</td><td>Onboarding pack and contacts list</td><td><span class="pill p-blue">Assistant</span></td></tr>
+              <tr><td>Tue, Oct 13</td><td>Board meeting</td><td>Printed deck, minutes template</td><td><span class="pill p-blue">Assistant</span></td></tr>
+              <tr><td>Wed to Sat</td><td>Singapore summit trip</td><td>Itinerary, passport check, per diem</td><td><span class="pill p-gold">Travel desk</span></td></tr>
+              <tr><td>Thu, Oct 15</td><td>Summit panel talk</td><td>Talking points, bio and slides</td><td><span class="pill p-sage">Director</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <nav class="wrap more" aria-label="More samples">
+    <h2>More sample work</h2>
+    <ul class="more-list">
+      <li><a href="executive-weekly-planner.html" aria-current="page"><small>Calendar management</small><strong>Executive Weekly Planner</strong></a></li>
+      <li><a href="inbox-sorting-system.html"><small>Email management</small><strong>Inbox Sorting System</strong></a></li>
+      <li><a href="travel-itinerary.html"><small>Travel and bookings</small><strong>Travel Itinerary and Booking Tracker</strong></a></li>
+      <li><a href="client-lead-tracker.html"><small>CRM and data entry</small><strong>Client and Lead Tracker</strong></a></li>
+      <li><a href="customer-data-cleanup.html"><small>Data management</small><strong>Client Database Cleanup</strong></a></li>
+      <li><a href="monthly-report.html"><small>Reports</small><strong>Monthly Operations Report</strong></a></li>
+      <li><a href="remote-va-toolkit.html"><small>Presentations</small><strong>The Remote VA Toolkit</strong></a></li>
+      <li><a href="website-tracking-setup.html"><small>SEO and analytics</small><strong>Website Tracking Setup</strong></a></li>
+    </ul>
+  </nav>
+
+  <footer class="s-foot"><div class="wrap"><p>Sample work by Mary Rose Obsuna, Virtual Assistant</p><a href="../index.html#contact">Work with me</a></div></footer>
+</body>
+</html>

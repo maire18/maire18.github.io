@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SLHNHKQ');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monthly Operations Report Sample | Mary Rose Obsuna</title>
+  <meta name="description" content="Sample monthly operations report by virtual assistant Mary Rose Obsuna: key metrics, a six-month trend chart, regional breakdown, takeaways and next steps.">
+  <link rel="canonical" href="https://daryroses.github.io/samples/monthly-report.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Monthly Operations Report Sample | Mary Rose Obsuna">
+  <meta property="og:description" content="Raw figures turned into a clear one-page report with metrics, a trend chart, takeaways and next steps.">
+  <meta property="og:url" content="https://daryroses.github.io/samples/monthly-report.html">
+  <meta property="og:image" content="https://daryroses.github.io/assets/img/portfolio/monthly-report.webp">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="samples.css">
+  <style>
+    .kpis { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); margin-bottom: 28px; }
+    @media (min-width: 820px) { .kpis { grid-template-columns: repeat(4, 1fr); } }
+    .summary { font-family: var(--serif); font-size: 19px; line-height: 1.6; color: var(--ink); padding: 20px 24px; border-radius: var(--r); background: var(--blue-50); border: 1px solid var(--blue-100); margin-bottom: 28px; }
+    .chart svg { width: 100%; height: auto; display: block; overflow: visible; }
+    .chart .grid { stroke: var(--line-soft); stroke-width: 1; }
+    .chart .base { stroke: #c9d2dd; stroke-width: 1; }
+    .chart .ax { fill: var(--muted); font: 12px var(--sans); }
+    .chart .val { fill: var(--ink); font: 600 13px var(--sans); }
+    .chart .val.hov { opacity: 0; transition: opacity .15s ease; }
+    .chart .bar path { fill: var(--blue-200); transition: fill .15s ease; }
+    .chart .bar.cur path { fill: var(--blue-600); }
+    .chart .hit { fill: transparent; }
+    .chart .bar:hover path, .chart .bar:focus path { fill: var(--blue-400); }
+    .chart .bar.cur:hover path, .chart .bar.cur:focus path { fill: var(--blue-700); }
+    .chart .bar:hover .hov, .chart .bar:focus .hov { opacity: 1; }
+    .chart .bar:focus { outline: none; }
+    .chart figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
+    .hbars { list-style: none; padding: 0; display: grid; gap: 14px; }
+    .hbars .row { display: flex; justify-content: space-between; font-size: 15px; margin-bottom: 6px; }
+    .hbars .row b { font-variant-numeric: tabular-nums; }
+    .hbars .track { height: 10px; border-radius: 999px; background: var(--line-soft); overflow: hidden; }
+    .hbars .track span { display: block; height: 100%; border-radius: 999px; background: var(--sage-400); }
+    .steps-table td:last-child { white-space: nowrap; }
+    .after-chart { margin-top: 32px; }
+    .take { list-style: none; padding: 0; display: grid; gap: 12px; }
+    .take li { display: grid; grid-template-columns: 28px 1fr; gap: 10px; }
+    .take .ic { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; }
+    .ic-good { background: var(--sage-50); color: var(--sage-700); }
+    .ic-watch { background: var(--gold-50); color: var(--gold-700); }
+  </style>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SLHNHKQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header class="s-top">
+    <div class="wrap">
+      <a class="s-brand" href="../index.html#projects"><img src="../assets/img/logo-header.png" width="34" height="34" alt=""><span>Mary Rose Obsuna</span></a>
+      <div class="s-actions">
+        <a class="s-btn" href="../index.html#projects"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg><span class="lbl-long">Back to portfolio</span><span class="sr-only">Back to portfolio</span></a>
+        <button class="s-btn s-btn-solid" type="button" onclick="window.print()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="7" rx="1"/></svg>Print or save PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="s-intro">
+      <p class="eyebrow"><span class="tag">Sample work</span>Reports and presentations</p>
+      <h1>Monthly Operations Report</h1>
+      <p class="lead">A month of raw operations data turned into a report a busy manager can read in three minutes: the headline numbers first, one trend chart, a regional breakdown, then clear takeaways and next steps with owners.</p>
+      <dl class="s-facts">
+        <div><dt>Prepared for</dt><dd>Operations Director (fictional)</dd></div>
+        <div><dt>Tools</dt><dd>PowerPoint, Excel</dd></div>
+        <div><dt>What it shows</dt><dd>Data cleanup, analysis, clear reporting</dd></div>
+      </dl>
+      <p class="disclaimer">The company and every figure on this page are fictional and used for demonstration only.</p>
+    </section>
+
+    <section class="files-panel" aria-labelledby="files-title">
+      <div class="files-head">
+        <h2 id="files-title">The real files</h2>
+        <p>Made in the actual tools. Download, open and use them.</p>
+      </div>
+      <ul class="files">
+          <li class="file">
+            <span class="fmt fmt-pptx">PPTX</span>
+            <div class="file-info">
+              <p class="file-name">September-2026-Operations-Report.pptx</p>
+              <p class="file-desc">Six-slide deck with editable charts &middot; 238 KB</p>
+              <p class="file-how">Opens in PowerPoint, Keynote or Google Slides.</p>
+            </div>
+            <a class="s-btn s-btn-solid file-dl" href="files/September-2026-Operations-Report.pptx" download><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download<span class="sr-only"> September-2026-Operations-Report.pptx</span></a>
+          </li>
+          <li class="file">
+            <span class="fmt fmt-xlsx">XLSX</span>
+            <div class="file-info">
+              <p class="file-name">Operations-Data-September-2026.xlsx</p>
+              <p class="file-desc">The data behind every number in the report &middot; 15 KB</p>
+              <p class="file-how">Totals, shares and changes are formulas, so the report can be checked.</p>
+            </div>
+            <a class="s-btn s-btn-solid file-dl" href="files/Operations-Data-September-2026.xlsx" download><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download<span class="sr-only"> Operations-Data-September-2026.xlsx</span></a>
+          </li>
+      </ul>
+    </section>
+
+    <article class="doc">
+      <header class="doc-head">
+        <div>
+          <p class="doc-kicker">Alder &amp; Finch Co. &middot; Operations</p>
+          <h2 class="doc-title">September 2026 Operations Report</h2>
+        </div>
+        <p class="doc-sub">Period: Sep 1 to 30 &middot; Sent October 2</p>
+      </header>
+
+      <p class="summary">September was the strongest month of the half: orders rose 6.4% and on-time delivery reached 96.0%, led by Metro Manila. Returns tickets are the one area to watch going into October.</p>
+
+      <dl class="kpis">
+        <div class="kpi"><dt>Orders fulfilled</dt><dd>4,812</dd><span class="delta up">&#8593; 6.4% vs Aug</span></div>
+        <div class="kpi"><dt>On-time delivery</dt><dd>96.0%</dd><span class="delta up">&#8593; 1.1 pts vs Aug</span></div>
+        <div class="kpi"><dt>Avg. fulfillment time</dt><dd>1.8 days</dd><span class="delta down-good">&#8595; 0.3 days faster</span></div>
+        <div class="kpi"><dt>Revenue</dt><dd>&#8369;18.4M</dd><span class="delta up">&#8593; 4.9% vs Aug</span></div>
+      </dl>
+
+      <div class="grid side">
+        <section class="doc-section" style="margin-top:0">
+          <h3 class="h2"><span class="num">1</span>Orders fulfilled, April to September</h3>
+          <figure class="chart">
+            <svg viewBox="0 0 560 256" role="img" aria-label="Bar chart of monthly orders: April 4,120; May 4,305; June 4,190; July 4,466; August 4,523; September 4,812.">
+              <line x1="48" x2="548" y1="184.0" y2="184.0" class="grid"/><text x="38" y="188.0" class="ax" text-anchor="end">1k</text>
+              <line x1="48" x2="548" y1="144.0" y2="144.0" class="grid"/><text x="38" y="148.0" class="ax" text-anchor="end">2k</text>
+              <line x1="48" x2="548" y1="104.0" y2="104.0" class="grid"/><text x="38" y="108.0" class="ax" text-anchor="end">3k</text>
+              <line x1="48" x2="548" y1="64.0" y2="64.0" class="grid"/><text x="38" y="68.0" class="ax" text-anchor="end">4k</text>
+              <line x1="48" x2="548" y1="24.0" y2="24.0" class="grid"/><text x="38" y="28.0" class="ax" text-anchor="end">5k</text>
+              <g class="bar" tabindex="0"><title>Apr 2026: 4,120 orders</title><rect class="hit" x="52.0" y="24" width="75.3" height="200"/><path d="M71.7,224 V63.2 Q71.7,59.2 75.7,59.2 H103.7 Q107.7,59.2 107.7,63.2 V224 Z"/><text x="89.7" y="244" class="ax" text-anchor="middle">Apr</text><text x="89.7" y="51.2" class="val hov" text-anchor="middle">4,120</text></g>
+              <g class="bar" tabindex="0"><title>May 2026: 4,305 orders</title><rect class="hit" x="135.3" y="24" width="75.3" height="200"/><path d="M155.0,224 V55.8 Q155.0,51.8 159.0,51.8 H187.0 Q191.0,51.8 191.0,55.8 V224 Z"/><text x="173.0" y="244" class="ax" text-anchor="middle">May</text><text x="173.0" y="43.8" class="val hov" text-anchor="middle">4,305</text></g>
+              <g class="bar" tabindex="0"><title>Jun 2026: 4,190 orders</title><rect class="hit" x="218.7" y="24" width="75.3" height="200"/><path d="M238.3,224 V60.4 Q238.3,56.4 242.3,56.4 H270.3 Q274.3,56.4 274.3,60.4 V224 Z"/><text x="256.3" y="244" class="ax" text-anchor="middle">Jun</text><text x="256.3" y="48.4" class="val hov" text-anchor="middle">4,190</text></g>
+              <g class="bar" tabindex="0"><title>Jul 2026: 4,466 orders</title><rect class="hit" x="302.0" y="24" width="75.3" height="200"/><path d="M321.7,224 V49.4 Q321.7,45.4 325.7,45.4 H353.7 Q357.7,45.4 357.7,49.4 V224 Z"/><text x="339.7" y="244" class="ax" text-anchor="middle">Jul</text><text x="339.7" y="37.4" class="val hov" text-anchor="middle">4,466</text></g>
+              <g class="bar" tabindex="0"><title>Aug 2026: 4,523 orders</title><rect class="hit" x="385.3" y="24" width="75.3" height="200"/><path d="M405.0,224 V47.1 Q405.0,43.1 409.0,43.1 H437.0 Q441.0,43.1 441.0,47.1 V224 Z"/><text x="423.0" y="244" class="ax" text-anchor="middle">Aug</text><text x="423.0" y="35.1" class="val hov" text-anchor="middle">4,523</text></g>
+              <g class="bar cur" tabindex="0"><title>Sep 2026: 4,812 orders</title><rect class="hit" x="468.7" y="24" width="75.3" height="200"/><path d="M488.3,224 V35.5 Q488.3,31.5 492.3,31.5 H520.3 Q524.3,31.5 524.3,35.5 V224 Z"/><text x="506.3" y="244" class="ax" text-anchor="middle">Sep</text><text x="506.3" y="23.5" class="val" text-anchor="middle">4,812</text></g>
+              <line x1="48" x2="548" y1="224" y2="224" class="base"/><text x="38" y="228" class="ax" text-anchor="end">0</text>
+            </svg>
+            <figcaption>Hover or tab to a bar to see its value. September is highlighted.</figcaption>
+          </figure>
+        </section>
+
+        <section class="box box-tint">
+          <h3>Support tickets by topic</h3>
+          <p class="small muted" style="margin-bottom:14px">1,126 tickets, 98% answered within 24 hours</p>
+          <ul class="hbars">
+            <li><div class="row"><span>Delivery status</span><b>42%</b></div><div class="track"><span style="width:42%"></span></div></li>
+            <li><div class="row"><span>Returns and exchanges</span><b>23%</b></div><div class="track"><span style="width:23%"></span></div></li>
+            <li><div class="row"><span>Billing</span><b>18%</b></div><div class="track"><span style="width:18%"></span></div></li>
+            <li><div class="row"><span>Product questions</span><b>17%</b></div><div class="track"><span style="width:17%"></span></div></li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="doc-section after-chart">
+        <h3 class="h2"><span class="num">2</span>Results by region</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Region</th><th class="num">Orders</th><th class="num">Share</th><th class="num">On-time</th><th class="num">Revenue</th></tr></thead>
+            <tbody>
+              <tr><td>Metro Manila</td><td class="num">2,146</td><td class="num">44.6%</td><td class="num">97.1%</td><td class="num">&#8369;8.3M</td></tr>
+              <tr><td>Central Luzon</td><td class="num">1,012</td><td class="num">21.0%</td><td class="num">95.8%</td><td class="num">&#8369;3.9M</td></tr>
+              <tr><td>Visayas</td><td class="num">894</td><td class="num">18.6%</td><td class="num">95.0%</td><td class="num">&#8369;3.4M</td></tr>
+              <tr><td>Mindanao</td><td class="num">760</td><td class="num">15.8%</td><td class="num">94.6%</td><td class="num">&#8369;2.8M</td></tr>
+            </tbody>
+            <tfoot><tr><td>Total</td><td class="num">4,812</td><td class="num">100%</td><td class="num">96.0%</td><td class="num">&#8369;18.4M</td></tr></tfoot>
+          </table>
+        </div>
+      </section>
+
+      <section class="doc-section">
+        <div class="grid g2">
+          <div>
+            <h3 class="h2"><span class="num">3</span>Key takeaways</h3>
+            <ul class="take">
+              <li><span class="ic ic-good" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></span><span>Orders grew for the third month in a row, driven by new retail accounts.</span></li>
+              <li><span class="ic ic-good" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></span><span>The new picking schedule cut fulfillment time by 0.3 days.</span></li>
+              <li><span class="ic ic-watch" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v5M12 16.5v.5"/></svg></span><span>Returns tickets rose to 23% of all tickets. Most mention sizing.</span></li>
+              <li><span class="ic ic-watch" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v5M12 16.5v.5"/></svg></span><span>Mindanao on-time delivery trails the other regions at 94.6%.</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="h2"><span class="num">4</span>Next steps for October</h3>
+            <div class="table-wrap">
+              <table class="steps-table">
+                <thead><tr><th>Action</th><th>Owner</th><th>Due</th></tr></thead>
+                <tbody>
+                  <tr><td>Add a sizing guide to product pages</td><td><span class="pill p-lav">Marketing</span></td><td>Oct 16</td></tr>
+                  <tr><td>Review Mindanao courier routes</td><td><span class="pill p-gold">Logistics</span></td><td>Oct 21</td></tr>
+                  <tr><td>Share this report format with branches</td><td><span class="pill p-blue">Admin</span></td><td>Oct 9</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <nav class="wrap more" aria-label="More samples">
+    <h2>More sample work</h2>
+    <ul class="more-list">
+      <li><a href="executive-weekly-planner.html"><small>Calendar management</small><strong>Executive Weekly Planner</strong></a></li>
+      <li><a href="inbox-sorting-system.html"><small>Email management</small><strong>Inbox Sorting System</strong></a></li>
+      <li><a href="travel-itinerary.html"><small>Travel and bookings</small><strong>Travel Itinerary and Booking Tracker</strong></a></li>
+      <li><a href="client-lead-tracker.html"><small>CRM and data entry</small><strong>Client and Lead Tracker</strong></a></li>
+      <li><a href="customer-data-cleanup.html"><small>Data management</small><strong>Client Database Cleanup</strong></a></li>
+      <li><a href="monthly-report.html" aria-current="page"><small>Reports</small><strong>Monthly Operations Report</strong></a></li>
+      <li><a href="remote-va-toolkit.html"><small>Presentations</small><strong>The Remote VA Toolkit</strong></a></li>
+      <li><a href="website-tracking-setup.html"><small>SEO and analytics</small><strong>Website Tracking Setup</strong></a></li>
+    </ul>
+  </nav>
+
+  <footer class="s-foot"><div class="wrap"><p>Sample work by Mary Rose Obsuna, Virtual Assistant</p><a href="../index.html#contact">Work with me</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SLHNHKQ');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Remote VA Toolkit Presentation Sample | Mary Rose Obsuna</title>
+  <meta name="description" content="Sample presentation by virtual assistant Mary Rose Obsuna: a 38-slide guide to 16 core VA responsibilities, the modern tools for each one, and a sample of the finished work.">
+  <link rel="canonical" href="https://daryroses.github.io/samples/remote-va-toolkit.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Remote VA Toolkit | Presentation Sample by Mary Rose Obsuna">
+  <meta property="og:description" content="A 38-slide PowerPoint guide to 16 core VA responsibilities, the tools for each one, and a real-world sample of the work.">
+  <meta property="og:url" content="https://daryroses.github.io/samples/remote-va-toolkit.html">
+  <meta property="og:image" content="https://daryroses.github.io/assets/img/portfolio/remote-va-toolkit.webp">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="samples.css">
+  <style>
+    /* Theme colors only on this page: blue, dark blue, near-black and grays */
+    .doc-kicker { color: var(--blue-600); }
+    .fmt-pptx { background: var(--blue-100); color: var(--blue-700); }
+    .fmt-pdf { background: var(--canvas); color: var(--ink); box-shadow: inset 0 0 0 1px var(--line); }
+    .files { gap: 12px; }
+
+    /* Slide viewer */
+    .viewer { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+    .stage {
+      position: relative; aspect-ratio: 16 / 9; overflow: hidden;
+      border-radius: var(--r); border: 1px solid var(--line); background: var(--canvas);
+      box-shadow: 0 1px 2px rgba(18, 20, 23, .04), 0 10px 28px rgba(18, 20, 23, .07);
+    }
+    .stage img { width: 100%; height: 100%; object-fit: contain; }
+    .stage:focus-visible { outline: 3px solid var(--blue-600); outline-offset: 3px; }
+    .controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .nav-btn {
+      display: grid; place-items: center; flex: none; width: 44px; height: 44px; border-radius: 50%;
+      border: 1px solid var(--line); background: var(--paper); color: var(--ink); cursor: pointer;
+      transition: background .2s ease, border-color .2s ease, color .2s ease;
+    }
+    .nav-btn:hover:not(:disabled) { background: var(--blue-50); border-color: var(--blue-400); color: var(--blue-700); }
+    .nav-btn:disabled { opacity: .4; cursor: default; }
+    .caption { flex: 1; min-width: 0; text-align: center; }
+    .caption small { display: block; font-size: 13px; color: var(--muted); }
+    .caption strong { display: block; font-size: 16px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .progress { height: 4px; border-radius: 4px; background: var(--line-soft); overflow: hidden; }
+    .progress span { display: block; height: 100%; width: 0; border-radius: 4px; background: var(--blue-600); transition: width .25s ease; }
+    .jump { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+    .jump label { flex: 1 1 280px; min-width: 0; font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 10px; }
+    .jump select {
+      flex: 1; min-width: 0; width: 100%; max-width: 420px; min-height: 40px; padding: 8px 34px 8px 14px; text-overflow: ellipsis; border: 1px solid var(--line); border-radius: 999px;
+      font: 15px var(--sans); color: var(--ink); appearance: none; cursor: pointer;
+      background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%235F6673' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") right 12px center no-repeat;
+    }
+    .jump select:focus { outline: none; border-color: var(--blue-400); box-shadow: 0 0 0 3px rgba(29, 95, 209, .15); }
+    .hint { font-size: 13px; color: var(--muted); }
+
+    /* Thumbnails */
+    .thumb-group { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 22px 0 10px; font-size: 15px; font-weight: 700; color: var(--ink); }
+    .thumb-group:first-of-type { margin-top: 0; }
+    .thumb-group span { font-size: 13px; font-weight: 500; color: var(--muted); }
+    .thumbs { list-style: none; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @media (min-width: 640px) { .thumbs { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (min-width: 960px) { .thumbs { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+    .thumb { display: block; padding: 6px; border-radius: var(--r); border: 1px solid var(--line-soft); background: var(--paper); color: var(--ink); text-decoration: none; transition: border-color .2s ease, transform .2s ease, background .2s ease; }
+    .thumb:hover { border-color: var(--blue-400); transform: translateY(-2px); color: var(--ink); }
+    .thumb img { width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 8px; border: 1px solid var(--line-soft); background: var(--canvas); }
+    .thumb span { display: block; padding: 8px 4px 2px; font-size: 13px; line-height: 1.4; color: var(--ink-2); }
+    .thumb b { color: var(--blue-700); margin-right: 2px; }
+    .thumb[aria-current="true"] { border-color: var(--blue-600); background: var(--blue-50); box-shadow: 0 0 0 1px var(--blue-600); }
+
+    .facts-list { list-style: none; padding: 0; display: grid; gap: 10px; }
+    .facts-list li { display: flex; gap: 10px; align-items: baseline; color: var(--ink-2); font-size: 15px; }
+    .facts-list li::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--blue-600); transform: translateY(-2px); }
+    .swatches { display: flex; gap: 8px; margin-top: 10px; }
+    .swatches i { width: 28px; height: 28px; border-radius: 8px; border: 1px solid var(--line); }
+
+    @media print { .viewer, .jump { display: none !important; } .thumbs { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SLHNHKQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header class="s-top">
+    <div class="wrap">
+      <a class="s-brand" href="../index.html#projects"><img src="../assets/img/logo-header.png" width="34" height="34" alt=""><span>Mary Rose Obsuna</span></a>
+      <div class="s-actions">
+        <a class="s-btn" href="../index.html#projects"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg><span class="lbl-long">Back to portfolio</span><span class="sr-only">Back to portfolio</span></a>
+        <a class="s-btn s-btn-solid" href="files/The-Remote-VA-Toolkit.pdf" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download PDF</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="s-intro">
+      <p class="eyebrow"><span class="tag">Sample work</span>Presentations</p>
+      <h1>The Remote VA Toolkit</h1>
+      <p class="lead">A 38-slide guide to the 16 core responsibilities of a remote virtual assistant, the modern tools used for each one, and a real-world sample of the finished work. Every area follows the same two-slide pattern, so it is easy to scan and present.</p>
+      <dl class="s-facts">
+        <div><dt>Format</dt><dd>38 slides, widescreen 16:9</dd></div>
+        <div><dt>Tool</dt><dd>Microsoft PowerPoint (also opens in Google Slides)</dd></div>
+        <div><dt>What it shows</dt><dd>Slide design, research, clear structure</dd></div>
+      </dl>
+      <p class="disclaimer">Client names, figures and records shown inside the sample slides are fictional and used for demonstration only.</p>
+    </section>
+
+    <section class="files-panel" aria-labelledby="files-title">
+      <div class="files-head">
+        <h2 id="files-title">The real files</h2>
+        <p>Made in the actual tool. Download, open and present them.</p>
+      </div>
+      <ul class="files">
+          <li class="file">
+            <span class="fmt fmt-pptx">PPTX</span>
+            <div class="file-info">
+              <p class="file-name">The-Remote-VA-Toolkit.pptx</p>
+              <p class="file-desc">Editable deck with speaker notes on every slide &middot; 314 KB</p>
+              <p class="file-how">Opens in PowerPoint, Google Slides or Keynote.</p>
+            </div>
+            <a class="s-btn s-btn-solid file-dl" href="files/The-Remote-VA-Toolkit.pptx" download><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download<span class="sr-only"> The-Remote-VA-Toolkit.pptx</span></a>
+          </li>
+          <li class="file">
+            <span class="fmt fmt-pdf">PDF</span>
+            <div class="file-info">
+              <p class="file-name">The-Remote-VA-Toolkit.pdf</p>
+              <p class="file-desc">All 38 slides, ready to read or share &middot; 590 KB</p>
+              <p class="file-how">Opens in any browser or PDF reader.</p>
+            </div>
+            <a class="s-btn file-dl" href="files/The-Remote-VA-Toolkit.pdf" download><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download<span class="sr-only"> The-Remote-VA-Toolkit.pdf</span></a>
+          </li>
+      </ul>
+    </section>
+
+    <article class="doc">
+      <header class="doc-head">
+        <div>
+          <p class="doc-kicker">Presentation &middot; 38 slides</p>
+          <h2 class="doc-title">The Remote VA Toolkit</h2>
+        </div>
+        <p class="doc-sub">Tools reviewed September 2026</p>
+      </header>
+
+      <section class="doc-section" aria-labelledby="viewer-title">
+        <h3 class="h2" id="viewer-title"><span class="num">1</span>View the slides</h3>
+        <div class="viewer">
+          <div class="stage" id="stage" tabindex="0" role="group" aria-roledescription="slide viewer" aria-label="Slides. Use the left and right arrow keys to move.">
+            <img id="slide-img" src="../assets/img/samples/remote-va-toolkit/slide-01.webp" width="1280" height="720" alt="Slide 1: The Remote VA Toolkit">
+          </div>
+          <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+          <div class="controls">
+            <button class="nav-btn" id="prev" type="button" aria-label="Previous slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+            <p class="caption" aria-live="polite"><small id="cap-kicker">Slide 1 of 38</small><strong id="cap-title">The Remote VA Toolkit</strong></p>
+            <button class="nav-btn" id="next" type="button" aria-label="Next slide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+          </div>
+          <div class="jump no-print">
+            <label>Jump to
+              <select id="jump">
+                <optgroup label="Start here">
+                <option value="1">01 · The Remote VA Toolkit</option>
+                <option value="2">02 · 16 areas, two slides each: tools, then a sample</option>
+                <option value="3">03 · Six tool categories every remote VA uses daily</option>
+                <option value="4">04 · How the 16 areas fit into one working day</option>
+                </optgroup>
+                <optgroup label="16 responsibility areas">
+                <option value="5">05 · Data Management</option>
+                <option value="7">07 · Calendar Management</option>
+                <option value="9">09 · Email Management</option>
+                <option value="11">11 · Operations Reports</option>
+                <option value="13">13 · Inventory Management</option>
+                <option value="15">15 · Travel Arrangements</option>
+                <option value="17">17 · Booking Management</option>
+                <option value="19">19 · Records and Documentation</option>
+                <option value="21">21 · Reports and Presentations</option>
+                <option value="23">23 · Digital Files Organization</option>
+                <option value="25">25 · Task and Project Management</option>
+                <option value="27">27 · AI Management</option>
+                <option value="29">29 · Content and Design</option>
+                <option value="31">31 · SEO</option>
+                <option value="33">33 · Research and Information Gathering</option>
+                <option value="35">35 · Remote Team Communication</option>
+                </optgroup>
+                <optgroup label="Wrap-up">
+                <option value="37">37 · Four rules for picking the right tool</option>
+                <option value="38">38 · Where to start</option>
+                </optgroup>
+              </select>
+            </label>
+            <p class="hint">Tip: click the slide, then use the arrow keys.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="doc-section">
+        <h3 class="h2"><span class="num">2</span>All 38 slides</h3>
+        <h4 class="thumb-group">Start here <span>Slides 1 to 4</span></h4>
+            <ul class="thumbs">
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-01.webp" data-slide="1"><img src="../assets/img/samples/remote-va-toolkit/thumb-01.webp" width="400" height="225" loading="lazy" alt="Slide 1: The Remote VA Toolkit"><span><b>01</b> The Remote VA Toolkit</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-02.webp" data-slide="2"><img src="../assets/img/samples/remote-va-toolkit/thumb-02.webp" width="400" height="225" loading="lazy" alt="Slide 2: 16 areas, two slides each: tools, then a sample"><span><b>02</b> 16 areas, two slides each: tools, then a sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-03.webp" data-slide="3"><img src="../assets/img/samples/remote-va-toolkit/thumb-03.webp" width="400" height="225" loading="lazy" alt="Slide 3: Six tool categories every remote VA uses daily"><span><b>03</b> Six tool categories every remote VA uses daily</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-04.webp" data-slide="4"><img src="../assets/img/samples/remote-va-toolkit/thumb-04.webp" width="400" height="225" loading="lazy" alt="Slide 4: How the 16 areas fit into one working day"><span><b>04</b> How the 16 areas fit into one working day</span></a></li>
+            </ul>
+            <h4 class="thumb-group">16 responsibility areas: tools, then a sample <span>Slides 5 to 36</span></h4>
+            <ul class="thumbs">
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-05.webp" data-slide="5"><img src="../assets/img/samples/remote-va-toolkit/thumb-05.webp" width="400" height="225" loading="lazy" alt="Slide 5: Data Management"><span><b>05</b> Data Management · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-06.webp" data-slide="6"><img src="../assets/img/samples/remote-va-toolkit/thumb-06.webp" width="400" height="225" loading="lazy" alt="Slide 6: A client database after cleanup"><span><b>06</b> Data Management · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-07.webp" data-slide="7"><img src="../assets/img/samples/remote-va-toolkit/thumb-07.webp" width="400" height="225" loading="lazy" alt="Slide 7: Calendar Management"><span><b>07</b> Calendar Management · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-08.webp" data-slide="8"><img src="../assets/img/samples/remote-va-toolkit/thumb-08.webp" width="400" height="225" loading="lazy" alt="Slide 8: A protected executive week"><span><b>08</b> Calendar Management · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-09.webp" data-slide="9"><img src="../assets/img/samples/remote-va-toolkit/thumb-09.webp" width="400" height="225" loading="lazy" alt="Slide 9: Email Management"><span><b>09</b> Email Management · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-10.webp" data-slide="10"><img src="../assets/img/samples/remote-va-toolkit/thumb-10.webp" width="400" height="225" loading="lazy" alt="Slide 10: A label system and a reply template"><span><b>10</b> Email Management · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-11.webp" data-slide="11"><img src="../assets/img/samples/remote-va-toolkit/thumb-11.webp" width="400" height="225" loading="lazy" alt="Slide 11: Operations Reports"><span><b>11</b> Operations Reports · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-12.webp" data-slide="12"><img src="../assets/img/samples/remote-va-toolkit/thumb-12.webp" width="400" height="225" loading="lazy" alt="Slide 12: A weekly operations report"><span><b>12</b> Operations Reports · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-13.webp" data-slide="13"><img src="../assets/img/samples/remote-va-toolkit/thumb-13.webp" width="400" height="225" loading="lazy" alt="Slide 13: Inventory Management"><span><b>13</b> Inventory Management · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-14.webp" data-slide="14"><img src="../assets/img/samples/remote-va-toolkit/thumb-14.webp" width="400" height="225" loading="lazy" alt="Slide 14: A stock tracker with reorder alerts"><span><b>14</b> Inventory Management · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-15.webp" data-slide="15"><img src="../assets/img/samples/remote-va-toolkit/thumb-15.webp" width="400" height="225" loading="lazy" alt="Slide 15: Travel Arrangements"><span><b>15</b> Travel Arrangements · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-16.webp" data-slide="16"><img src="../assets/img/samples/remote-va-toolkit/thumb-16.webp" width="400" height="225" loading="lazy" alt="Slide 16: Day one of a business trip itinerary"><span><b>16</b> Travel Arrangements · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-17.webp" data-slide="17"><img src="../assets/img/samples/remote-va-toolkit/thumb-17.webp" width="400" height="225" loading="lazy" alt="Slide 17: Booking Management"><span><b>17</b> Booking Management · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-18.webp" data-slide="18"><img src="../assets/img/samples/remote-va-toolkit/thumb-18.webp" width="400" height="225" loading="lazy" alt="Slide 18: A daily booking log for a clinic"><span><b>18</b> Booking Management · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-19.webp" data-slide="19"><img src="../assets/img/samples/remote-va-toolkit/thumb-19.webp" width="400" height="225" loading="lazy" alt="Slide 19: Records and Documentation"><span><b>19</b> Records and Documentation · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-20.webp" data-slide="20"><img src="../assets/img/samples/remote-va-toolkit/thumb-20.webp" width="400" height="225" loading="lazy" alt="Slide 20: A one-page SOP"><span><b>20</b> Records and Documentation · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-21.webp" data-slide="21"><img src="../assets/img/samples/remote-va-toolkit/thumb-21.webp" width="400" height="225" loading="lazy" alt="Slide 21: Reports and Presentations"><span><b>21</b> Reports and Presentations · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-22.webp" data-slide="22"><img src="../assets/img/samples/remote-va-toolkit/thumb-22.webp" width="400" height="225" loading="lazy" alt="Slide 22: A five-slide monthly review outline"><span><b>22</b> Reports and Presentations · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-23.webp" data-slide="23"><img src="../assets/img/samples/remote-va-toolkit/thumb-23.webp" width="400" height="225" loading="lazy" alt="Slide 23: Digital Files Organization"><span><b>23</b> Digital Files Organization · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-24.webp" data-slide="24"><img src="../assets/img/samples/remote-va-toolkit/thumb-24.webp" width="400" height="225" loading="lazy" alt="Slide 24: A shared drive structure and naming rule"><span><b>24</b> Digital Files Organization · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-25.webp" data-slide="25"><img src="../assets/img/samples/remote-va-toolkit/thumb-25.webp" width="400" height="225" loading="lazy" alt="Slide 25: Task and Project Management"><span><b>25</b> Task and Project Management · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-26.webp" data-slide="26"><img src="../assets/img/samples/remote-va-toolkit/thumb-26.webp" width="400" height="225" loading="lazy" alt="Slide 26: A weekly task board"><span><b>26</b> Task and Project Management · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-27.webp" data-slide="27"><img src="../assets/img/samples/remote-va-toolkit/thumb-27.webp" width="400" height="225" loading="lazy" alt="Slide 27: AI Management"><span><b>27</b> AI Management · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-28.webp" data-slide="28"><img src="../assets/img/samples/remote-va-toolkit/thumb-28.webp" width="400" height="225" loading="lazy" alt="Slide 28: A reusable prompt template"><span><b>28</b> AI Management · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-29.webp" data-slide="29"><img src="../assets/img/samples/remote-va-toolkit/thumb-29.webp" width="400" height="225" loading="lazy" alt="Slide 29: Content and Design"><span><b>29</b> Content and Design · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-30.webp" data-slide="30"><img src="../assets/img/samples/remote-va-toolkit/thumb-30.webp" width="400" height="225" loading="lazy" alt="Slide 30: One week of a content calendar"><span><b>30</b> Content and Design · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-31.webp" data-slide="31"><img src="../assets/img/samples/remote-va-toolkit/thumb-31.webp" width="400" height="225" loading="lazy" alt="Slide 31: SEO"><span><b>31</b> SEO · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-32.webp" data-slide="32"><img src="../assets/img/samples/remote-va-toolkit/thumb-32.webp" width="400" height="225" loading="lazy" alt="Slide 32: A monthly SEO snapshot"><span><b>32</b> SEO · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-33.webp" data-slide="33"><img src="../assets/img/samples/remote-va-toolkit/thumb-33.webp" width="400" height="225" loading="lazy" alt="Slide 33: Research and Information Gathering"><span><b>33</b> Research and Information Gathering · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-34.webp" data-slide="34"><img src="../assets/img/samples/remote-va-toolkit/thumb-34.webp" width="400" height="225" loading="lazy" alt="Slide 34: A vendor comparison brief"><span><b>34</b> Research and Information Gathering · sample</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-35.webp" data-slide="35"><img src="../assets/img/samples/remote-va-toolkit/thumb-35.webp" width="400" height="225" loading="lazy" alt="Slide 35: Remote Team Communication"><span><b>35</b> Remote Team Communication · tools</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-36.webp" data-slide="36"><img src="../assets/img/samples/remote-va-toolkit/thumb-36.webp" width="400" height="225" loading="lazy" alt="Slide 36: An end-of-day report in Slack"><span><b>36</b> Remote Team Communication · sample</span></a></li>
+            </ul>
+            <h4 class="thumb-group">Wrap-up <span>Slides 37 to 38</span></h4>
+            <ul class="thumbs">
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-37.webp" data-slide="37"><img src="../assets/img/samples/remote-va-toolkit/thumb-37.webp" width="400" height="225" loading="lazy" alt="Slide 37: Four rules for picking the right tool"><span><b>37</b> Four rules for picking the right tool</span></a></li>
+              <li><a class="thumb" href="../assets/img/samples/remote-va-toolkit/slide-38.webp" data-slide="38"><img src="../assets/img/samples/remote-va-toolkit/thumb-38.webp" width="400" height="225" loading="lazy" alt="Slide 38: Master email, calendar and tasks first. The other 13 build on them."><span><b>38</b> Where to start</span></a></li>
+            </ul>
+      </section>
+
+      <section class="doc-section">
+        <h3 class="h2"><span class="num">3</span>How the deck is built</h3>
+        <div class="grid g3">
+          <div class="box"><h3>One pattern for every area</h3><p class="small muted">Each of the 16 areas gets two slides: the tasks and tools first, then a sample of the finished work.</p></div>
+          <div class="box"><h3>Ready to present</h3><p class="small muted">Speaker notes on all 38 slides, a clear outline slide, and short titles that state the point.</p></div>
+          <div class="box"><h3>Simple, consistent design</h3><p class="small muted">One typeface (DM Sans), blue for emphasis, near-black and grays for everything else.</p>
+            <div class="swatches" aria-hidden="true"><i style="background:#1D5FD1"></i><i style="background:#121417"></i><i style="background:#5F6673"></i><i style="background:#F5F6F8"></i></div></div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <nav class="wrap more" aria-label="More samples">
+    <h2>More sample work</h2>
+    <ul class="more-list">
+      <li><a href="executive-weekly-planner.html"><small>Calendar management</small><strong>Executive Weekly Planner</strong></a></li>
+      <li><a href="inbox-sorting-system.html"><small>Email management</small><strong>Inbox Sorting System</strong></a></li>
+      <li><a href="travel-itinerary.html"><small>Travel and bookings</small><strong>Travel Itinerary and Booking Tracker</strong></a></li>
+      <li><a href="client-lead-tracker.html"><small>CRM and data entry</small><strong>Client and Lead Tracker</strong></a></li>
+      <li><a href="customer-data-cleanup.html"><small>Data management</small><strong>Client Database Cleanup</strong></a></li>
+      <li><a href="monthly-report.html"><small>Reports</small><strong>Monthly Operations Report</strong></a></li>
+      <li><a href="remote-va-toolkit.html" aria-current="page"><small>Presentations</small><strong>The Remote VA Toolkit</strong></a></li>
+      <li><a href="website-tracking-setup.html"><small>SEO and analytics</small><strong>Website Tracking Setup</strong></a></li>
+    </ul>
+  </nav>
+
+  <footer class="s-foot"><div class="wrap"><p>Sample work by Mary Rose Obsuna, Virtual Assistant</p><a href="../index.html#contact">Work with me</a></div></footer>
+
+  <script>
+  (function () {
+    var SLIDES = [{"t": "The Remote VA Toolkit", "k": "A practical guide for remote professionals", "s": "The Remote VA Toolkit"}, {"t": "16 areas, two slides each: tools, then a sample", "k": "How to use this deck", "s": "16 areas, two slides each: tools, then a sample"}, {"t": "Six tool categories every remote VA uses daily", "k": "The core stack", "s": "Six tool categories every remote VA uses daily"}, {"t": "How the 16 areas fit into one working day", "k": "A typical day", "s": "How the 16 areas fit into one working day"}, {"t": "Data Management", "k": "01 / 16 · Responsibilities and tools", "s": "Data Management · tools"}, {"t": "A client database after cleanup", "k": "01 / 16 · Sample", "s": "Data Management · sample"}, {"t": "Calendar Management", "k": "02 / 16 · Responsibilities and tools", "s": "Calendar Management · tools"}, {"t": "A protected executive week", "k": "02 / 16 · Sample", "s": "Calendar Management · sample"}, {"t": "Email Management", "k": "03 / 16 · Responsibilities and tools", "s": "Email Management · tools"}, {"t": "A label system and a reply template", "k": "03 / 16 · Sample", "s": "Email Management · sample"}, {"t": "Operations Reports", "k": "04 / 16 · Responsibilities and tools", "s": "Operations Reports · tools"}, {"t": "A weekly operations report", "k": "04 / 16 · Sample", "s": "Operations Reports · sample"}, {"t": "Inventory Management", "k": "05 / 16 · Responsibilities and tools", "s": "Inventory Management · tools"}, {"t": "A stock tracker with reorder alerts", "k": "05 / 16 · Sample", "s": "Inventory Management · sample"}, {"t": "Travel Arrangements", "k": "06 / 16 · Responsibilities and tools", "s": "Travel Arrangements · tools"}, {"t": "Day one of a business trip itinerary", "k": "06 / 16 · Sample", "s": "Travel Arrangements · sample"}, {"t": "Booking Management", "k": "07 / 16 · Responsibilities and tools", "s": "Booking Management · tools"}, {"t": "A daily booking log for a clinic", "k": "07 / 16 · Sample", "s": "Booking Management · sample"}, {"t": "Records and Documentation", "k": "08 / 16 · Responsibilities and tools", "s": "Records and Documentation · tools"}, {"t": "A one-page SOP", "k": "08 / 16 · Sample", "s": "Records and Documentation · sample"}, {"t": "Reports and Presentations", "k": "09 / 16 · Responsibilities and tools", "s": "Reports and Presentations · tools"}, {"t": "A five-slide monthly review outline", "k": "09 / 16 · Sample", "s": "Reports and Presentations · sample"}, {"t": "Digital Files Organization", "k": "10 / 16 · Responsibilities and tools", "s": "Digital Files Organization · tools"}, {"t": "A shared drive structure and naming rule", "k": "10 / 16 · Sample", "s": "Digital Files Organization · sample"}, {"t": "Task and Project Management", "k": "11 / 16 · Responsibilities and tools", "s": "Task and Project Management · tools"}, {"t": "A weekly task board", "k": "11 / 16 · Sample", "s": "Task and Project Management · sample"}, {"t": "AI Management", "k": "12 / 16 · Responsibilities and tools", "s": "AI Management · tools"}, {"t": "A reusable prompt template", "k": "12 / 16 · Sample", "s": "AI Management · sample"}, {"t": "Content and Design", "k": "13 / 16 · Responsibilities and tools", "s": "Content and Design · tools"}, {"t": "One week of a content calendar", "k": "13 / 16 · Sample", "s": "Content and Design · sample"}, {"t": "SEO", "k": "14 / 16 · Responsibilities and tools", "s": "SEO · tools"}, {"t": "A monthly SEO snapshot", "k": "14 / 16 · Sample", "s": "SEO · sample"}, {"t": "Research and Information Gathering", "k": "15 / 16 · Responsibilities and tools", "s": "Research and Information Gathering · tools"}, {"t": "A vendor comparison brief", "k": "15 / 16 · Sample", "s": "Research and Information Gathering · sample"}, {"t": "Remote Team Communication", "k": "16 / 16 · Responsibilities and tools", "s": "Remote Team Communication · tools"}, {"t": "An end-of-day report in Slack", "k": "16 / 16 · Sample", "s": "Remote Team Communication · sample"}, {"t": "Four rules for picking the right tool", "k": "Choosing tools", "s": "Four rules for picking the right tool"}, {"t": "Master email, calendar and tasks first. The other 13 build on them.", "k": "Where to start", "s": "Where to start"}];
+    var IMG = '../assets/img/samples/remote-va-toolkit/slide-';
+    var total = SLIDES.length, current = 1;
+    var img = document.getElementById('slide-img');
+    var stage = document.getElementById('stage');
+    var prev = document.getElementById('prev');
+    var next = document.getElementById('next');
+    var bar = document.getElementById('bar');
+    var capKicker = document.getElementById('cap-kicker');
+    var capTitle = document.getElementById('cap-title');
+    var jump = document.getElementById('jump');
+    var thumbs = document.querySelectorAll('.thumb');
+    var pad = function (n) { return n < 10 ? '0' + n : '' + n; };
+
+    // Area jumps point at the tools slide; the sample slide keeps the same area selected
+    function areaStart(n) { return n >= 5 && n <= 36 && n % 2 === 0 ? n - 1 : n; }
+
+    function show(n) {
+      current = Math.max(1, Math.min(total, n));
+      var s = SLIDES[current - 1];
+      img.src = IMG + pad(current) + '.webp';
+      img.alt = 'Slide ' + current + ': ' + s.t;
+      capKicker.textContent = 'Slide ' + current + ' of ' + total + ' · ' + s.k;
+      capTitle.textContent = s.t;
+      bar.style.width = (current / total * 100) + '%';
+      prev.disabled = current === 1;
+      next.disabled = current === total;
+      thumbs.forEach(function (t) {
+        if (+t.dataset.slide === current) t.setAttribute('aria-current', 'true');
+        else t.removeAttribute('aria-current');
+      });
+      var target = String(areaStart(current));
+      if (jump.querySelector('option[value="' + target + '"]')) jump.value = target;
+      // Load the neighbours early so moving through the deck feels instant
+      [current - 1, current + 1].forEach(function (k) { if (k >= 1 && k <= total) new Image().src = IMG + pad(k) + '.webp'; });
+    }
+
+    prev.addEventListener('click', function () { show(current - 1); });
+    next.addEventListener('click', function () { show(current + 1); });
+    jump.addEventListener('change', function () { show(+jump.value); });
+    stage.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); show(current + 1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); show(current - 1); }
+      if (e.key === 'Home') { e.preventDefault(); show(1); }
+      if (e.key === 'End') { e.preventDefault(); show(total); }
+    });
+    stage.addEventListener('click', function () { stage.focus(); });
+    thumbs.forEach(function (t) {
+      t.addEventListener('click', function (e) {
+        e.preventDefault();
+        show(+t.dataset.slide);
+        document.querySelector('.viewer').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    });
+    show(1);
+  })();
+  </script>
+</body>
+</html>

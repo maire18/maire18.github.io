@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Sample Gmail filters by Mary Rose Obsuna. Client domains use .example and are placeholders:
+     replace them with real client domains before importing. -->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+	<title>Mail Filters</title>
+	<id>tag:mail.google.com,2008:filters:sample</id>
+	<updated>2026-10-02T08:00:00Z</updated>
+	<author>
+		<name>Mary Rose Obsuna</name>
+	</author>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:sample01</id>
+		<updated>2026-10-02T08:00:00Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value="subject:(approval OR urgent OR sign)"/>
+		<apps:property name='label' value="01 Action"/>
+		<apps:property name='shouldStar' value="true"/>
+		<apps:property name='shouldAlwaysMarkAsImportant' value="true"/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:sample02</id>
+		<updated>2026-10-02T08:00:00Z</updated>
+		<content></content>
+		<apps:property name='from' value="@marlowefoods.example OR @harlowretail.example OR @tidewatergrocers.example"/>
+		<apps:property name='label' value="Clients"/>
+		<apps:property name='shouldNeverSpam' value="true"/>
+		<apps:property name='shouldAlwaysMarkAsImportant' value="true"/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:sample03</id>
+		<updated>2026-10-02T08:00:00Z</updated>
+		<content></content>
+		<apps:property name='from' value="invoices@ OR billing@ OR receipts@ OR noreply@coralair.example"/>
+		<apps:property name='label' value="05 Receipts"/>
+		<apps:property name='shouldArchive' value="true"/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:sample04</id>
+		<updated>2026-10-02T08:00:00Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value="unsubscribe"/>
+		<apps:property name='label' value="03 Read later"/>
+		<apps:property name='shouldArchive' value="true"/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:sample05</id>
+		<updated>2026-10-02T08:00:00Z</updated>
+		<content></content>
+		<apps:property name='hasTheWord' value="filename:invite.ics"/>
+		<apps:property name='label' value="Calendar"/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+</feed>

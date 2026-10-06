@@ -1,0 +1,207 @@
+﻿customer_id,first_name,last_name,email,mobile,city,province,sources,first_order_date,last_order_date,total_orders,total_spent_php,marketing_consent,segment,record_status
+BHG-10001,Fritz,Francisco,ffrancisco45@example.com,+63 961 555 3755,Daraga,Albay,FB,2023-03-06,2025-06-13,2,3390,,Lapsed,Needs follow-up
+BHG-10002,Precious,Briones,pbriones89@example.com,+63 920 555 2968,Naga City,Camarines Sur,WEB,2023-04-30,2024-06-03,3,2010,No,Lapsed,Complete
+BHG-10003,Gemma,Padilla,gemma.padilla@example.com,+63 998 555 4416,Virac,Catanduanes,WEB,2023-05-15,2024-10-09,2,1480,No,Lapsed,Complete
+BHG-10004,Nico,Torres,nico.torres@mail.example.com,+63 977 555 0129,Naga City,Camarines Sur,FB,2023-05-28,2025-08-22,5,6910,No,Lapsed,Complete
+BHG-10005,Gio,Garcia,ggarcia53@example.com,+63 998 555 5135,Legazpi City,Albay,WEB,2023-05-30,2024-06-20,4,3200,Yes,Lapsed,Complete
+BHG-10006,Carlo,Cortez,carlo.cortez@example.net,+63 977 555 6591,Legazpi City,Albay,FB,2023-06-09,2023-08-17,2,2220,Yes,Lapsed,Complete
+BHG-10007,Aira,Pascual,aira.pascual@example.com,,Pili,Camarines Sur,POS,2023-06-12,2026-02-02,2,3320,No,At risk,Needs follow-up
+BHG-10008,Aira,Ignacio,aira.ignacio@example.com,+63 928 555 5809,Daet,Camarines Norte,FB,2023-06-13,2024-03-25,2,3400,Yes,Lapsed,Complete
+BHG-10009,Carlo,Soriano,carlo.soriano@example.com,+63 917 555 3722,Daraga,Albay,WEB,2023-06-14,2026-08-12,24,38110,No,VIP,Complete
+BHG-10010,Jomar,Cruz,jomar.cruz@example.net,+63 917 555 4023,Naga City,Camarines Sur,WEB + POS,2023-06-16,2025-10-29,5,8920,Yes,At risk,Complete
+BHG-10011,Cedric,Fernandez,cedric.fernandez@example.com,+63 995 555 6077,Daraga,Albay,WEB + FB + POS,2023-06-19,2026-08-28,29,35060,Yes,VIP,Complete
+BHG-10012,Flor,Evangelista,flor.evangelista@example.com,+63 918 555 6322,Naga City,Camarines Sur,FB,2023-06-23,2026-08-12,33,51710,Yes,VIP,Complete
+BHG-10013,Nina,Hidalgo,nina.hidalgo@example.com,+63 977 555 4270,Naga City,Camarines Sur,WEB,2023-06-27,2023-08-22,4,6080,Yes,Lapsed,Complete
+BHG-10014,Aira,Santiago,aira.santiago@example.com,+63 918 555 8391,Naga City,Camarines Sur,FB,2023-07-08,2024-01-10,4,7510,No,Lapsed,Complete
+BHG-10015,Pauline,Cruz,pauline.cruz@example.com,+63 998 555 8552,Naga City,Camarines Sur,WEB,2023-07-15,2023-07-15,1,920,Yes,Lapsed,Complete
+BHG-10016,Hannah,Cortez,hannah.cortez@example.com,+63 918 555 7216,Buhi,Camarines Sur,FB,2023-07-17,2023-07-17,1,1860,No,Lapsed,Complete
+BHG-10017,Erika,Francisco,erika.francisco@example.org,+63 919 555 4129,Naga City,Camarines Sur,WEB,2023-07-27,2025-03-17,2,1940,Yes,Lapsed,Complete
+BHG-10018,Dolor,Garcia,dolor.garcia@mail.example.com,+63 954 555 7220,Pili,Camarines Sur,POS,2023-08-10,2024-11-02,5,8810,No,Lapsed,Complete
+BHG-10019,Ronald,Nolasco,,+63 961 555 8956,Naga City,Camarines Sur,POS,2023-08-11,2026-08-31,22,23280,Yes,VIP,Needs follow-up
+BHG-10020,Queenie,Lualhati,queenie.lualhati@example.com,+63 945 555 3327,Iriga City,Camarines Sur,POS,2023-08-15,2026-03-11,4,4300,No,At risk,Complete
+BHG-10021,Jerome,Ocampo,jerome.ocampo@mail.example.com,+63 927 555 4463,Naga City,Camarines Sur,WEB + POS,2023-08-16,2025-12-29,7,6620,No,At risk,Complete
+BHG-10022,Sarah,Pascual,sarah.pascual@mail.example.com,+63 998 555 7907,Daet,Camarines Norte,POS,2023-08-29,2026-03-10,7,4580,Yes,At risk,Complete
+BHG-10023,Ivan,Navarro,ivan.navarro@example.com,+63 918 555 8417,Sorsogon City,Sorsogon,FB,2023-09-02,2026-02-11,5,7960,,At risk,Needs follow-up
+BHG-10024,Odette,Gonzales,odette.gonzales@example.org,+63 954 555 6686,Pili,Camarines Sur,WEB,2023-09-06,2025-11-13,9,11010,Yes,At risk,Complete
+BHG-10025,Tristan,Morales,tristan.morales@example.com,+63 998 555 6749,Virac,Catanduanes,WEB,2023-09-06,2025-10-25,8,5520,Yes,At risk,Complete
+BHG-10026,Edwin,Valdez,edwin.valdez@example.com,+63 928 555 4401,Naga City,Camarines Sur,WEB,2023-09-07,2026-06-21,14,22620,Yes,VIP,Complete
+BHG-10027,Precious,Nolasco,precious.nolasco@example.com,+63 918 555 0963,Daraga,Albay,FB,2023-09-07,2026-05-24,8,11660,No,Regular,Complete
+BHG-10028,Cedric,De Leon,cedric.deleon@mail.example.com,+63 919 555 3704,Legazpi City,Albay,WEB + FB,2023-09-11,2026-02-19,8,10880,No,At risk,Complete
+BHG-10029,Edwin,Tolentino,,+63 995 555 6521,Naga City,Camarines Sur,FB,2023-09-12,2026-02-05,4,4230,Yes,At risk,Needs follow-up
+BHG-10030,Tristan,Sison,tristan.sison@example.org,+63 954 555 1403,Masbate City,Masbate,WEB,2023-09-14,2026-09-21,22,28050,Yes,VIP,Complete
+BHG-10031,Xander,Torres,xander.torres@example.com,+63 995 555 6206,Naga City,Camarines Sur,FB,2023-09-21,2025-07-20,2,2460,Yes,Lapsed,Complete
+BHG-10032,Wendy,Tan,wendy.tan@example.com,+63 928 555 3453,Naga City,Camarines Sur,WEB,2023-09-27,2026-08-03,8,7990,Yes,Regular,Complete
+BHG-10033,Wendy,Dimaculangan,wendy.dimaculangan@example.com,+63 928 555 6822,Naga City,Camarines Sur,FB + POS,2023-09-28,2024-11-23,5,4580,No,Lapsed,Complete
+BHG-10034,Mark,Gonzales,mark.gonzales@example.com,+63 945 555 2257,Sorsogon City,Sorsogon,FB,2023-10-04,2026-07-05,8,7450,No,Regular,Complete
+BHG-10035,Oscar,Quiambao,oscar.quiambao@example.net,+63 928 555 5585,Tabaco City,Albay,FB + POS,2023-10-06,2026-02-26,6,9220,Yes,At risk,Complete
+BHG-10036,Zaldy,Obsuna,zaldy.obsuna@example.com,+63 961 555 1192,Legazpi City,Albay,WEB,2023-10-07,2026-06-04,17,21010,No,VIP,Complete
+BHG-10037,Mia,Fernandez,mia.fernandez@example.com,+63 927 555 4680,Naga City,Camarines Sur,POS,2023-10-13,2026-06-08,15,24400,Yes,VIP,Complete
+BHG-10038,Rodel,Sison,rodel.sison@example.net,+63 945 555 2777,Daet,Camarines Norte,WEB,2023-10-15,2026-03-11,5,7020,Yes,At risk,Complete
+BHG-10039,Carlo,Rivera,carlo.rivera@example.com,+63 920 555 0814,Legazpi City,Albay,FB,2023-10-26,2026-03-12,6,5540,Yes,At risk,Complete
+BHG-10040,Vince,Roxas,vince.roxas@example.com,+63 977 555 2938,Naga City,Camarines Sur,POS,2023-10-30,2024-08-03,3,4580,Yes,Lapsed,Complete
+BHG-10041,Owen,Galang,owen.galang@example.net,+63 927 555 1033,Naga City,Camarines Sur,POS,2023-10-31,2026-05-13,11,14320,Yes,Regular,Complete
+BHG-10042,Rey,Vergara,rvergara98@mail.example.com,+63 961 555 9883,Naga City,Camarines Sur,WEB,2023-11-01,2026-09-14,6,8010,No,Regular,Complete
+BHG-10043,Edwin,Ilagan,eilagan76@example.com,+63 977 555 8984,Naga City,Camarines Sur,FB,2023-11-09,2026-07-31,7,11420,Yes,Regular,Complete
+BHG-10044,Tess,Torres,tess.torres@mail.example.com,+63 961 555 8712,Daet,Camarines Norte,WEB + POS,2023-11-10,2025-12-31,3,2700,Yes,At risk,Complete
+BHG-10045,Wilma,Roxas,,+63 998 555 3127,Naga City,Camarines Sur,FB,2023-11-24,2024-09-24,5,7580,Yes,Lapsed,Needs follow-up
+BHG-10046,Zaldy,Morales,zaldy.morales@example.com,+63 977 555 6014,Naga City,Camarines Sur,WEB + FB,2023-11-24,2026-06-28,7,5110,Yes,Regular,Complete
+BHG-10047,Marites,Lualhati,mlualhati41@example.com,+63 998 555 0148,Naga City,Camarines Sur,WEB,2023-11-26,2026-08-19,9,7940,Yes,Regular,Complete
+BHG-10048,Mark,Dizon,mark.dizon@example.com,+63 945 555 6838,Naga City,Camarines Sur,WEB,2023-11-26,2023-11-26,1,930,Yes,Lapsed,Complete
+BHG-10049,Patrick,Magno,patrick.magno@example.com,+63 977 555 0749,Legazpi City,Albay,WEB,2023-12-05,2026-08-24,31,35150,Yes,VIP,Complete
+BHG-10050,Gerald,Santos,gerald.santos@example.com,+63 995 555 4394,Naga City,Camarines Sur,WEB,2023-12-13,2025-01-30,2,3250,Yes,Lapsed,Complete
+BHG-10051,Irene,Lim,irene.lim@example.net,+63 954 555 1150,Naga City,Camarines Sur,POS,2023-12-18,2025-02-08,2,2760,No,Lapsed,Complete
+BHG-10052,Tess,Soriano,,+63 954 555 2665,Pili,Camarines Sur,POS,2023-12-18,2026-01-19,9,14480,Yes,At risk,Needs follow-up
+BHG-10053,Francis,Lualhati,francis.lualhati@example.com,+63 939 555 1561,Legazpi City,Albay,POS,2023-12-22,2023-12-22,1,1430,No,Lapsed,Complete
+BHG-10054,Miguel,Cruz,miguel.cruz@example.com,+63 919 555 6778,Virac,Catanduanes,WEB + FB,2023-12-26,2026-07-19,7,12920,Yes,Regular,Complete
+BHG-10055,Rica,Panganiban,,+63 928 555 3569,Legazpi City,Albay,POS,2024-01-04,2025-12-09,4,4590,Yes,At risk,Needs follow-up
+BHG-10056,Aira,Lacson,,+63 998 555 5918,Naga City,Camarines Sur,FB,2024-01-06,2025-12-14,2,3740,Yes,At risk,Needs follow-up
+BHG-10057,Lara,Flores,lflores25@example.com,+63 961 555 2883,Naga City,Camarines Sur,POS,2024-01-13,2026-08-13,4,7230,Yes,Regular,Complete
+BHG-10058,Erika,Cortez,erika.cortez@mail.example.com,+63 945 555 8848,Pili,Camarines Sur,WEB,2024-01-16,2025-05-28,5,7200,Yes,Lapsed,Complete
+BHG-10059,Lorna,Uy,luy73@example.org,+63 918 555 8023,Naga City,Camarines Sur,WEB,2024-01-18,2025-10-05,3,2850,No,At risk,Complete
+BHG-10060,Olive,Lacson,olive.lacson@example.com,+63 919 555 0148,Daet,Camarines Norte,WEB + POS,2024-01-18,2026-04-16,9,14520,Yes,Regular,Complete
+BHG-10061,Gemma,Navarro,gemma.navarro@example.com,+63 961 555 2518,Pili,Camarines Sur,POS,2024-01-21,2024-06-19,2,1510,Yes,Lapsed,Complete
+BHG-10062,Ella,Cruz,ecruz68@example.com,+63 954 555 9220,Legazpi City,Albay,POS,2024-02-02,2025-11-29,9,13090,Yes,At risk,Complete
+BHG-10063,Cathy,Domingo,cathy.domingo@example.com,+63 995 555 3099,Pili,Camarines Sur,FB + POS,2024-02-05,2026-08-16,8,14110,Yes,Regular,Complete
+BHG-10064,Jessa,Mendoza,jmendoza32@example.com,+63 977 555 0698,Naga City,Camarines Sur,WEB + FB + POS,2024-02-10,2026-07-04,5,6420,No,Regular,Complete
+BHG-10065,Joy,Padilla,joy.padilla@example.net,+63 917 555 6115,Daraga,Albay,WEB,2024-02-14,2025-07-28,2,3400,Yes,Lapsed,Complete
+BHG-10066,Hannah,Chua,hannah.chua@example.com,+63 998 555 2644,Legazpi City,Albay,WEB,2024-02-18,2025-11-13,8,4780,Yes,At risk,Complete
+BHG-10067,Tess,Manalo,tess.manalo@mail.example.com,+63 998 555 0205,Masbate City,Masbate,WEB + FB,2024-02-21,2026-08-10,25,39120,Yes,VIP,Complete
+BHG-10068,Clara,Lualhati,clualhati44@example.com,+63 954 555 2028,Legazpi City,Albay,WEB,2024-02-23,2026-06-12,11,19740,No,VIP,Complete
+BHG-10069,Sam,Ocampo,sam.ocampo@example.com,+63 919 555 9762,Legazpi City,Albay,WEB + FB,2024-02-27,2026-06-16,11,10150,Yes,Regular,Complete
+BHG-10070,Clara,Domingo,,+63 945 555 5892,Iriga City,Camarines Sur,FB,2024-02-28,2026-08-26,32,41790,No,VIP,Needs follow-up
+BHG-10071,Jessa,Santos,jessa.santos@example.com,+63 945 555 2478,Iriga City,Camarines Sur,WEB,2024-03-05,2026-06-17,12,21140,Yes,VIP,Complete
+BHG-10072,Cathy,Villanueva,cathy.villanueva@example.com,+63 919 555 9670,Iriga City,Camarines Sur,WEB,2024-03-06,2026-07-18,3,4350,Yes,Regular,Complete
+BHG-10073,Rafael,Manalo,rafael.manalo@example.com,+63 961 555 6678,Legazpi City,Albay,POS,2024-03-08,2026-06-16,11,20100,No,VIP,Complete
+BHG-10074,Kristine,Ilagan,kristine.ilagan@example.com,+63 919 555 5117,Tabaco City,Albay,WEB + POS,2024-03-10,2024-07-27,4,7200,Yes,Lapsed,Complete
+BHG-10075,Teddy,Torres,ttorres44@example.com,+63 939 555 5147,Virac,Catanduanes,WEB + FB,2024-03-15,2024-12-01,2,3750,Yes,Lapsed,Complete
+BHG-10076,Edwin,Salazar,edwin.salazar@example.com,+63 995 555 2976,Daraga,Albay,POS,2024-03-16,2026-09-18,32,45380,Yes,VIP,Complete
+BHG-10077,Kristine,Castillo,kristine.castillo@example.com,+63 954 555 5696,Tabaco City,Albay,WEB + POS,2024-03-19,2026-07-02,3,4420,No,Regular,Complete
+BHG-10078,Fritz,Reyes,fritz.reyes@example.com,+63 945 555 6114,Pili,Camarines Sur,WEB,2024-03-24,2026-03-18,6,6910,Yes,At risk,Complete
+BHG-10079,Jerome,Hidalgo,jhidalgo74@example.com,+63 954 555 4505,Naga City,Camarines Sur,WEB,2024-03-25,2025-03-06,5,5040,Yes,Lapsed,Complete
+BHG-10080,Elmer,Ilagan,elmer.ilagan@mail.example.com,+63 920 555 2439,Iriga City,Camarines Sur,WEB,2024-03-30,2026-03-22,6,8340,Yes,At risk,Complete
+BHG-10081,Bernadette,Cabrera,bernadette.cabrera@example.com,+63 939 555 7626,Naga City,Camarines Sur,FB + POS,2024-04-03,2026-08-19,12,11830,Yes,Regular,Complete
+BHG-10082,Wendy,Garcia,,+63 927 555 1010,Daraga,Albay,FB,2024-04-04,2026-06-05,5,5200,Yes,Regular,Needs follow-up
+BHG-10083,Rey,Garcia,rgarcia1@example.com,+63 918 555 2870,Naga City,Camarines Sur,FB,2024-04-05,2026-08-15,9,6250,Yes,Regular,Complete
+BHG-10084,Marvin,Torres,marvin.torres@example.com,+63 998 555 8961,Naga City,Camarines Sur,FB,2024-04-05,2024-09-27,5,4740,Yes,Lapsed,Complete
+BHG-10085,Edwin,Encarnacion,edwin.encarnacion@example.com,+63 927 555 9969,Naga City,Camarines Sur,WEB,2024-04-08,2026-09-06,31,42720,No,VIP,Complete
+BHG-10086,Kevin,Zamora,kzamora29@example.com,+63 995 555 4996,Sorsogon City,Sorsogon,WEB,2024-04-09,2025-06-19,3,3800,Yes,Lapsed,Complete
+BHG-10087,Mark,Magno,mmagno62@mail.example.com,+63 927 555 9344,Naga City,Camarines Sur,WEB,2024-04-11,2024-04-29,4,2760,No,Lapsed,Complete
+BHG-10088,Cathy,Flores,cathy.flores@example.com,+63 920 555 4882,Sorsogon City,Sorsogon,WEB + FB,2024-04-12,2026-08-17,13,21720,Yes,VIP,Complete
+BHG-10089,Ella,Roxas,ella.roxas@example.net,+63 917 555 4872,Naga City,Camarines Sur,WEB,2024-04-16,2026-09-21,20,21880,Yes,VIP,Complete
+BHG-10090,Queenie,Ilagan,queenie.ilagan@example.com,+63 939 555 9211,Legazpi City,Albay,FB,2024-04-22,2025-11-08,2,3700,Yes,At risk,Complete
+BHG-10091,Irene,Evangelista,irene.evangelista@example.org,+63 920 555 8110,Daraga,Albay,POS,2024-04-28,2026-06-30,8,11260,Yes,Regular,Complete
+BHG-10092,Joy,Dimaculangan,joy.dimaculangan@example.net,+63 977 555 9905,Iriga City,Camarines Sur,POS,2024-04-30,2025-10-12,7,10060,Yes,At risk,Complete
+BHG-10093,Ursula,Aguilar,ursula.aguilar@example.net,+63 954 555 5789,Naga City,Camarines Sur,WEB + FB,2024-05-06,2026-07-08,18,20540,Yes,VIP,Complete
+BHG-10094,Nelia,Bernal,nelia.bernal@example.net,+63 918 555 4892,Naga City,Camarines Sur,WEB,2024-05-06,2024-08-01,2,2240,Yes,Lapsed,Complete
+BHG-10095,Pauline,Bernal,,+63 928 555 3589,Sorsogon City,Sorsogon,FB,2024-05-09,2026-06-10,6,9950,No,Regular,Needs follow-up
+BHG-10096,Sarah,Soriano,sarah.soriano@example.net,+63 927 555 3394,Naga City,Camarines Sur,WEB + FB,2024-05-10,2026-06-17,8,7860,Yes,Regular,Complete
+BHG-10097,Sarah,Hidalgo,sarah.hidalgo@example.com,+63 954 555 7452,Buhi,Camarines Sur,WEB,2024-05-26,2026-08-24,7,5830,Yes,Regular,Complete
+BHG-10098,Marvin,Gutierrez,marvin.gutierrez@example.com,+63 920 555 7351,Sorsogon City,Sorsogon,WEB,2024-05-28,2026-09-16,16,26020,No,VIP,Complete
+BHG-10099,Hector,Ordonez,hector.ordonez@example.com,+63 919 555 4423,Iriga City,Camarines Sur,FB,2024-06-09,2026-07-27,12,19560,,VIP,Needs follow-up
+BHG-10100,Sarah,Cabrera,scabrera22@example.net,+63 954 555 7486,Legazpi City,Albay,WEB,2024-07-03,2024-11-03,2,2290,No,Lapsed,Complete
+BHG-10101,Precious,Roxas,precious.roxas@example.net,+63 954 555 8500,Daraga,Albay,WEB,2024-07-06,2026-04-17,12,20510,Yes,VIP,Complete
+BHG-10102,Cyril,Mendoza,cyril.mendoza@example.com,+63 927 555 8919,Pili,Camarines Sur,WEB + FB + POS,2024-07-09,2026-04-22,3,4950,Yes,Regular,Complete
+BHG-10103,Oscar,Cortez,ocortez73@example.net,+63 939 555 5191,Buhi,Camarines Sur,WEB + FB + POS,2024-07-10,2026-05-16,12,7390,Yes,Regular,Complete
+BHG-10104,Elmer,Tolentino,elmer.tolentino@example.com,+63 939 555 6594,Sorsogon City,Sorsogon,WEB + POS,2024-07-15,2025-04-09,4,7340,Yes,Lapsed,Complete
+BHG-10105,Patrick,Zamora,patrick.zamora@example.com,+63 918 555 5999,Naga City,Camarines Sur,WEB + FB + POS,2024-07-19,2026-06-03,11,15300,Yes,VIP,Complete
+BHG-10106,Fritz,Villanueva,fritz.villanueva@example.com,+63 939 555 0400,Legazpi City,Albay,WEB,2024-07-26,2026-05-18,8,14320,No,Regular,Complete
+BHG-10107,Aira,Belmonte,aira.belmonte@mail.example.com,+63 917 555 0158,Daet,Camarines Norte,WEB,2024-07-31,2024-07-31,1,960,No,Lapsed,Complete
+BHG-10108,Patrick,Valdez,patrick.valdez@example.net,+63 998 555 5222,Naga City,Camarines Sur,FB,2024-08-10,2026-07-18,29,40540,Yes,VIP,Complete
+BHG-10109,Mark,Ordonez,mordonez7@mail.example.com,+63 919 555 3651,Legazpi City,Albay,WEB,2024-08-13,2026-05-06,8,5900,Yes,Regular,Complete
+BHG-10110,Yna,Soriano,ysoriano55@example.net,+63 998 555 7564,Daraga,Albay,WEB + POS,2024-08-13,2026-01-02,2,2480,Yes,At risk,Complete
+BHG-10111,Bea,Tamayo,bea.tamayo@example.com,+63 928 555 6937,Naga City,Camarines Sur,POS,2024-08-15,2026-07-16,5,3250,Yes,Regular,Complete
+BHG-10112,Hazel,Roxas,,+63 920 555 3395,Pili,Camarines Sur,POS,2024-08-25,2025-08-13,5,8500,No,Lapsed,Needs follow-up
+BHG-10113,Erika,Encarnacion,eencarnacion73@example.com,+63 954 555 4918,Legazpi City,Albay,POS,2024-08-30,2026-08-27,12,17900,Yes,VIP,Complete
+BHG-10114,Hannah,Galang,hannah.galang@example.net,+63 954 555 8277,Virac,Catanduanes,FB + POS,2024-08-31,2025-12-22,3,4400,Yes,At risk,Complete
+BHG-10115,Dan,Cruz,dcruz15@example.com,+63 995 555 7400,Tabaco City,Albay,FB,2024-09-08,2026-06-08,3,2540,Yes,Regular,Complete
+BHG-10116,Alvin,Vergara,alvin.vergara@mail.example.com,+63 961 555 0464,Naga City,Camarines Sur,WEB + FB + POS,2024-09-11,2026-06-16,8,5550,No,Regular,Complete
+BHG-10117,Hector,Vergara,hector.vergara@mail.example.com,+63 961 555 5217,Naga City,Camarines Sur,FB,2024-09-11,2026-06-29,10,7930,No,Regular,Complete
+BHG-10118,Xander,Briones,xander.briones@example.com,+63 977 555 3671,Legazpi City,Albay,FB,2024-09-21,2025-12-25,3,5120,No,At risk,Complete
+BHG-10119,Liza,Cabrera,liza.cabrera@example.com,+63 954 555 0408,Buhi,Camarines Sur,FB + POS,2024-09-25,2026-09-08,7,6980,Yes,Regular,Complete
+BHG-10120,Bea,Abad,bea.abad@example.net,+63 918 555 6044,Sorsogon City,Sorsogon,WEB,2024-10-07,2026-03-14,7,9450,No,At risk,Complete
+BHG-10121,Elmer,Lacson,elacson58@example.com,+63 954 555 5659,Pili,Camarines Sur,POS,2024-10-19,2026-05-12,3,3970,No,Regular,Complete
+BHG-10122,Ana,Cruz,ana.cruz@mail.example.com,+63 919 555 9232,Buhi,Camarines Sur,WEB,2024-10-23,2026-02-18,4,5990,Yes,At risk,Complete
+BHG-10123,Gio,Robles,gio.robles@example.net,+63 927 555 9957,Sorsogon City,Sorsogon,WEB,2024-11-08,2026-07-10,5,8520,No,Regular,Complete
+BHG-10124,Dan,Yap,dan.yap@example.net,+63 945 555 1875,Virac,Catanduanes,FB,2024-11-08,2025-10-23,9,15840,No,At risk,Complete
+BHG-10125,Alvin,Dela Cruz,alvin.delacruz@example.com,+63 995 555 7735,Daraga,Albay,FB,2024-11-10,2026-01-20,9,7390,,At risk,Needs follow-up
+BHG-10126,Ramon,Galang,ramon.galang@example.org,+63 998 555 4430,Naga City,Camarines Sur,WEB + FB,2024-11-11,2026-03-20,3,4310,Yes,At risk,Complete
+BHG-10127,Bryan,Cruz,bryan.cruz@example.com,+63 939 555 0317,Virac,Catanduanes,WEB + FB,2024-11-16,2026-07-17,4,4310,No,Regular,Complete
+BHG-10128,Jessa,Encarnacion,jessa.encarnacion@example.com,+63 928 555 8102,Legazpi City,Albay,FB + POS,2024-11-17,2026-06-24,27,44090,Yes,VIP,Complete
+BHG-10129,Leo,Roxas,leo.roxas@example.com,+63 945 555 0239,Legazpi City,Albay,WEB,2024-11-20,2026-05-22,11,9800,No,Regular,Complete
+BHG-10130,Lorna,Ignacio,lignacio89@example.com,+63 977 555 1775,Sorsogon City,Sorsogon,WEB,2024-11-30,2026-07-14,29,36600,Yes,VIP,Complete
+BHG-10131,Tonette,Castillo,tonette.castillo@example.com,+63 928 555 4774,Naga City,Camarines Sur,WEB,2024-12-10,2026-02-03,2,1770,No,At risk,Complete
+BHG-10132,Tonette,Dimaculangan,tonette.dimaculangan@example.com,+63 920 555 1697,Naga City,Camarines Sur,FB,2024-12-21,2026-08-11,33,36960,No,VIP,Complete
+BHG-10133,Mia,Zamora,mia.zamora@example.net,+63 961 555 2792,Legazpi City,Albay,WEB,2024-12-25,2026-04-24,3,2340,No,Regular,Complete
+BHG-10134,Mark,Pascual,mark.pascual@example.net,+63 945 555 6863,Legazpi City,Albay,FB + POS,2024-12-30,2026-01-23,3,4310,Yes,At risk,Complete
+BHG-10135,Odette,Soriano,,+63 961 555 9952,Pili,Camarines Sur,POS,2025-01-04,2026-08-29,14,16970,Yes,VIP,Needs follow-up
+BHG-10136,Venus,Chua,venus.chua@example.com,+63 961 555 7854,Daraga,Albay,WEB,2025-01-04,2025-11-09,9,6650,Yes,At risk,Complete
+BHG-10137,Wendy,Cortez,wendy.cortez@example.com,+63 977 555 9537,Virac,Catanduanes,WEB + FB + POS,2025-01-08,2025-11-19,8,13180,Yes,At risk,Complete
+BHG-10138,Flor,Rosales,flor.rosales@example.net,+63 961 555 1499,Daet,Camarines Norte,WEB + POS,2025-01-12,2026-09-13,21,32950,Yes,VIP,Complete
+BHG-10139,Vince,Nolasco,,+63 917 555 0248,Sorsogon City,Sorsogon,POS,2025-01-18,2026-06-13,9,14350,Yes,Regular,Needs follow-up
+BHG-10140,Tonette,Manalo,tonette.manalo@example.com,+63 939 555 4852,Naga City,Camarines Sur,WEB,2025-01-29,2025-12-16,5,9390,Yes,At risk,Complete
+BHG-10141,Rafael,Magno,rafael.magno@example.com,+63 928 555 1113,Sorsogon City,Sorsogon,WEB,2025-01-31,2026-06-06,11,7640,Yes,Regular,Complete
+BHG-10142,Lorna,Encarnacion,lencarnacion54@mail.example.com,+63 995 555 1330,Iriga City,Camarines Sur,FB,2025-02-01,2025-12-31,7,5430,Yes,At risk,Complete
+BHG-10143,Bernadette,Obsuna,bernadette.obsuna@example.com,+63 918 555 8217,Legazpi City,Albay,POS,2025-02-03,2026-05-08,7,11190,No,Regular,Complete
+BHG-10144,Ronald,Dela Cruz,ronald.delacruz@example.com,+63 961 555 0859,Buhi,Camarines Sur,POS,2025-02-05,2026-09-03,8,11020,Yes,Regular,Complete
+BHG-10145,Leo,Santiago,leo.santiago@mail.example.com,+63 998 555 7073,Pili,Camarines Sur,WEB + POS,2025-02-10,2026-06-17,27,40280,Yes,VIP,Complete
+BHG-10146,Venus,Navarro,,+63 998 555 7652,Iriga City,Camarines Sur,FB,2025-02-19,2026-08-23,19,23830,Yes,VIP,Needs follow-up
+BHG-10147,Leo,Valdez,lvaldez94@example.org,+63 927 555 2161,Buhi,Camarines Sur,WEB + FB,2025-02-19,2025-12-19,8,8780,No,At risk,Complete
+BHG-10148,Pauline,Evangelista,pauline.evangelista@example.com,+63 998 555 6008,Legazpi City,Albay,WEB,2025-02-21,2025-11-23,3,2570,Yes,At risk,Complete
+BHG-10149,Marvin,Ramos,mramos71@example.com,+63 939 555 2959,Pili,Camarines Sur,WEB,2025-02-22,2025-10-22,5,6440,No,At risk,Complete
+BHG-10150,Flor,Katigbak,flor.katigbak@example.com,+63 945 555 5461,Daraga,Albay,POS,2025-02-26,2026-06-28,9,8030,Yes,Regular,Complete
+BHG-10151,Irene,Roxas,irene.roxas@example.com,+63 977 555 9373,Daraga,Albay,WEB,2025-03-26,2026-09-04,10,6360,Yes,Regular,Complete
+BHG-10152,Miguel,Soriano,miguel.soriano@example.com,+63 977 555 8871,Buhi,Camarines Sur,FB,2025-03-28,2025-10-18,4,6380,No,At risk,Complete
+BHG-10153,Liza,Nepomuceno,liza.nepomuceno@example.net,+63 954 555 0350,Naga City,Camarines Sur,WEB,2025-04-16,2026-08-06,9,13280,Yes,Regular,Complete
+BHG-10154,Zaldy,Ordonez,zaldy.ordonez@example.com,+63 977 555 0593,Naga City,Camarines Sur,WEB,2025-04-25,2025-12-25,5,6380,Yes,At risk,Complete
+BHG-10155,Rafael,Ubaldo,rubaldo31@example.com,+63 961 555 2079,Sorsogon City,Sorsogon,WEB,2025-05-04,2025-11-21,3,4280,No,At risk,Complete
+BHG-10156,Rafael,Encarnacion,rencarnacion73@example.com,+63 945 555 5342,Legazpi City,Albay,WEB,2025-05-14,2026-08-02,9,9780,Yes,Regular,Complete
+BHG-10157,Imelda,Roxas,,+63 927 555 0523,Naga City,Camarines Sur,POS,2025-05-30,2026-06-02,8,13550,Yes,Regular,Needs follow-up
+BHG-10158,Ivan,Panganiban,ivan.panganiban@example.com,+63 939 555 7181,Tabaco City,Albay,WEB,2025-06-06,2026-06-28,6,8300,Yes,Regular,Complete
+BHG-10159,Bianca,Tolentino,bianca.tolentino@example.net,+63 945 555 8231,Naga City,Camarines Sur,POS,2025-06-20,2026-09-12,4,6100,Yes,Regular,Complete
+BHG-10160,Kevin,Magno,kevin.magno@example.com,+63 977 555 5530,Pili,Camarines Sur,WEB + FB,2025-07-10,2026-07-02,13,12040,Yes,Regular,Complete
+BHG-10161,Lester,Reyes,lester.reyes@mail.example.com,+63 927 555 9935,Buhi,Camarines Sur,WEB,2025-07-20,2026-07-22,4,5030,Yes,Regular,Complete
+BHG-10162,Nelia,Lualhati,nelia.lualhati@example.com,+63 920 555 6633,Legazpi City,Albay,WEB,2025-07-21,2026-04-18,6,8520,Yes,Regular,Complete
+BHG-10163,Hannah,Zamora,hzamora70@example.org,,Daet,Camarines Norte,POS,2025-07-23,2026-07-23,4,3380,Yes,Regular,Needs follow-up
+BHG-10164,Liza,Vergara,liza.vergara@example.org,+63 917 555 8967,Daet,Camarines Norte,FB + POS,2025-08-02,2026-05-27,5,9260,No,Regular,Complete
+BHG-10165,Pauline,Aquino,pauline.aquino@example.com,+63 995 555 2232,Legazpi City,Albay,WEB,2025-08-02,2026-05-21,3,3220,Yes,Regular,Complete
+BHG-10166,Vic,Rosales,vic.rosales@example.com,+63 939 555 4499,Daet,Camarines Norte,WEB + FB,2025-08-10,2026-04-22,10,18420,Yes,VIP,Complete
+BHG-10167,Fritz,Soriano,fritz.soriano@example.com,+63 998 555 8820,Naga City,Camarines Sur,WEB,2025-08-12,2026-09-02,3,2180,No,Regular,Complete
+BHG-10168,Vince,Domingo,vdomingo75@mail.example.com,+63 995 555 1470,Naga City,Camarines Sur,WEB + POS,2025-08-25,2026-06-15,4,5920,Yes,Regular,Complete
+BHG-10169,Erika,Yap,erika.yap@example.com,+63 995 555 6049,Daet,Camarines Norte,FB + POS,2025-08-31,2026-05-07,5,4360,Yes,Regular,Complete
+BHG-10170,Olive,Tolentino,olive.tolentino@example.com,+63 918 555 9211,Naga City,Camarines Sur,POS,2025-10-16,2026-09-25,6,8030,Yes,Regular,Complete
+BHG-10171,Clara,Flores,clara.flores@example.com,+63 919 555 5118,Legazpi City,Albay,POS,2025-11-15,2026-07-04,8,9900,Yes,Regular,Complete
+BHG-10172,Kim,Aguilar,kim.aguilar@example.com,+63 961 555 5500,Naga City,Camarines Sur,FB,2025-11-28,2026-06-06,6,3690,Yes,Regular,Complete
+BHG-10173,Zaldy,Katigbak,zaldy.katigbak@example.net,+63 939 555 3566,Daraga,Albay,POS,2025-12-08,2026-08-09,10,14400,Yes,Regular,Complete
+BHG-10174,Cedric,Agbayani,cedric.agbayani@example.com,+63 927 555 5498,Naga City,Camarines Sur,FB,2025-12-12,2026-05-08,6,5580,No,Regular,Complete
+BHG-10175,Janelle,Velasco,janelle.velasco@mail.example.com,+63 995 555 0519,Tabaco City,Albay,FB,2025-12-16,2026-09-10,6,5460,Yes,Regular,Complete
+BHG-10176,Gio,Bautista,gio.bautista@example.com,+63 945 555 6816,Pili,Camarines Sur,WEB,2025-12-19,2026-08-19,8,6760,Yes,Regular,Complete
+BHG-10177,Lara,Santos,lara.santos@example.net,+63 961 555 7829,Daet,Camarines Norte,WEB,2026-01-01,2026-09-23,4,4920,Yes,Regular,Complete
+BHG-10178,Lara,Dimaculangan,lara.dimaculangan@example.com,+63 920 555 3100,Masbate City,Masbate,WEB + FB + POS,2026-01-03,2026-05-10,8,8620,Yes,Regular,Complete
+BHG-10179,Vic,Jimenez,vjimenez65@example.com,+63 939 555 2705,Naga City,Camarines Sur,WEB,2026-02-26,2026-09-04,13,11360,No,Regular,Complete
+BHG-10180,Nico,Vergara,nico.vergara@example.net,+63 918 555 4141,Daraga,Albay,WEB + FB + POS,2026-03-01,2026-07-06,8,11090,Yes,Regular,Complete
+BHG-10181,Precious,Dimaculangan,pdimaculangan91@example.net,+63 927 555 4721,Sorsogon City,Sorsogon,WEB,2026-07-09,2026-09-12,2,2590,Yes,New,Complete
+BHG-10182,Rafael,Rosales,rafael.rosales@example.com,+63 945 555 2236,Naga City,Camarines Sur,FB,2026-07-13,2026-07-13,1,890,Yes,New,Complete
+BHG-10183,Nico,Cruz,nico.cruz@example.com,+63 961 555 7374,Buhi,Camarines Sur,POS,2026-07-18,2026-07-18,1,1500,No,New,Complete
+BHG-10184,Gerald,Salazar,gerald.salazar@example.net,+63 919 555 3247,Naga City,Camarines Sur,FB,2026-07-25,2026-07-25,1,1330,Yes,New,Complete
+BHG-10185,Sam,Navarro,snavarro86@example.net,+63 917 555 4228,Sorsogon City,Sorsogon,FB,2026-07-25,2026-08-25,2,2100,Yes,New,Complete
+BHG-10186,Mark,Tolentino,mtolentino22@example.com,+63 920 555 3274,Naga City,Camarines Sur,WEB,2026-07-28,2026-09-12,2,2890,Yes,New,Complete
+BHG-10187,Rey,Morales,rey.morales@example.com,+63 917 555 8652,Daraga,Albay,POS,2026-07-31,2026-08-25,2,2690,No,New,Complete
+BHG-10188,Ivan,Yap,ivan.yap@example.net,+63 961 555 1233,Daraga,Albay,WEB,2026-07-31,2026-07-31,1,880,Yes,New,Complete
+BHG-10189,Mia,Tan,,+63 961 555 1469,Legazpi City,Albay,FB,2026-08-05,2026-09-11,2,3400,Yes,New,Needs follow-up
+BHG-10190,Rodel,Briones,rbriones86@example.net,+63 917 555 1913,Naga City,Camarines Sur,POS,2026-08-08,2026-09-22,3,3360,No,New,Complete
+BHG-10191,Wendy,Obsuna,wendy.obsuna@example.net,+63 917 555 1735,Naga City,Camarines Sur,POS,2026-08-10,2026-08-10,1,1610,No,New,Complete
+BHG-10192,Liza,Rivera,liza.rivera@example.com,+63 920 555 5838,Naga City,Camarines Sur,FB + POS,2026-08-12,2026-08-25,3,4310,Yes,New,Complete
+BHG-10193,Hannah,Ocampo,hannah.ocampo@example.net,+63 945 555 1293,Naga City,Camarines Sur,FB + POS,2026-08-17,2026-09-01,2,1540,No,New,Complete
+BHG-10194,Ben,Castillo,ben.castillo@example.com,+63 945 555 9269,Naga City,Camarines Sur,FB,2026-08-20,2026-08-20,1,970,Yes,New,Complete
+BHG-10195,Gelo,Chua,gelo.chua@example.com,+63 954 555 4378,Naga City,Camarines Sur,FB,2026-08-20,2026-09-04,3,2800,Yes,New,Complete
+BHG-10196,Dolor,Morales,dmorales55@mail.example.com,+63 917 555 6173,Legazpi City,Albay,POS,2026-08-26,2026-09-12,3,4240,No,New,Complete
+BHG-10197,Marites,Ordonez,marites.ordonez@example.net,+63 995 555 9934,Naga City,Camarines Sur,POS,2026-08-28,2026-09-06,3,5300,Yes,New,Complete
+BHG-10198,Cathy,Herrera,cathy.herrera@example.org,+63 928 555 9655,Daraga,Albay,FB,2026-08-30,2026-08-30,1,1770,Yes,New,Complete
+BHG-10199,Pauline,Gonzales,pauline.gonzales@example.net,+63 977 555 1667,Naga City,Camarines Sur,WEB,2026-08-30,2026-09-12,3,3360,Yes,New,Complete
+BHG-10200,Sam,Belmonte,sam.belmonte@example.org,+63 945 555 4298,Daet,Camarines Norte,POS,2026-09-01,2026-09-01,2,1240,No,New,Complete
+BHG-10201,Zaldy,Ubaldo,zaldy.ubaldo@example.com,+63 927 555 4239,Naga City,Camarines Sur,WEB + FB,2026-09-04,2026-09-07,2,1810,Yes,New,Complete
+BHG-10202,Mia,Encarnacion,mia.encarnacion@example.com,+63 939 555 5704,Daraga,Albay,FB,2026-09-05,2026-09-09,2,3760,Yes,New,Complete
+BHG-10203,Yna,Cabrera,ycabrera43@example.com,+63 917 555 1504,Legazpi City,Albay,POS,2026-09-08,2026-09-18,2,2540,Yes,New,Complete
+BHG-10204,Yna,Encarnacion,yna.encarnacion@example.com,+63 945 555 1557,Daet,Camarines Norte,POS,2026-09-09,2026-09-13,2,1790,Yes,New,Complete
+BHG-10205,Dolor,Marquez,dolor.marquez@example.com,+63 977 555 6111,Legazpi City,Albay,WEB,2026-09-14,2026-09-25,3,5560,Yes,New,Complete
+BHG-10206,Bea,Torres,bea.torres@example.net,+63 945 555 3117,Sorsogon City,Sorsogon,FB,2026-09-27,2026-09-27,1,1650,No,New,Complete

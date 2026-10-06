@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SLHNHKQ');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client and Lead Tracker Sample | Mary Rose Obsuna</title>
+  <meta name="description" content="Sample CRM and lead tracker by virtual assistant Mary Rose Obsuna: pipeline stages, deal values, owners, follow-up dates and filtered views.">
+  <link rel="canonical" href="https://daryroses.github.io/samples/client-lead-tracker.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Client and Lead Tracker Sample | Mary Rose Obsuna">
+  <meta property="og:description" content="A working lead tracker with pipeline stages, follow-up dates and filtered views, so no inquiry gets missed.">
+  <meta property="og:url" content="https://daryroses.github.io/samples/client-lead-tracker.html">
+  <meta property="og:image" content="https://daryroses.github.io/assets/img/portfolio/client-lead-tracker.webp">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="samples.css">
+  <style>
+    .kpis { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); margin-bottom: 24px; }
+    @media (min-width: 820px) { .kpis { grid-template-columns: repeat(4, 1fr); } }
+    .kpi .sub { display: block; margin-top: 6px; font-size: 13px; color: var(--muted); }
+    .stages { display: grid; gap: 10px; grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: 640px) { .stages { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 960px) { .stages { grid-template-columns: repeat(6, 1fr); } }
+    .stage { padding: 14px; border-radius: var(--r); background: var(--canvas); border: 1px solid var(--line-soft); }
+    .stage .top { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+    .stage b { font-family: var(--serif); font-size: 22px; font-weight: 500; }
+    .stage .val { font-size: 13px; color: var(--muted); margin-top: 2px; }
+    .stage .bar { height: 6px; border-radius: 6px; background: var(--line); margin-top: 10px; overflow: hidden; }
+    .stage .bar span { display: block; height: 100%; border-radius: 6px; background: var(--blue-400); }
+    .toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+    .views { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px; border-radius: 20px; background: var(--canvas); border: 1px solid var(--line-soft); }
+    .views button { min-height: 36px; padding: 6px 14px; border: 0; border-radius: 999px; background: transparent; color: var(--ink-2); font: 600 14px/1 var(--sans); cursor: pointer; }
+    .views button:hover { color: var(--blue-700); }
+    .views button[aria-pressed="true"] { background: var(--paper); color: var(--blue-700); box-shadow: 0 1px 3px rgba(15, 40, 70, .1); }
+    .search { position: relative; }
+    .search input { min-height: 40px; width: min(260px, 100%); padding: 8px 14px 8px 36px; border: 1px solid var(--line); border-radius: 999px; font: 15px var(--sans); color: var(--ink); background: var(--paper); }
+    .search input:focus { outline: none; border-color: var(--blue-400); box-shadow: 0 0 0 3px rgba(91, 181, 238, .2); }
+    .search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+    .co b { display: block; font-weight: 600; }
+    .co small { color: var(--muted); font-size: 13px; }
+    .owner { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+    .av { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; font-size: 11px; font-weight: 700; }
+    .av-i { background: var(--lav-100); color: var(--lav-700); } .av-c { background: var(--sage-100); color: var(--sage-700); } .av-j { background: var(--gold-100); color: var(--gold-700); }
+    .due { white-space: nowrap; }
+    .due .pill { margin-left: 6px; }
+    .count { font-size: 14px; color: var(--muted); margin-top: 10px; }
+    .empty { padding: 28px; text-align: center; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SLHNHKQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header class="s-top">
+    <div class="wrap">
+      <a class="s-brand" href="../index.html#projects"><img src="../assets/img/logo-header.png" width="34" height="34" alt=""><span>Mary Rose Obsuna</span></a>
+      <div class="s-actions">
+        <a class="s-btn" href="../index.html#projects"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg><span class="lbl-long">Back to portfolio</span><span class="sr-only">Back to portfolio</span></a>
+        <button class="s-btn s-btn-solid" type="button" onclick="window.print()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="7" rx="1"/></svg>Print or save PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="s-intro">
+      <p class="eyebrow"><span class="tag">Sample work</span>CRM and data entry</p>
+      <h1>Client and Lead Tracker</h1>
+      <p class="lead">A lightweight CRM for a small sales team: every lead has a stage, a value, an owner and a follow-up date. Saved views answer the daily questions fast. Try the filters and search below.</p>
+      <dl class="s-facts">
+        <div><dt>Prepared for</dt><dd>Sales team of 3 (fictional)</dd></div>
+        <div><dt>Tools</dt><dd>Excel, Google Sheets</dd></div>
+        <div><dt>What it shows</dt><dd>Data entry, CRM upkeep, follow-through</dd></div>
+      </dl>
+      <p class="disclaimer">All companies, contacts and deal values on this page are fictional and used for demonstration only.</p>
+    </section>
+
+    <section class="files-panel" aria-labelledby="files-title">
+      <div class="files-head">
+        <h2 id="files-title">The real file</h2>
+        <p>Made in the actual tool. Download, open and use it.</p>
+      </div>
+      <ul class="files">
+          <li class="file">
+            <span class="fmt fmt-xlsx">XLSX</span>
+            <div class="file-info">
+              <p class="file-name">Client-and-Lead-Tracker.xlsx</p>
+              <p class="file-desc">Dashboard, leads table, dropdowns and chart &middot; 19 KB</p>
+              <p class="file-how">Follow-up status updates on its own. Opens in Excel or Google Sheets.</p>
+            </div>
+            <a class="s-btn s-btn-solid file-dl" href="files/Client-and-Lead-Tracker.xlsx" download><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download<span class="sr-only"> Client-and-Lead-Tracker.xlsx</span></a>
+          </li>
+      </ul>
+    </section>
+
+    <article class="doc">
+      <header class="doc-head">
+        <div>
+          <p class="doc-kicker">Alder &amp; Finch Co. &middot; Sales pipeline</p>
+          <h2 class="doc-title">Lead tracker, Q4 2026</h2>
+        </div>
+        <p class="doc-sub">Data as of Monday, October 5, 2026</p>
+      </header>
+
+      <dl class="kpis">
+        <div class="kpi"><dt>Open pipeline</dt><dd>&#8369;1.83M</dd><span class="sub">9 active deals</span></div>
+        <div class="kpi"><dt>Won this quarter</dt><dd>&#8369;885K</dd><span class="sub">2 new clients</span></div>
+        <div class="kpi"><dt>Follow-ups this week</dt><dd>9</dd><span class="sub">2 overdue</span></div>
+        <div class="kpi"><dt>Win rate</dt><dd>67%</dd><span class="sub">2 won, 1 lost</span></div>
+      </dl>
+
+      <section class="doc-section">
+        <h3 class="h2"><span class="num">1</span>Pipeline by stage</h3>
+        <div class="stages">
+          <div class="stage"><div class="top"><span class="pill p-gray">New</span><b>2</b></div><p class="val">&#8369;370K</p><div class="bar"><span style="width:42%"></span></div></div>
+          <div class="stage"><div class="top"><span class="pill p-lav">Contacted</span><b>3</b></div><p class="val">&#8369;383K</p><div class="bar"><span style="width:43%"></span></div></div>
+          <div class="stage"><div class="top"><span class="pill p-blue">Proposal</span><b>2</b></div><p class="val">&#8369;325K</p><div class="bar"><span style="width:37%"></span></div></div>
+          <div class="stage"><div class="top"><span class="pill p-gold">Negotiation</span><b>2</b></div><p class="val">&#8369;750K</p><div class="bar"><span style="width:85%"></span></div></div>
+          <div class="stage"><div class="top"><span class="pill p-sage">Won</span><b>2</b></div><p class="val">&#8369;885K</p><div class="bar"><span style="width:100%"></span></div></div>
+          <div class="stage"><div class="top"><span class="pill p-rose">Lost</span><b>1</b></div><p class="val">&#8369;60K</p><div class="bar"><span style="width:7%"></span></div></div>
+        </div>
+        <p class="small muted" style="margin-top:8px">Bars show each stage&rsquo;s total value compared with the largest stage.</p>
+      </section>
+
+      <section class="doc-section">
+        <h3 class="h2"><span class="num">2</span>All leads</h3>
+        <div class="toolbar no-print">
+          <div class="views" role="group" aria-label="Saved views">
+            <button type="button" data-view="all" aria-pressed="true">All leads</button>
+            <button type="button" data-view="due" aria-pressed="false">Follow up this week</button>
+            <button type="button" data-view="open" aria-pressed="false">Proposal and negotiation</button>
+            <button type="button" data-view="won" aria-pressed="false">Won</button>
+          </div>
+          <label class="search"><span class="sr-only">Search leads</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <input id="q" type="search" placeholder="Search company or contact">
+          </label>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Company and contact</th><th>Stage</th><th class="num">Value (&#8369;)</th><th>Owner</th><th>Source</th><th>Next step</th><th>Follow-up</th></tr></thead>
+            <tbody id="leads">
+              <tr data-stage="proposal" data-follow="2026-10-02"><td class="co"><b>Kestrel Hardware</b><small>Ramon Lim</small></td><td><span class="pill p-blue">Proposal</span></td><td class="num">140,000</td><td><span class="owner"><span class="av av-c">CA</span>Carlo</span></td><td>Referral</td><td>Confirm decision date</td><td class="due">Oct 2</td></tr>
+              <tr data-stage="contacted" data-follow="2026-10-03"><td class="co"><b>Brightwell Logistics</b><small>Sam Chua</small></td><td><span class="pill p-lav">Contacted</span></td><td class="num">210,000</td><td><span class="owner"><span class="av av-c">CA</span>Carlo</span></td><td>LinkedIn</td><td>Send proposal draft</td><td class="due">Oct 3</td></tr>
+              <tr data-stage="proposal" data-follow="2026-10-05"><td class="co"><b>Bayside Packaging</b><small>Leo Santos</small></td><td><span class="pill p-blue">Proposal</span></td><td class="num">185,000</td><td><span class="owner"><span class="av av-c">CA</span>Carlo</span></td><td>Trade show</td><td>Follow up on proposal</td><td class="due">Oct 5</td></tr>
+              <tr data-stage="new" data-follow="2026-10-05"><td class="co"><b>Silverleaf Hotels</b><small>Grace Tan</small></td><td><span class="pill p-gray">New</span></td><td class="num">250,000</td><td><span class="owner"><span class="av av-i">IV</span>Ivy</span></td><td>LinkedIn</td><td>Send intro email</td><td class="due">Oct 5</td></tr>
+              <tr data-stage="negotiation" data-follow="2026-10-06"><td class="co"><b>Marlowe Foods</b><small>Ana Villanueva</small></td><td><span class="pill p-gold">Negotiation</span></td><td class="num">420,000</td><td><span class="owner"><span class="av av-i">IV</span>Ivy</span></td><td>Referral</td><td>Send revised pricing</td><td class="due">Oct 6</td></tr>
+              <tr data-stage="new" data-follow="2026-10-06"><td class="co"><b>Crestview Schools</b><small>Liza Aquino</small></td><td><span class="pill p-gray">New</span></td><td class="num">120,000</td><td><span class="owner"><span class="av av-i">IV</span>Ivy</span></td><td>Website</td><td>Qualify budget and timing</td><td class="due">Oct 6</td></tr>
+              <tr data-stage="contacted" data-follow="2026-10-07"><td class="co"><b>Northgate Pharmacy</b><small>Paolo Reyes</small></td><td><span class="pill p-lav">Contacted</span></td><td class="num">95,000</td><td><span class="owner"><span class="av av-j">JE</span>Jen</span></td><td>Cold email</td><td>Book discovery call</td><td class="due">Oct 7</td></tr>
+              <tr data-stage="contacted" data-follow="2026-10-08"><td class="co"><b>Pinecrest Clinics</b><small>Joy Mendoza</small></td><td><span class="pill p-lav">Contacted</span></td><td class="num">78,000</td><td><span class="owner"><span class="av av-j">JE</span>Jen</span></td><td>Website</td><td>Send case study</td><td class="due">Oct 8</td></tr>
+              <tr data-stage="negotiation" data-follow="2026-10-09"><td class="co"><b>Oakline Furniture</b><small>Mark Uy</small></td><td><span class="pill p-gold">Negotiation</span></td><td class="num">330,000</td><td><span class="owner"><span class="av av-c">CA</span>Carlo</span></td><td>Trade show</td><td>Legal review of terms</td><td class="due">Oct 9</td></tr>
+              <tr data-stage="won" data-follow="2026-10-12"><td class="co"><b>Harlow Retail</b><small>Kim Dela Cruz</small></td><td><span class="pill p-sage">Won</span></td><td class="num">610,000</td><td><span class="owner"><span class="av av-i">IV</span>Ivy</span></td><td>Website</td><td>Kickoff call</td><td class="due">Oct 12</td></tr>
+              <tr data-stage="won" data-follow="2026-10-15"><td class="co"><b>Tidewater Grocers</b><small>Bea Ramos</small></td><td><span class="pill p-sage">Won</span></td><td class="num">275,000</td><td><span class="owner"><span class="av av-i">IV</span>Ivy</span></td><td>Referral</td><td>Onboarding checklist</td><td class="due">Oct 15</td></tr>
+              <tr data-stage="lost" data-follow="2027-01-12"><td class="co"><b>Ember Cafe Group</b><small>Nico Garcia</small></td><td><span class="pill p-rose">Lost</span></td><td class="num">60,000</td><td><span class="owner"><span class="av av-j">JE</span>Jen</span></td><td>Instagram</td><td>Reconnect in Q1</td><td class="due">Jan 12</td></tr>
+            </tbody>
+          </table>
+          <p class="empty" id="empty" hidden>No leads match this view.</p>
+        </div>
+        <p class="count" id="count" aria-live="polite">Showing 12 of 12 leads</p>
+      </section>
+
+      <section class="doc-section">
+        <h3 class="h2"><span class="num">3</span>House rules for the tracker</h3>
+        <div class="grid g3">
+          <div class="box"><h3>Every lead has a next step</h3><p class="small muted">No row is saved without a next step and a follow-up date.</p></div>
+          <div class="box"><h3>Updated the same day</h3><p class="small muted">Calls and emails are logged before the end of the day they happen.</p></div>
+          <div class="box"><h3>Monday review</h3><p class="small muted">Overdue follow-ups are flagged to the owner every Monday morning.</p></div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <nav class="wrap more" aria-label="More samples">
+    <h2>More sample work</h2>
+    <ul class="more-list">
+      <li><a href="executive-weekly-planner.html"><small>Calendar management</small><strong>Executive Weekly Planner</strong></a></li>
+      <li><a href="inbox-sorting-system.html"><small>Email management</small><strong>Inbox Sorting System</strong></a></li>
+      <li><a href="travel-itinerary.html"><small>Travel and bookings</small><strong>Travel Itinerary and Booking Tracker</strong></a></li>
+      <li><a href="client-lead-tracker.html" aria-current="page"><small>CRM and data entry</small><strong>Client and Lead Tracker</strong></a></li>
+      <li><a href="customer-data-cleanup.html"><small>Data management</small><strong>Client Database Cleanup</strong></a></li>
+      <li><a href="monthly-report.html"><small>Reports</small><strong>Monthly Operations Report</strong></a></li>
+      <li><a href="remote-va-toolkit.html"><small>Presentations</small><strong>The Remote VA Toolkit</strong></a></li>
+      <li><a href="website-tracking-setup.html"><small>SEO and analytics</small><strong>Website Tracking Setup</strong></a></li>
+    </ul>
+  </nav>
+
+  <footer class="s-foot"><div class="wrap"><p>Sample work by Mary Rose Obsuna, Virtual Assistant</p><a href="../index.html#contact">Work with me</a></div></footer>
+
+  <script>
+  (function () {
+    var TODAY = '2026-10-05', WEEK_END = '2026-10-09';
+    var rows = Array.prototype.slice.call(document.querySelectorAll('#leads tr'));
+    var buttons = document.querySelectorAll('.views button');
+    var q = document.getElementById('q');
+    var count = document.getElementById('count');
+    var empty = document.getElementById('empty');
+    var view = 'all';
+
+    // Flag overdue follow-ups on open deals
+    rows.forEach(function (r) {
+      var open = r.dataset.stage !== 'won' && r.dataset.stage !== 'lost';
+      if (open && r.dataset.follow < TODAY) {
+        r.querySelector('.due').insertAdjacentHTML('beforeend', '<span class="pill p-rose">Overdue</span>');
+      } else if (open && r.dataset.follow === TODAY) {
+        r.querySelector('.due').insertAdjacentHTML('beforeend', '<span class="pill p-gold">Today</span>');
+      }
+    });
+
+    function matches(r) {
+      var s = r.dataset.stage, f = r.dataset.follow;
+      if (view === 'due' && !(s !== 'won' && s !== 'lost' && f <= WEEK_END)) return false;
+      if (view === 'open' && s !== 'proposal' && s !== 'negotiation') return false;
+      if (view === 'won' && s !== 'won') return false;
+      var term = q.value.trim().toLowerCase();
+      return !term || r.querySelector('.co').textContent.toLowerCase().indexOf(term) > -1;
+    }
+    function render() {
+      var shown = 0;
+      rows.forEach(function (r) { var ok = matches(r); r.hidden = !ok; if (ok) shown++; });
+      count.textContent = 'Showing ' + shown + ' of ' + rows.length + ' leads';
+      empty.hidden = shown > 0;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        view = b.dataset.view;
+        buttons.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        render();
+      });
+    });
+    q.addEventListener('input', render);
+  })();
+  </script>
+</body>
+</html>
