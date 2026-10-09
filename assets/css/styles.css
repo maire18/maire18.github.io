@@ -630,7 +630,7 @@ body { background: var(--bg); position: relative; }
 /* ---------- Fit the screen: on desktop monitors the hero and every section fill one screen height,
    and the hero's type and spacing scale with the window height so nothing is cut off ---------- */
 :root { --header-h: 69px; }
-main > section { scroll-margin-top: var(--header-h); }
+html { scroll-padding-top: var(--header-h); } /* a clicked menu link lands the section right under the header */
 @media (min-width: 860px) {
   .hero { min-height: calc(100vh - var(--header-h)); min-height: calc(100svh - var(--header-h)); display: flex; align-items: center; padding: 24px 0; }
   .hero .container { width: 100%; }
@@ -647,9 +647,19 @@ main > section { scroll-margin-top: var(--header-h); }
   .hero-meta { margin-top: clamp(12px, 2.4vh, 26px); }
   .hero-visual { --w: min(440px, calc(100vh * 1.05), calc(100% + 2 * (var(--gutter) + max(0px, (100vw - var(--container)) / 2)) - 32px)); }
 
+  /* Heading sits right under the header when a menu link is clicked; spacing shrinks on shorter screens */
   main > .section { min-height: calc(100vh - var(--header-h)); min-height: calc(100svh - var(--header-h));
-    display: flex; flex-direction: column; justify-content: center; }
+    display: flex; flex-direction: column; justify-content: flex-start;
+    padding: clamp(20px, 4.5vh, 56px) 0 clamp(20px, 4vh, 48px); }
   main > .section > .container { width: 100%; }
+  .eyebrow { margin-bottom: clamp(4px, 1vh, 10px); }
+  .section-title { margin-bottom: clamp(14px, 2.8vh, 32px); }
+  .section-intro { margin-bottom: clamp(14px, 2.8vh, 32px); }
+  .folder-grid { row-gap: clamp(6px, 2vh, 28px); }
+  .folder-btn { padding: clamp(8px, 1.6vh, 16px) 10px clamp(8px, 1.4vh, 14px); }
+  .tool-cards, .cards, .jobs { gap: clamp(10px, 1.8vh, 16px); }
+  .tool-card { padding: clamp(14px, 2.6vh, 24px) 26px; }
+  .tool-card-title { margin-bottom: clamp(8px, 1.6vh, 16px); }
 }
 
 /* ---------- Every device: comfortable tap targets, notch-safe edges, no sideways scrolling ---------- */
