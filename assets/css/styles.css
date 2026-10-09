@@ -652,6 +652,23 @@ main > section { scroll-margin-top: var(--header-h); }
   main > .section > .container { width: 100%; }
 }
 
+/* ---------- Every device: comfortable tap targets, notch-safe edges, no sideways scrolling ---------- */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { overflow-x: clip; }
+.container { padding-left: max(var(--gutter), env(safe-area-inset-left)); padding-right: max(var(--gutter), env(safe-area-inset-right)); }
+.to-top { right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); }
+@media (pointer: coarse), (max-width: 859px) {
+  .hero-meta a, .contact-list a, .site-footer a, .profile-link, .nav-links a, .to-top { min-height: 44px; }
+  .hero-meta a, .contact-list a, .site-footer a { display: inline-flex; align-items: center; }
+  .profile-link { padding-top: 8px; padding-bottom: 8px; }
+  .nav-toggle { min-width: 44px; min-height: 44px; }
+}
+/* Landscape phones and short windows: keep the hero from being cramped */
+@media (max-height: 520px) and (min-width: 860px) {
+  .hero, main > .section { min-height: 0; }
+  .hero { padding: 32px 0; }
+}
+
 /* Reduced motion: keep everything visible and still */
 @media (prefers-reduced-motion: reduce) {
   .bg-blob { animation: none; }
