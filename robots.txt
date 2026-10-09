@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://daryroses.github.io/sitemap.xml
+Sitemap: https://maire18.github.io/sitemap.xml

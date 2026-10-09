@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://daryroses.github.io/</loc>
+    <loc>https://maire18.github.io/</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://daryroses.github.io/assets/img/mary-rose-obsuna.jpg</image:loc>
+      <image:loc>https://maire18.github.io/assets/img/mary-rose-obsuna.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://daryroses.github.io/assets/img/logo.png</image:loc>
+      <image:loc>https://maire18.github.io/assets/img/logo.png</image:loc>
     </image:image>
   </url>
 </urlset>
