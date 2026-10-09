@@ -502,16 +502,16 @@ body { background: var(--bg); position: relative; }
 .hero { position: relative; overflow: hidden; }
 .hero .container { position: relative; z-index: 1; }
 
-/* Animated chart backdrop framing the portrait. The photo sits in the middle of .hero-visual, so the graphic
-   is centred on the wrapper, sized so it never runs past the right edge, and hidden where there is no room. */
-.hero-visual { position: relative; display: flex; justify-content: center; }
-.hero-art { display: none; }
-@media (min-width: 1220px) {
-  .hero-art { display: block; position: absolute; left: 50%; top: 50%; translate: -50% -50%; overflow: visible;
-    width: min(600px, calc(100% + 2 * (var(--gutter) + max(0px, (100vw - var(--container)) / 2)) - 32px));
-    height: auto; pointer-events: none;
-    animation: art-in 1s ease .2s both, art-float 9s ease-in-out 1.6s infinite; }
-}
+/* Animated chart backdrop framing the portrait, for every screen size. --w is the graphic's width: as wide as
+   the space allows (never past the screen edge, max 600px). The photo is sized from it, so the two scale
+   together and the photo never covers the bars or the document. */
+.hero-visual { --w: min(600px, calc(100% + 2 * (var(--gutter) + max(0px, (100vw - var(--container)) / 2)) - 32px));
+  position: relative; display: flex; justify-content: center; padding-block: calc(var(--w) * .12); }
+.hero-visual .hero-photo { width: min(260px, calc(var(--w) * .5)); }
+.hero-art { display: block; position: absolute; left: 50%; top: 50%; translate: -50% -50%; overflow: visible;
+  width: var(--w); height: auto; pointer-events: none;
+  animation: art-in 1s ease .2s both, art-float 9s ease-in-out 1.6s infinite; }
+@media (min-width: 1220px) { .hero-visual { padding-block: 0; } }
 
 /* Document: slides in, its lines write themselves one by one, then a highlight keeps running down them */
 .art-doc { animation: doc-in .7s cubic-bezier(.2, .8, .2, 1) .4s both; }
