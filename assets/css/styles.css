@@ -505,9 +505,9 @@ body { background: var(--bg); position: relative; }
 /* Animated chart backdrop framing the portrait, for every screen size. --w is the graphic's width: as wide as
    the space allows (never past the screen edge, max 600px). The photo is sized from it, so the two scale
    together and the photo never covers the bars or the document. */
-.hero-visual { --w: min(600px, calc(100% + 2 * (var(--gutter) + max(0px, (100vw - var(--container)) / 2)) - 32px));
+.hero-visual { --w: min(440px, calc(100% + 2 * (var(--gutter) + max(0px, (100vw - var(--container)) / 2)) - 32px));
   position: relative; display: flex; justify-content: center; padding-block: calc(var(--w) * .12); }
-.hero-visual .hero-photo { width: min(260px, calc(var(--w) * .5)); }
+.hero-visual .hero-photo { width: min(220px, calc(var(--w) * .5)); }
 .hero-art { display: block; position: absolute; left: 50%; top: 50%; translate: -50% -50%; overflow: visible;
   width: var(--w); height: auto; pointer-events: none;
   animation: art-in 1s ease .2s both, art-float 9s ease-in-out 1.6s infinite; }
@@ -538,7 +538,7 @@ body { background: var(--bg); position: relative; }
 .art-rings circle { fill: none; stroke: var(--sky); stroke-width: 2; opacity: 0; transform-box: fill-box; transform-origin: center; animation: ring 3.6s ease-out infinite; }
 .art-rings circle:nth-child(1) { animation-delay: 3.2s; } .art-rings circle:nth-child(2) { animation-delay: 4.4s; } .art-rings circle:nth-child(3) { animation-delay: 5.6s; }
 .art-pulse circle:first-child { fill: rgba(112, 166, 212, 0.28); }
-.art-pulse circle:last-child { fill: var(--blue); }
+.art-pulse circle:nth-of-type(2) { fill: var(--blue); }
 
 /* Check: pops in, ticks itself on a loop with a ripple, and floats gently */
 .art-check { animation: float 6s ease-in-out 3.6s infinite; transform-box: fill-box; transform-origin: center; }
@@ -645,7 +645,7 @@ main > section { scroll-margin-top: var(--header-h); }
   .hero-actions { margin-top: clamp(14px, 3vh, 30px); }
   .profiles { margin-top: clamp(12px, 2.4vh, 24px); }
   .hero-meta { margin-top: clamp(12px, 2.4vh, 26px); }
-  .hero-visual { --w: min(600px, calc(100vh * 1.05), calc(100% + 2 * (var(--gutter) + max(0px, (100vw - var(--container)) / 2)) - 32px)); }
+  .hero-visual { --w: min(440px, calc(100vh * 1.05), calc(100% + 2 * (var(--gutter) + max(0px, (100vw - var(--container)) / 2)) - 32px)); }
 
   main > .section { min-height: calc(100vh - var(--header-h)); min-height: calc(100svh - var(--header-h));
     display: flex; flex-direction: column; justify-content: center; }
