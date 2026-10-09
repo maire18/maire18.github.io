@@ -20,7 +20,7 @@
   <link rel="alternate" hreflang="x-default" href="https://daryroses.github.io/">
   <!-- Google Search Console: if you verify with the "HTML tag" method, paste the meta tag Google gives you on the next line.
        (The "Google Tag Manager" method also works, since GTM is installed above.) -->
-  <meta name="theme-color" content="#F5F6F8">
+  <meta name="theme-color" content="#F4F7FA">
   <meta name="geo.region" content="PH-CAS">
   <meta name="geo.placename" content="Buhi">
 
@@ -55,6 +55,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/oswald-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <script type="application/ld+json">
@@ -173,6 +174,14 @@
 
   <a class="skip" href="#main">Skip to content</a>
 
+  <!-- Soft animated background: sky-blue light, dot grid and floating shapes -->
+  <div class="bg-scene" aria-hidden="true">
+    <span class="bg-blob bg-blob-1"></span>
+    <span class="bg-blob bg-blob-2"></span>
+    <span class="bg-blob bg-blob-3"></span>
+    <span class="bg-grid"></span>
+  </div>
+
   <header class="site-header" id="top">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="Mary Rose Obsuna, back to top">
@@ -198,11 +207,20 @@
   <main id="main">
     <!-- HERO -->
     <section class="hero">
+      <svg class="hero-art" viewBox="0 0 520 360" aria-hidden="true" focusable="false">
+        <g class="art-doc"><rect x="300" y="24" width="150" height="190" rx="14"/><path d="M326 66h98M326 92h98M326 118h70M326 144h84M326 170h56"/></g>
+        <g class="art-bars"><rect x="40" y="250" width="34" height="80" rx="6"/><rect x="92" y="210" width="34" height="120" rx="6"/><rect x="144" y="232" width="34" height="98" rx="6"/><rect x="196" y="176" width="34" height="154" rx="6"/></g>
+        <path class="art-line" pathLength="1" d="M30 170 C 90 150, 120 110, 170 120 S 250 60, 300 70 S 400 30, 500 40"/>
+        <g class="art-dots"><circle cx="170" cy="120" r="6"/><circle cx="300" cy="70" r="6"/><circle cx="500" cy="40" r="6"/></g>
+        <g class="art-check"><circle cx="440" cy="270" r="34"/><path d="M424 270l11 11 22-24"/></g>
+      </svg>
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="badge"><span class="dot"></span>Open to remote work</p>
+          <p class="hello">Hello, I&rsquo;m</p>
           <h1 class="name">Mary Rose Obsuna</h1>
-          <p class="kicker">Virtual Assistant&nbsp;<span>|</span> Business Administrative Operations Specialist&nbsp;<span>|</span> AI &amp; Digital Productivity Enthusiast</p>
+          <p class="role-banner"><span>Virtual Assistant</span></p>
+          <p class="kicker">Business Administrative Operations Specialist&nbsp;<span>|</span> AI &amp; Digital Productivity Enthusiast</p>
           <p class="lead hero-quote">I don&rsquo;t aim to impress with complexity. I aim to earn trust through results.</p>
           <div class="hero-actions">
             <a class="btn" href="#contact">Work with me</a>
@@ -223,6 +241,7 @@
           </ul>
         </div>
         <figure class="hero-photo">
+          <span class="photo-block" aria-hidden="true"></span>
           <img src="assets/img/mary-rose-obsuna.jpg" srcset="assets/img/mary-rose-obsuna-400.jpg 400w, assets/img/mary-rose-obsuna.jpg 800w" sizes="(min-width: 768px) 214px, 60vw" width="800" height="800" fetchpriority="high" alt="Portrait of Mary Rose Obsuna, virtual assistant from Buhi, Camarines Sur, Philippines">
         </figure>
       </div>

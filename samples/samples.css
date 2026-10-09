@@ -2,22 +2,22 @@
    Minimal palette: blue, black and gray. One typeface (DM Sans). Soft edges throughout. */
 
 :root {
-  --canvas: #F5F6F8;
+  --canvas: #F4F7FA;
   --paper: #FFFFFF;
-  --ink: #121417;
-  --ink-2: #4B5563;
-  --muted: #5F6673;
-  --line: #DDE1E6;
-  --line-soft: #ECEEF1;
+  --ink: #2E3031;
+  --ink-2: #555A5F;
+  --muted: #6B7075;
+  --line: #DFE6EC;
+  --line-soft: #EDF1F4;
 
-  /* Blue, black and gray only. Old accent names are kept so every page still works. */
-  --blue-50: #F3F6FD;  --blue-100: #E7EEFB; --blue-200: #C7D6F4; --blue-400: #5B8CE6; --blue-600: #1D5FD1; --blue-700: #163F8C;
-  --sage-50: #EEF3FC;  --sage-100: #DCE6F8; --sage-400: #6E97E0; --sage-700: #1D4FB0;
-  --gold-50: #F1F2F4;  --gold-100: #E1E4E8; --gold-400: #9AA1AB; --gold-700: #3F4650;
-  --rose-50: #ECEDEF;  --rose-100: #D5D8DC; --rose-400: #5F6673; --rose-700: #121417;
-  --lav-50: #F2F6FD;   --lav-100: #E1E9F9;  --lav-400: #8FB0EA;  --lav-700: #163F8C;
+  /* Sky-blue theme (soft sky blue, charcoal, light gray, white). Old accent names are kept so every page still works. */
+  --blue-50: #EEF5FB;  --blue-100: #E4EEF8; --blue-200: #B9D3E8; --blue-400: #70A6D4; --blue-600: #3F7DBF; --blue-700: #2F6399;
+  --sage-50: #EEF5FB;  --sage-100: #DCEAF5; --sage-400: #70A6D4; --sage-700: #2F6399;
+  --gold-50: #F4F5F6;  --gold-100: #E6E7E8; --gold-400: #9A9EA2; --gold-700: #2E3031;
+  --rose-50: #EDEEEF;  --rose-100: #D9DBDD; --rose-400: #6B7075; --rose-700: #2E3031;
+  --lav-50: #F2F7FC;   --lav-100: #E3EEF8;  --lav-400: #8DB8DE;  --lav-700: #3F79B5;
 
-  --serif: "DM Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+--serif: "DM Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --sans: "DM Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 
@@ -25,7 +25,7 @@
   --r: 14px;
   --r-lg: 22px;
   --pill: 999px;
-  --shadow: 0 1px 2px rgba(15, 40, 70, .04), 0 12px 32px rgba(15, 60, 110, .06);
+  --shadow: 0 1px 2px rgba(47, 99, 153, .05), 0 12px 32px rgba(47, 99, 153, .08);
   --gutter: 16px;
   color-scheme: light;
 }
@@ -35,7 +35,11 @@
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
 body {
-  margin: 0; background: var(--canvas); color: var(--ink);
+  margin: 0; color: var(--ink);
+  background:
+    radial-gradient(1100px 520px at 100% -10%, rgba(112, 166, 212, 0.20), transparent 60%),
+    radial-gradient(900px 480px at -10% 100%, rgba(185, 211, 232, 0.30), transparent 60%),
+    var(--canvas) fixed;
   font: 16px/1.6 var(--sans); -webkit-font-smoothing: antialiased;
 }
 h1, h2, h3, h4, p, ul, ol, dl, figure { margin: 0; }
