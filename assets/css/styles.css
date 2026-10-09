@@ -627,6 +627,31 @@ body { background: var(--bg); position: relative; }
 .to-top { background: var(--blue); box-shadow: 0 8px 20px rgba(47, 99, 153, 0.3); }
 .to-top:hover { background: var(--blue-dark); }
 
+/* ---------- Fit the screen: on desktop monitors the hero and every section fill one screen height,
+   and the hero's type and spacing scale with the window height so nothing is cut off ---------- */
+:root { --header-h: 69px; }
+main > section { scroll-margin-top: var(--header-h); }
+@media (min-width: 860px) {
+  .hero { min-height: calc(100vh - var(--header-h)); min-height: calc(100svh - var(--header-h)); display: flex; align-items: center; padding: 24px 0; }
+  .hero .container { width: 100%; }
+  .badge { margin-bottom: clamp(8px, 1.8vh, 20px); }
+  .hello { font-size: clamp(18px, min(3vw, 3.4vh), 30px); }
+  .name { font-size: clamp(40px, min(7.4vw, 10.5vh), 86px); }
+  .name::after { margin-top: clamp(8px, 1.4vh, 14px); }
+  .role-banner { margin-top: clamp(10px, 2.2vh, 22px); padding: clamp(6px, 1vh, 10px) 26px; font-size: clamp(22px, min(3.4vw, 4.6vh), 36px); }
+  .kicker { margin-top: clamp(10px, 1.8vh, 18px); font-size: clamp(12px, 1.6vh, 14px); }
+  .lead { margin-top: clamp(10px, 1.8vh, 18px); }
+  .hero-quote { font-size: clamp(18px, min(2.2vw, 2.9vh), 24px); }
+  .hero-actions { margin-top: clamp(14px, 3vh, 30px); }
+  .profiles { margin-top: clamp(12px, 2.4vh, 24px); }
+  .hero-meta { margin-top: clamp(12px, 2.4vh, 26px); }
+  .hero-visual { --w: min(600px, calc(100vh * 1.05), calc(100% + 2 * (var(--gutter) + max(0px, (100vw - var(--container)) / 2)) - 32px)); }
+
+  main > .section { min-height: calc(100vh - var(--header-h)); min-height: calc(100svh - var(--header-h));
+    display: flex; flex-direction: column; justify-content: center; }
+  main > .section > .container { width: 100%; }
+}
+
 /* Reduced motion: keep everything visible and still */
 @media (prefers-reduced-motion: reduce) {
   .bg-blob { animation: none; }
