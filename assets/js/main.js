@@ -20,6 +20,18 @@
     });
   }
 
+  // The name, the back-to-top button and the footer link always return to the very top of the page
+  // (the header is sticky, so the plain #top anchor would not scroll anywhere).
+  document.querySelectorAll('a[href="#top"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      if (links) links.classList.remove('open');
+      if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+    });
+  });
+
   // Header border, reading progress bar and back-to-top button follow the scroll
   var header = document.querySelector('.site-header');
   var progress = document.querySelector('.scroll-progress');
