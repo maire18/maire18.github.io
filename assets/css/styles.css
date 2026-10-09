@@ -479,7 +479,7 @@ body { background: var(--bg); position: relative; }
 
 /* Sections let the scene show through */
 .section { background: transparent; }
-.section-alt, .section-portfolio { background: var(--bg-alt); }
+.section-alt, .section-portfolio { background: transparent; } /* same background as the contact section */
 .section + .section { border-top: 1px solid rgba(223, 230, 236, 0.8); }
 
 /* ---------- Header ---------- */
