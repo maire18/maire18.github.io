@@ -500,24 +500,65 @@ body { background: var(--bg); position: relative; }
 
 /* ---------- Hero ---------- */
 .hero { position: relative; overflow: hidden; }
-.hero-art { position: absolute; right: -70px; bottom: 24px; width: min(470px, 50vw); height: auto; z-index: 0; opacity: .5; pointer-events: none; }
 .hero .container { position: relative; z-index: 1; }
-.art-doc rect, .art-bars rect { fill: rgba(255, 255, 255, 0.6); stroke: var(--sky-pale); stroke-width: 2; }
-.art-doc path { stroke: var(--sky-pale); stroke-width: 6; stroke-linecap: round; fill: none; }
-.art-bars rect:nth-child(4) { fill: rgba(112, 166, 212, 0.25); stroke: var(--sky); }
+
+/* Animated chart backdrop framing the portrait. The photo sits in the middle of .hero-visual, so the graphic
+   is centred on the wrapper, sized so it never runs past the right edge, and hidden where there is no room. */
+.hero-visual { position: relative; display: flex; justify-content: center; }
+.hero-art { display: none; }
+@media (min-width: 1220px) {
+  .hero-art { display: block; position: absolute; left: 50%; top: 50%; translate: -50% -50%; overflow: visible;
+    width: min(600px, calc(100% + 2 * (var(--gutter) + max(0px, (100vw - var(--container)) / 2)) - 32px));
+    height: auto; pointer-events: none;
+    animation: art-in 1s ease .2s both, art-float 9s ease-in-out 1.6s infinite; }
+}
+
+/* Document: slides in, its lines write themselves one by one, then a highlight keeps running down them */
+.art-doc { animation: doc-in .7s cubic-bezier(.2, .8, .2, 1) .4s both; }
+.art-doc rect, .art-bars rect { fill: rgba(255, 255, 255, 0.7); stroke: var(--sky-pale); stroke-width: 2; }
+.art-doc path { fill: none; stroke: var(--sky-pale); stroke-width: 6; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.art-doc path:nth-of-type(1) { animation: draw .5s ease 1s forwards, glow-line 6s ease-in-out 3s infinite; }
+.art-doc path:nth-of-type(2) { animation: draw .5s ease 1.15s forwards, glow-line 6s ease-in-out 3.45s infinite; }
+.art-doc path:nth-of-type(3) { animation: draw .5s ease 1.3s forwards, glow-line 6s ease-in-out 3.9s infinite; }
+.art-doc path:nth-of-type(4) { animation: draw .5s ease 1.45s forwards, glow-line 6s ease-in-out 4.35s infinite; }
+.art-doc path:nth-of-type(5) { animation: draw .5s ease 1.6s forwards, glow-line 6s ease-in-out 4.8s infinite; }
+
+/* Bars: grow up one after another, then keep moving like live data (the tall one trends upward) */
+.art-bars rect:nth-child(4) { fill: rgba(112, 166, 212, 0.28); stroke: var(--sky); }
+.art-bars rect { transform-box: fill-box; transform-origin: bottom; }
+.art-bars rect:nth-child(1) { --b: .84; animation: grow-up .9s cubic-bezier(.2, .8, .2, 1) .2s both, breathe 3.4s ease-in-out 1.6s infinite alternate; }
+.art-bars rect:nth-child(2) { --b: .9;  animation: grow-up .9s cubic-bezier(.2, .8, .2, 1) .32s both, breathe 4.1s ease-in-out 2.2s infinite alternate; }
+.art-bars rect:nth-child(3) { --b: .82; animation: grow-up .9s cubic-bezier(.2, .8, .2, 1) .44s both, breathe 3.7s ease-in-out 1.9s infinite alternate; }
+.art-bars rect:nth-child(4) { --b: 1.12; animation: grow-up .9s cubic-bezier(.2, .8, .2, 1) .56s both, breathe 4.6s ease-in-out 2.5s infinite alternate; }
+
+/* Trend line draws across, its points pop in and keep sending out rings, and a marker travels along it */
 .art-line { fill: none; stroke: var(--sky); stroke-width: 4; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.4s ease .6s forwards; }
-.art-dots circle { fill: #fff; stroke: var(--sky); stroke-width: 3; opacity: 0; animation: fade-in .4s ease forwards; }
-.art-dots circle:nth-child(1) { animation-delay: 1.4s; } .art-dots circle:nth-child(2) { animation-delay: 2s; } .art-dots circle:nth-child(3) { animation-delay: 2.7s; }
-.art-bars rect { transform-box: fill-box; transform-origin: bottom; animation: grow-up .9s cubic-bezier(.2, .8, .2, 1) both; }
-.art-bars rect:nth-child(2) { animation-delay: .12s; } .art-bars rect:nth-child(3) { animation-delay: .24s; } .art-bars rect:nth-child(4) { animation-delay: .36s; }
-.art-check circle { fill: rgba(112, 166, 212, 0.18); stroke: var(--sky); stroke-width: 2; }
-.art-check path { fill: none; stroke: var(--blue); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
-.art-check { animation: float 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.art-dots circle { fill: #fff; stroke: var(--sky); stroke-width: 3; opacity: 0; transform-box: fill-box; transform-origin: center; animation: pop .5s ease forwards; }
+.art-dots circle:nth-child(1) { animation-delay: 1.3s; } .art-dots circle:nth-child(2) { animation-delay: 2.3s; } .art-dots circle:nth-child(3) { animation-delay: 2.95s; }
+.art-rings circle { fill: none; stroke: var(--sky); stroke-width: 2; opacity: 0; transform-box: fill-box; transform-origin: center; animation: ring 3.6s ease-out infinite; }
+.art-rings circle:nth-child(1) { animation-delay: 3.2s; } .art-rings circle:nth-child(2) { animation-delay: 4.4s; } .art-rings circle:nth-child(3) { animation-delay: 5.6s; }
+.art-pulse circle:first-child { fill: rgba(112, 166, 212, 0.28); }
+.art-pulse circle:last-child { fill: var(--blue); }
+
+/* Check: pops in, ticks itself on a loop with a ripple, and floats gently */
+.art-check { animation: float 6s ease-in-out 3.6s infinite; transform-box: fill-box; transform-origin: center; }
+.art-check circle { fill: rgba(112, 166, 212, 0.18); stroke: var(--sky); stroke-width: 2; transform-box: fill-box; transform-origin: center; }
+.art-check circle:not(.art-check-ring) { animation: pop .6s ease 3.1s both; }
+.art-check .art-check-ring { fill: none; opacity: 0; animation: check-ring 8s ease-out 4s infinite; }
+.art-check path { fill: none; stroke: var(--blue); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: check-draw 8s ease 3.4s infinite; }
+
+@keyframes art-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes art-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes doc-in { from { opacity: 0; transform: translateX(22px); } to { opacity: 1; transform: none; } }
 @keyframes draw { to { stroke-dashoffset: 0; } }
-@keyframes fade-in { to { opacity: 1; } }
 @keyframes grow-up { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes breathe { from { transform: scaleY(1); } to { transform: scaleY(var(--b, .88)); } }
+@keyframes pop { 0% { opacity: 0; transform: scale(0); } 60% { opacity: 1; transform: scale(1.35); } 100% { opacity: 1; transform: scale(1); } }
+@keyframes ring { 0% { opacity: .55; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(3.2); } }
+@keyframes glow-line { 0%, 70%, 100% { stroke: var(--sky-pale); } 12%, 28% { stroke: var(--sky); } }
+@keyframes check-draw { 0% { stroke-dashoffset: 1; } 8%, 86% { stroke-dashoffset: 0; } 94%, 100% { stroke-dashoffset: 1; } }
+@keyframes check-ring { 0% { opacity: .6; transform: scale(1); } 15%, 100% { opacity: 0; transform: scale(1.9); } }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-@media (max-width: 859px) { .hero-art { display: none; } }
 
 .badge { background: rgba(255, 255, 255, 0.9); color: var(--blue-dark); border: 1px solid var(--sky-pale); box-shadow: var(--shadow-soft); }
 .hello { font-family: var(--display); font-weight: 400; font-size: clamp(22px, 3vw, 30px); letter-spacing: .14em; text-transform: uppercase; color: var(--ink); line-height: 1.1; }
@@ -589,7 +630,8 @@ body { background: var(--bg); position: relative; }
 /* Reduced motion: keep everything visible and still */
 @media (prefers-reduced-motion: reduce) {
   .bg-blob { animation: none; }
-  .art-line { stroke-dashoffset: 0; }
+  .art-line, .art-doc path, .art-check path { stroke-dashoffset: 0; }
   .art-dots circle { opacity: 1; }
+  .art-rings, .art-pulse { display: none; }
   .section-title.reveal:not(.visible)::after { transform: scaleX(1); }
 }

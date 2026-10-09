@@ -207,13 +207,6 @@
   <main id="main">
     <!-- HERO -->
     <section class="hero">
-      <svg class="hero-art" viewBox="0 0 520 360" aria-hidden="true" focusable="false">
-        <g class="art-doc"><rect x="300" y="24" width="150" height="190" rx="14"/><path d="M326 66h98M326 92h98M326 118h70M326 144h84M326 170h56"/></g>
-        <g class="art-bars"><rect x="40" y="250" width="34" height="80" rx="6"/><rect x="92" y="210" width="34" height="120" rx="6"/><rect x="144" y="232" width="34" height="98" rx="6"/><rect x="196" y="176" width="34" height="154" rx="6"/></g>
-        <path class="art-line" pathLength="1" d="M30 170 C 90 150, 120 110, 170 120 S 250 60, 300 70 S 400 30, 500 40"/>
-        <g class="art-dots"><circle cx="170" cy="120" r="6"/><circle cx="300" cy="70" r="6"/><circle cx="500" cy="40" r="6"/></g>
-        <g class="art-check"><circle cx="440" cy="270" r="34"/><path d="M424 270l11 11 22-24"/></g>
-      </svg>
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="badge"><span class="dot"></span>Open to remote work</p>
@@ -240,10 +233,28 @@
             <li>Buhi, Philippines</li>
           </ul>
         </div>
-        <figure class="hero-photo">
-          <span class="photo-block" aria-hidden="true"></span>
-          <img src="assets/img/mary-rose-obsuna.jpg" srcset="assets/img/mary-rose-obsuna-400.jpg 400w, assets/img/mary-rose-obsuna.jpg 800w" sizes="(min-width: 768px) 214px, 60vw" width="800" height="800" fetchpriority="high" alt="Portrait of Mary Rose Obsuna, virtual assistant from Buhi, Camarines Sur, Philippines">
-        </figure>
+        <div class="hero-visual">
+          <svg class="hero-art" viewBox="0 0 600 440" aria-hidden="true" focusable="false">
+            <g class="art-bars"><rect x="14" y="262" width="22" height="68" rx="5"/><rect x="46" y="222" width="22" height="108" rx="5"/><rect x="78" y="242" width="22" height="88" rx="5"/><rect x="110" y="182" width="22" height="148" rx="5"/></g>
+            <g class="art-doc">
+              <rect x="494" y="40" width="98" height="150" rx="12"/>
+              <path pathLength="1" d="M510 80h64"/><path pathLength="1" d="M510 102h64"/><path pathLength="1" d="M510 124h40"/><path pathLength="1" d="M510 146h54"/><path pathLength="1" d="M510 168h32"/>
+            </g>
+            <path class="art-line" pathLength="1" d="M6 238 C 50 214, 92 150, 132 152 S 230 120, 300 132 S 420 112, 494 112 S 560 84, 584 66"/>
+            <g class="art-rings"><circle cx="132" cy="152" r="6"/><circle cx="494" cy="112" r="6"/><circle cx="584" cy="66" r="6"/></g>
+            <g class="art-dots"><circle cx="132" cy="152" r="6"/><circle cx="494" cy="112" r="6"/><circle cx="584" cy="66" r="6"/></g>
+            <g class="art-check"><circle class="art-check-ring" cx="540" cy="330" r="30"/><circle cx="540" cy="330" r="30"/><path pathLength="1" d="M525 330l10 10 21-23"/></g>
+            <g class="art-pulse" opacity="0">
+              <circle r="13"/><circle r="5.5"/>
+              <animateMotion dur="9s" begin="3.4s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;.72;1" path="M6 238 C 50 214, 92 150, 132 152 S 230 120, 300 132 S 420 112, 494 112 S 560 84, 584 66"/>
+              <animate attributeName="opacity" dur="9s" begin="3.4s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;.04;.68;.72;1"/>
+            </g>
+          </svg>
+          <figure class="hero-photo">
+            <span class="photo-block" aria-hidden="true"></span>
+            <img src="assets/img/mary-rose-obsuna.jpg" srcset="assets/img/mary-rose-obsuna-400.jpg 400w, assets/img/mary-rose-obsuna.jpg 800w" sizes="(min-width: 768px) 214px, 60vw" width="800" height="800" fetchpriority="high" alt="Portrait of Mary Rose Obsuna, virtual assistant from Buhi, Camarines Sur, Philippines">
+          </figure>
+        </div>
       </div>
     </section>
 
