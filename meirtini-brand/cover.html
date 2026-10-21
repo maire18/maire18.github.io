@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Meirtini Facebook Cover</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0a3256; --blue:#2f9bf7; --mid:#1d6fc4; --olive:#7d8a14; --line:#7fb2df; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { width:1640px; height:624px; overflow:hidden; background:#ffffff; }
+  .cover {
+    position:relative; width:1640px; height:624px; overflow:hidden;
+    font-family:"Poppins","Segoe UI",Arial,sans-serif; color:var(--navy);
+    background:#ffffff;
+  }
+  /* thin frame lines like the reference poster */
+  .cover::before, .cover::after { display:none; }
+  .cover::before { top:8px; } .cover::after { bottom:8px; }
+
+  .left { position:absolute; left:56px; top:112px; }
+  .brand {
+    font-size:112px; font-weight:700; letter-spacing:5px; line-height:1.05;
+    background:linear-gradient(90deg, #0a3256 0%, #1d6fc4 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+  }
+  .box { background:none; border:none; box-shadow:none; }
+  .sub { display:block; margin-top:6px; padding:0 4px; font-size:22px; font-weight:600; letter-spacing:2.5px; color:var(--mid); }
+  .points { width:760px; margin-top:22px; padding:0 4px; }
+  .points .t { white-space:nowrap; font-size:28px; font-weight:700; line-height:1.28; color:var(--olive); }
+  .points .s { margin-top:10px; font-size:19px; font-weight:500; color:#27455f; }
+  .points .s i { display:inline-block; width:7px; height:7px; margin:0 12px 3px; border-radius:50%; background:var(--olive); }
+  .cta-center { position:absolute; left:0; right:0; bottom:34px; text-align:center; }
+  .btn { display:inline-block; font-size:26px; font-weight:600; color:#1d6fc4; letter-spacing:.5px; }
+
+  .disc { position:absolute; left:1092px; top:86px; width:452px; height:452px; border-radius:50%; background:#0a3256; box-shadow:0 14px 36px rgba(10,50,86,.28); }
+  .glass-img { position:absolute; left:1090px; top:84px; width:456px; height:456px; clip-path:circle(48.3% at 50% 50%); filter:url(#key); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="left">
+    <div class="brand">MEIRTINI</div>
+    <div class="box sub">WEBSITE DEVELOPMENT &middot; DIGITAL PORTFOLIOS</div>
+    <div class="box points">
+      <div class="t">Helping businesses gain more visibility online,<br>more inquiries, and more customers.</div>
+      <div class="s">Business Websites<i></i>Portfolios<i></i>Admin Dashboard</div>
+    </div>
+    
+  </div>
+
+  <div class="cta-center"><div class="btn">Let&rsquo;s talk about your website &#128188;</div></div>
+  <svg width="0" height="0" style="position:absolute"><filter id="key" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  4 0 0 0 -0.78"/></filter></svg>
+  <div class="disc"></div>
+  <img class="glass-img" src="logo.webp" alt="">
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
