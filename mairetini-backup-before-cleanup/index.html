@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mairetini | Website Development &amp; Digital Portfolios</title>
+  <meta name="description" content="Mairetini builds affordable websites and digital portfolios that help businesses gain more visibility online, more inquiries, and more customers.">
+  <meta name="theme-color" content="#0a3256">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mairetini | Website Development &amp; Digital Portfolios">
+  <meta property="og:description" content="Helping businesses gain more visibility online, more inquiries, and more customers.">
+  <meta property="og:image" content="https://mairetini.netlify.app/assets/logo-square.png">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/><path d="m14 5-4 14"/></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h8M18 6h2M4 12h2M12 12h8M4 18h10M20 18h0"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 11h18M7 15h3"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9L12 3.5Z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Mairetini home">
+      <img src="assets/logo.png" alt="" width="42" height="42"><span>MAIRETINI</span>
+    </a>
+    <nav class="links" id="menu" aria-label="Main">
+      <a href="#why">Why a website</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-sm" href="#contact">Free quote</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow fade" style="--d:.05s">Website Development &middot; Digital Portfolios</span>
+        <h1 aria-label="More visibility. More inquiries. More customers.">
+          <span class="line"><span class="g1">More visibility.</span></span>
+          <span class="line"><span class="g2">More inquiries.</span></span>
+          <span class="line"><span class="g3">More customers.</span></span>
+        </h1>
+        <p class="lead fade" style="--d:.7s">Helping businesses gain more visibility online, more inquiries, and more customers, with affordable websites and digital portfolios built to be found.</p>
+        <div class="hero-cta fade" style="--d:.85s">
+          <a class="btn" href="#contact">Get a free quote <span aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn-ghost" href="#packages">See packages</a>
+        </div>
+        <div class="hero-note fade" style="--d:1s">
+          <span><svg><use href="#i-check"/></svg> Mobile-friendly</span>
+          <span><svg><use href="#i-check"/></svg> Free revisions</span>
+          <span><svg><use href="#i-check"/></svg> Affordable launch rates</span>
+        </div>
+      </div>
+
+      <div class="visual fade" style="--d:.5s" aria-hidden="true">
+        <div class="blob"></div>
+        <div class="orbit o1"><i></i></div>
+        <div class="orbit o2"><i></i></div>
+        <div class="tilt" id="tilt"><img class="disc" src="assets/logo.png" alt="" width="400" height="400"></div>
+        <div class="card-float cf1"><b><svg width="16" height="16"><use href="#i-search"/></svg></b>Found on Google</div>
+        <div class="card-float cf2 olive"><b><svg width="16" height="16"><use href="#i-shield"/></svg></b>Builds trust</div>
+        <div class="card-float cf3"><b><svg width="16" height="16"><use href="#i-clock"/></svg></b>Open 24/7</div>
+        <div class="card-float cf4 olive"><b><svg width="16" height="16"><use href="#i-check"/></svg></b>Mobile-friendly</div>
+        <div class="card-float cf5"><b><svg width="16" height="16"><use href="#i-cal"/></svg></b>Easy bookings</div>
+        <div class="card-float cf6 olive"><b><svg width="16" height="16"><use href="#i-star"/></svg></b>Reviews in one place</div>
+        <div class="card-float cf7"><b><svg width="16" height="16"><use href="#i-chat"/></svg></b>More inquiries</div>
+        <div class="card-float cf8 olive"><b><svg width="16" height="16"><use href="#i-layers"/></svg></b>All in one place</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track" id="track">
+      <span>Business Websites</span><span>Digital Portfolios</span><span>Online Payments</span><span>Booking &amp; Reservations</span><span>Google Business Profile</span><span>SEO Basics</span><span>Custom Domain &amp; Email</span>
+    </div>
+  </div>
+
+  <!-- WHY -->
+  <section id="why">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Why a website</span>
+        <h2>Even a small business deserves to be found.</h2>
+        <p>When people look for a caf&eacute;, a restaurant or a service in your area, many of them, tourists and first-time visitors especially, search on Google first. A website is how you show up there.</p>
+      </div>
+      <div class="why-grid">
+        <article class="why reveal" style="--d:0s"><div class="ico"><svg width="26" height="26"><use href="#i-search"/></svg></div><h3>Be found</h3><p>People who search online can discover you, not only the people who already follow your page.</p></article>
+        <article class="why reveal" style="--d:.08s"><div class="ico"><svg width="26" height="26"><use href="#i-layers"/></svg></div><h3>Everything in one place</h3><p>Menu, services, prices, photos, hours and contact details, all on one link for your Facebook bio.</p></article>
+        <article class="why reveal" style="--d:.16s"><div class="ico"><svg width="26" height="26"><use href="#i-shield"/></svg></div><h3>Look trusted</h3><p>A proper website makes a small business feel established, professional and reliable.</p></article>
+        <article class="why reveal" style="--d:.24s"><div class="ico"><svg width="26" height="26"><use href="#i-home"/></svg></div><h3>Own your space</h3><p>Social platforms change their rules and reach. Your website is yours, and it&rsquo;s open 24/7.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Services</span>
+        <h2>Start simple. Add more when you&rsquo;re ready.</h2>
+        <p>Website development and digital portfolios come first. Everything else is an add-on, so you only pay for what helps your business.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal" style="--d:0s"><span class="num">01</span><div class="ico"><svg width="26" height="26"><use href="#i-code"/></svg></div><h3>Business Websites</h3><p>Clean, fast, mobile-friendly sites with your products, services, gallery, map, hours and an inquiry form.</p></article>
+        <article class="svc reveal" style="--d:.08s"><span class="num">02</span><div class="ico"><svg width="26" height="26"><use href="#i-brief"/></svg></div><h3>Digital Portfolios</h3><p>A polished portfolio for students, freelancers and creatives: your projects, your CV and your story on one link.</p></article>
+        <article class="svc reveal" style="--d:.16s"><span class="num">03</span><div class="ico"><svg width="26" height="26"><use href="#i-layers"/></svg></div><h3>Basic Logo Design</h3><p>A clean, simple logo that matches your new website and your brand.</p></article>
+        <article class="svc reveal" style="--d:0s"><span class="num">04</span><div class="ico"><svg width="26" height="26"><use href="#i-card"/></svg></div><h3>Payments &amp; Ordering</h3><p>Accept online payments or orders through a trusted provider, straight into your own account.</p></article>
+        <article class="svc reveal" style="--d:.08s"><span class="num">05</span><div class="ico"><svg width="26" height="26"><use href="#i-cal"/></svg></div><h3>Booking &amp; Reservations</h3><p>Let customers book a table, a session or an appointment, with notifications when they do.</p></article>
+        <article class="svc reveal" style="--d:.16s"><span class="num">06</span><div class="ico"><svg width="26" height="26"><use href="#i-pin"/></svg></div><h3>Google Business Profile &amp; SEO</h3><p>We set up your Google listing and the SEO basics, so it&rsquo;s easier for new customers to find you.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="services" id="packages">
+    <div class="wrap">
+      <div class="head center reveal">
+        <span class="eyebrow">Packages</span>
+        <h2>Simple packages. Affordable launch rates.</h2>
+        <p>We&rsquo;re a new studio, so our launch rates are made to be friendly. Message us and we&rsquo;ll send a clear, fixed quote.</p>
+      </div>
+      <div class="pk-grid">
+        <article class="pk reveal" style="--d:0s">
+          <h3>Portfolio</h3>
+          <p class="for">For students, freelancers, job seekers, and creatives.</p>
+          <div class="price">Launch rates from &#8369;200<small>Larger portfolios go up to &#8369;2,000</small></div>
+          <p class="what">What you get:</p>
+          <ul>
+            <li><svg><use href="#i-check"/></svg>A smooth one-page or multi-section portfolio</li>
+            <li><svg><use href="#i-check"/></svg>Project gallery and your story</li>
+            <li><svg><use href="#i-check"/></svg>Downloadable CV or resume</li>
+            <li><svg><use href="#i-check"/></svg>Mobile-friendly design</li>
+            <li><svg><use href="#i-check"/></svg>Contact and social links</li>
+            <li><svg><use href="#i-check"/></svg>Basic logo design</li>
+            <li><svg><use href="#i-check"/></svg>Inquiry form</li>
+            <li><svg><use href="#i-check"/></svg>Social media buttons</li>
+            <li><svg><use href="#i-check"/></svg>2 free revisions, so you love the result</li>
+          </ul>
+          <a class="btn" href="#contact" data-pick="Portfolio">Get my portfolio</a>
+          <p class="opt-note">Optional: need a custom domain or hosting setup? Ask us. Extra cost applies.</p>
+        </article>
+        <article class="pk pop reveal" style="--d:.1s">
+          <span class="ribbon">Most popular</span>
+          <h3>Business Website</h3>
+          <p class="for">Give your business a home online.</p>
+          <div class="price">From &#8369;2,000<small>Larger websites go up to &#8369;30,000</small></div>
+          <p class="what">What you get:</p>
+          <ul>
+            <li><svg><use href="#i-check"/></svg>Products, services and gallery</li>
+            <li><svg><use href="#i-check"/></svg>Map, hours and inquiry form</li>
+            <li><svg><use href="#i-check"/></svg>Buttons to your social pages</li>
+            <li><svg><use href="#i-check"/></svg>Mobile-friendly design</li>
+            <li><svg><use href="#i-check"/></svg>2 free revisions, with more on larger websites</li>
+          </ul>
+          <div class="payfor"><b>Everything else is an add-on, so you only pay for what helps your business.</b></div>
+          <a class="btn" href="#contact" data-pick="Business Website">Get my business website</a>
+          <div class="lvl"><b>Level up (optional, extra cost):</b>
+            <ul><li>Custom domain setup</li><li>Hosting and database setup</li></ul>
+            <em>Domain, hosting and database fees are paid to the providers.</em></div>
+        </article>
+        <article class="pk reveal" style="--d:.2s">
+          <h3>Get Found Complete</h3>
+          <p class="for">Give your business a home online.</p>
+          <div class="price">From &#8369;10,000<small>Larger websites go up to &#8369;50,000</small></div>
+          <p class="what">What you get:</p>
+          <ul>
+            <li><svg><use href="#i-check"/></svg>Products, services and gallery</li>
+            <li><svg><use href="#i-check"/></svg>Map, hours and inquiry form</li>
+            <li><svg><use href="#i-check"/></svg>Buttons to your social pages</li>
+            <li><svg><use href="#i-check"/></svg>Mobile-friendly design</li>
+            <li><svg><use href="#i-check"/></svg>SEO basics</li>
+            <li><svg><use href="#i-check"/></svg>Google Business Profile setup</li>
+            <li><svg><use href="#i-check"/></svg>Online payments or ordering</li>
+            <li><svg><use href="#i-check"/></svg>5 free revisions, with more on larger websites</li>
+          </ul>
+          <div class="payfor"><b>Everything else is an add-on, so you only pay for what helps your business.</b></div>
+          <a class="btn" href="#contact" data-pick="Get Found Complete">Choose Get Found</a>
+          <div class="lvl"><b>Level up (optional, extra cost):</b>
+            <ul><li>Custom domain setup</li><li>Hosting and database setup</li></ul>
+            <em>Domain, hosting and database fees are paid to the providers.</em></div>
+        </article>
+      </div>
+      <p class="note reveal">Need something extra? Add it anytime:</p>
+      <div class="addons reveal">
+        <span>Online payments</span><span>Online ordering</span><span>Booking &amp; reservations</span><span>Messenger / WhatsApp chat</span><span>Reviews section</span><span>Custom domain &amp; email</span><span>Monthly maintenance</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="head center reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>From hello to live, in four easy steps.</h2>
+      </div>
+      <div class="steps" id="steps">
+        <div class="step reveal"><div class="dot">1</div><h3>Let&rsquo;s talk</h3><p>Tell us about your business and what you need. We&rsquo;ll send a free, clear quote.</p></div>
+        <div class="step reveal" style="--d:.1s"><div class="dot">2</div><h3>Plan &amp; design</h3><p>You share your photos and details. We shape the design around your brand.</p></div>
+        <div class="step reveal" style="--d:.2s"><div class="dot">3</div><h3>Build &amp; review</h3><p>We build it, you review it, and we fix whatever you&rsquo;d like to change.</p></div>
+        <div class="step reveal" style="--d:.3s"><div class="dot">4</div><h3>Launch</h3><p>Your site goes live, and we make sure everything works as it should.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="wrap">
+      <div class="head center reveal">
+        <span class="eyebrow">Our work</span>
+        <h2>A taste of what we build.</h2>
+        <p id="work-sub">Concept previews of what your website could look like. Ask us for live samples built by our developer.</p>
+      </div>
+      <div class="work-grid" id="work-grid">
+        <a class="shot reveal" href="#contact" style="--d:0s" data-pick="Business Website">
+          <div class="browser cafe"><div class="bar"><i></i><i></i><i></i><em>yourcafe.com</em></div>
+            <div class="view"><div class="page"><div class="m-hero">Fresh. Local. Yours.<small>Menu &middot; Hours &middot; Find us</small></div><div class="m-row"><div class="m-tile"></div><div class="m-tile"></div><div class="m-tile"></div></div><div class="m-line"></div><div class="m-line s"></div><div class="m-row"><div class="m-tile"></div><div class="m-tile"></div><div class="m-tile"></div></div><div class="m-line"></div><div class="m-line s"></div></div></div></div>
+          <div class="cap"><div><b>Caf&eacute; &amp; restaurant</b><br><span>Menu, map and reservations</span></div><span class="tag">Concept</span></div>
+        </a>
+        <a class="shot reveal" href="#contact" style="--d:.1s" data-pick="Portfolio">
+          <div class="browser port"><div class="bar"><i></i><i></i><i></i><em>yourname.com</em></div>
+            <div class="view"><div class="page"><div class="m-hero">Hi, I&rsquo;m your name.<small>Designer &middot; Projects &middot; CV</small></div><div class="m-row"><div class="m-tile"></div><div class="m-tile"></div><div class="m-tile"></div></div><div class="m-line"></div><div class="m-line s"></div><div class="m-row"><div class="m-tile"></div><div class="m-tile"></div><div class="m-tile"></div></div><div class="m-line"></div><div class="m-line s"></div></div></div></div>
+          <div class="cap"><div><b>Digital portfolio</b><br><span>Projects, CV and contact</span></div><span class="tag">Concept</span></div>
+        </a>
+        <a class="shot reveal" href="#contact" style="--d:.2s" data-pick="Get Found Complete">
+          <div class="browser salon"><div class="bar"><i></i><i></i><i></i><em>yoursalon.com</em></div>
+            <div class="view"><div class="page"><div class="m-hero">Look good. Feel good.<small>Services &middot; Book now &middot; Gallery</small></div><div class="m-row"><div class="m-tile"></div><div class="m-tile"></div><div class="m-tile"></div></div><div class="m-line"></div><div class="m-line s"></div><div class="m-row"><div class="m-tile"></div><div class="m-tile"></div><div class="m-tile"></div></div><div class="m-line"></div><div class="m-line s"></div></div></div></div>
+          <div class="cap"><div><b>Salon &amp; services</b><br><span>Booking and Google listing</span></div><span class="tag">Concept</span></div>
+        </a>
+      </div>
+      <p class="work-note reveal" id="work-note">Hover a preview to scroll through it.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="services" id="faq">
+    <div class="wrap">
+      <div class="head center reveal">
+        <span class="eyebrow">Questions</span>
+        <h2>Good to know before you start.</h2>
+      </div>
+      <div class="faq" id="faqList">
+        <div class="qa reveal"><button aria-expanded="false">What do I need to get started?<span class="pl"></span></button><div class="ans"><div><p>Just your business name, a few photos and what you offer. We guide you through the rest, and no technical knowledge is needed.</p></div></div></div>
+        <div class="qa reveal"><button aria-expanded="false">What if I need changes after launch?<span class="pl"></span></button><div class="ans"><div><p>Your package includes free revisions so you love the result. For changes later on, just message us and we&rsquo;ll send a quick quote.</p></div></div></div>
+        <div class="qa reveal"><button aria-expanded="false">Can you add online payments?<span class="pl"></span></button><div class="ans"><div><p>Yes, as an add-on. Payments go through a trusted provider&rsquo;s checkout straight to your own account, and we never hold your money. Available providers depend on your country.</p></div></div></div>
+        <div class="qa reveal"><button aria-expanded="false">Will a website put me at the top of Google?<span class="pl"></span></button><div class="ans"><div><p>No one can honestly promise rankings. A website, a complete Google Business Profile and good customer reviews all improve your chances of being found, and we help you set up the first two.</p></div></div></div>
+        <div class="qa reveal"><button aria-expanded="false">How long does it take?<span class="pl"></span></button><div class="ans"><div><p>Simple sites can be ready in about a week. Larger ones take a little longer. It also depends on how quickly we receive your content.</p></div></div></div>
+        <div class="qa reveal"><button aria-expanded="false">Who owns the website?<span class="pl"></span></button><div class="ans"><div><p>You own your content and your accounts. We agree on the details in writing before we start, so everything is clear.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="cta reveal">
+        <div>
+          <h2>Let&rsquo;s talk about your website &#128188;</h2>
+          <p>Tell us about your business and we&rsquo;ll send a free quote. No pressure at all.</p>
+          <div class="chan" id="channels"></div>
+        </div>
+        <form class="form" id="quoteForm" name="mairetini-quote" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="mairetini-quote">
+          <p class="sr" aria-hidden="true"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="two">
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
+            <div class="field"><label for="f-biz">Business name</label><input id="f-biz" name="business" type="text" autocomplete="organization"></div>
+          </div>
+          <div class="field"><label for="f-email">Your email</label><input id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+          <div class="field"><label for="f-need">I&rsquo;m interested in</label>
+            <select id="f-need" name="interested_in"><option>Business Website</option><option>Portfolio</option><option>Get Found Complete</option><option>Not sure yet</option></select></div>
+          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Tell us a little about your business..."></textarea></div>
+          <button class="btn" type="submit">Send my request</button>
+          <div class="status" id="status" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#top"><img src="assets/logo.png" alt="" width="38" height="38"><span>MAIRETINI</span></a>
+    <nav aria-label="Footer"><a href="#services">Services</a><a href="#packages">Packages</a><a href="#work">Work</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+    <span>&copy; <span id="year">2026</span> Mairetini. Website development &amp; digital portfolios.</span>
+  </div>
+</footer>
+
+<button class="top" id="toTop" aria-label="Back to top"><svg><use href="#i-up"/></svg></button>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+

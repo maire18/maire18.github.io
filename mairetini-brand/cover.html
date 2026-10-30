@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mairetini Facebook Cover</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0a3256; --blue:#2f9bf7; --mid:#1d6fc4; --olive:#7d8a14; --line:#7fb2df; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { width:1640px; height:624px; overflow:hidden; background:#ffffff; }
+  .cover {
+    position:relative; width:1640px; height:624px; overflow:hidden;
+    font-family:"Poppins","Segoe UI",Arial,sans-serif; color:var(--navy);
+    background:#ffffff;
+  }
+  /* thin frame lines like the reference poster */
+  .cover::before, .cover::after { display:none; }
+  .cover::before { top:8px; } .cover::after { bottom:8px; }
+
+  .left { position:absolute; left:56px; top:172px; }
+  .brand {
+    font-size:112px; font-weight:700; letter-spacing:5px; line-height:1.05;
+    background:linear-gradient(90deg, #0a3256 0%, #1d6fc4 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+  }
+  .box { background:none; border:none; box-shadow:none; }
+  .sub { display:block; margin-top:6px; padding:0 4px; font-size:22px; font-weight:600; letter-spacing:2.5px; color:var(--mid); }
+  .points { width:760px; margin-top:22px; padding:0 4px; }
+  .points .t { white-space:nowrap; font-size:28px; font-weight:700; line-height:1.28; color:var(--olive); }
+  .points .s { margin-top:10px; font-size:19px; font-weight:500; color:#27455f; }
+  .points .s i { display:inline-block; width:7px; height:7px; margin:0 12px 3px; border-radius:50%; background:var(--olive); }
+  .cta-left { margin-top:26px; }
+  .btn { display:inline-block; font-size:26px; font-weight:600; color:#1d6fc4; letter-spacing:.5px; }
+
+  .site { font-family:"Poppins","Segoe UI",Arial,sans-serif; position:absolute; top:112px; width:392px; border:1.5px solid var(--line); border-radius:18px; background:#fff; overflow:hidden; }
+  .site.a { left:780px; } .site.b { left:1188px; }
+  .site .bar { display:flex; align-items:center; gap:6px; padding:10px 14px; border-bottom:1.5px solid var(--line); background:#f6f9fc; font-size:13px; font-weight:500; color:#5b7085; }
+  .site .bar i { width:9px; height:9px; border-radius:50%; background:#cfdbe8; }
+  .site .bar em { margin-left:6px; padding:2px 12px; border-radius:999px; background:#fff; border:1px solid var(--line); font-style:normal; flex:1; }
+  .page { display:grid; grid-template-columns:136px 1fr; height:380px; }
+  .side { background:var(--navy); padding:14px 10px; }
+  .logo { display:flex; align-items:center; gap:8px; margin:0 4px 12px; font-size:12px; font-weight:700; letter-spacing:1.5px; color:#fff; }
+  .logo i { width:22px; height:22px; border-radius:50%; background:#fff; display:block; position:relative; }
+  .logo i::after { content:""; position:absolute; left:6px; top:6px; width:10px; height:10px; border-radius:50%; background:var(--olive); }
+  .side div.nav { white-space:nowrap; display:flex; align-items:center; gap:8px; padding:6px 8px; margin-bottom:2px; border-radius:8px; font-size:14.5px; font-weight:500; color:#cfe0f2; }
+  .side div.nav::before { content:""; width:6px; height:6px; border-radius:50%; background:#6f8fb0; flex:none; }
+  .side div.nav.on { background:var(--olive); color:#fff; font-weight:600; }
+  .side div.nav.on::before { background:#fff; }
+  .side div.nav.more { color:#d6e27a; }
+  .side div.nav.more::before { background:#d6e27a; }
+  .main { padding:12px; display:flex; flex-direction:column; gap:10px; }
+  .hero { border-radius:10px; padding:12px; color:#fff; min-height:104px; display:flex; flex-direction:column; justify-content:flex-end; background:linear-gradient(135deg,#0a3256,#2f9bf7); }
+  .hero b { font-size:15px; line-height:1.2; display:block; }
+  .hero small { font-size:10.5px; opacity:.85; }
+  .hero .pill { align-self:flex-start; margin-top:7px; padding:3px 10px; border-radius:999px; background:#fff; color:var(--navy); font-size:10.5px; font-weight:600; }
+  .avatar { width:34px; height:34px; border-radius:50%; background:#fff; margin-bottom:7px; position:relative; }
+  .avatar::after { content:""; position:absolute; left:11px; top:7px; width:12px; height:12px; border-radius:50%; background:var(--navy); box-shadow:0 14px 0 3px var(--navy); }
+  .tiles { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; }
+  .tiles span { height:52px; border-radius:8px; background:#e3eefa; position:relative; }
+  .tiles span::after { content:""; position:absolute; left:7px; right:18px; bottom:7px; height:5px; border-radius:4px; background:#fff; }
+  .tiles span:nth-child(2) { background:#eef3d4; } .tiles span:nth-child(3) { background:#dfeaf6; }
+  .stars { color:var(--olive); font-size:17px; letter-spacing:2px; line-height:1; }
+  .line { height:6px; border-radius:4px; background:#e6eef6; } .line.s { width:62%; }
+  .tags { display:flex; gap:6px; flex-wrap:wrap; }
+  .tags span { padding:3px 10px; border-radius:999px; background:#eef3d4; color:var(--olive); font-size:10.5px; font-weight:600; }
+  .cv { align-self:flex-start; padding:5px 14px; border-radius:999px; background:var(--olive); color:#fff; font-size:11px; font-weight:600; }  .allin { font-family:"Poppins","Segoe UI",Arial,sans-serif; position:absolute; left:780px; width:800px; top:28px; text-align:center; font-size:58px; font-weight:700; letter-spacing:-1px; line-height:1.1; color:var(--navy); }
+  .allin b { color:var(--olive); font-weight:700; }</style>
+</head>
+<body>
+<div class="cover">
+  <div class="left">
+    <div class="brand">MAIRETINI</div>
+    <div class="box sub">WEBSITE DEVELOPMENT &middot; CAREER PORTFOLIOS</div>
+    <div class="box points">
+      <div class="t">Helping businesses gain more visibility online,<br>more inquiries, and more customers.</div>
+    </div>
+    <div class="cta-left"><div class="btn">Let&rsquo;s talk about your website &#128188;</div></div>
+    
+  </div>
+</div>
+
+    <div class="allin">All in <b>one place</b> &#127864;</div>
+    <div class="site a">
+    <div class="bar"><i></i><i></i><i></i><em>yourbusiness.com</em></div>
+    <div class="page">
+      <div class="side">
+        <div class="logo"><i></i>YOUR LOGO</div>
+          <div class="nav on">Home</div>
+          <div class="nav">About</div>
+          <div class="nav">Products</div>
+          <div class="nav">Services</div>
+          <div class="nav">Feedbacks</div>
+          <div class="nav">Rating</div>
+          <div class="nav">Contact</div>
+          <div class="nav">FAQs</div>
+          <div class="nav more">and more</div>
+      </div>
+      <div class="main">
+        <div class="hero"><b>Fresh. Local. Yours.</b><small>Menu &middot; Hours &middot; Find us</small><span class="pill">Visit us</span></div>
+        <div class="tiles"><span></span><span></span><span></span></div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="line"></div><div class="line s"></div>
+        <div class="tiles"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="site b">
+    <div class="bar"><i></i><i></i><i></i><em>yourname.com</em></div>
+    <div class="page">
+      <div class="side">
+        <div class="logo"><i></i>YOUR NAME</div>
+          <div class="nav on">Home</div>
+          <div class="nav">About me</div>
+          <div class="nav">Skills</div>
+          <div class="nav">Projects</div>
+          <div class="nav">Experience</div>
+          <div class="nav">Resume</div>
+          <div class="nav">Feedbacks</div>
+          <div class="nav">Contact</div>
+          <div class="nav more">and more</div>
+      </div>
+      <div class="main">
+        <div class="hero"><div class="avatar"></div><b>Hi, I&rsquo;m your name.</b><small>Career portfolio</small></div>
+        <div class="tags"><span>Skills</span><span>Tools</span><span>Experience</span></div>
+        <div class="tiles"><span></span><span></span><span></span></div>
+        <div class="line"></div><div class="line s"></div>
+        <div class="cv">Download CV</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

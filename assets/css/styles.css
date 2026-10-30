@@ -169,7 +169,7 @@ h1, h2, h3, p, ul, ol, dl, figure { margin: 0; }
 @media (min-width: 860px) { .about-grid { grid-template-columns: 1.6fr 1fr; gap: 48px; align-items: start; } }
 .about-text p { color: var(--body); }
 .about-text p + p { margin-top: 16px; }
-.quote { font-size: 20px; line-height: 1.6; color: var(--ink) !important; font-weight: 500; }
+.about-sub { margin: 32px 0 12px; font-size: 18px; color: var(--ink); }.quote { font-size: 20px; line-height: 1.6; color: var(--ink) !important; font-weight: 500; }
 .facts dl { display: grid; gap: 0; }
 .facts dl > div { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line-soft); }
 .facts dl > div:first-child { padding-top: 0; }

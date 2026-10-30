@@ -225,11 +225,14 @@
   });
 
   // Contact form: GitHub Pages has no server, so messages are delivered
-  // by FormSubmit (formsubmit.co) straight to the inbox below. If that
-  // service can't be reached, the visitor's email app opens instead.
+  // by a form service straight to the inbox below. With a Web3Forms access
+  // key (free at web3forms.com) it uses Web3Forms; without one it uses
+  // FormSubmit (formsubmit.co). If the service can't be reached, the
+  // visitor's email app opens instead.
   var form = document.getElementById('contact-form');
   var status = document.getElementById('form-status');
   var TO = 'mairrmdd@gmail.com';
+  var WEB3FORMS_KEY = ''; // paste your Web3Forms access key here
   var ENDPOINT = 'https://formsubmit.co/ajax/' + TO;
 
   function track(event, params) {
@@ -284,27 +287,37 @@
         setStatus('We could not send the form just now, so your email app should open with the message ready. You can also email ' + TO + ' directly.', 'error');
       }
 
-      fetch(ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          topic: topic,
-          message: message,
-          _subject: 'Portfolio: ' + subject,
-          _replyto: email,
-          _template: 'table',
-          _captcha: 'false'
-        })
-      })
+      var payload = { name: name, email: email, topic: topic, message: message };
+      var request = WEB3FORMS_KEY
+        ? fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(Object.assign({
+              access_key: WEB3FORMS_KEY,
+              subject: 'Portfolio: ' + subject,
+              from_name: 'Portfolio contact form',
+              replyto: email
+            }, payload))
+          })
+        : fetch(ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(Object.assign({
+              _subject: 'Portfolio: ' + subject,
+              _replyto: email,
+              _template: 'table',
+              _captcha: 'false'
+            }, payload))
+          });
+
+      request
         .then(function (res) { return res.json(); })
         .then(function (data) {
           if (String(data.success) === 'true') {
             form.reset();
             setStatus('Thank you, ' + name + '! Your message has been sent. I will reply to ' + email + ' soon.', 'success');
             track('generate_lead', { form_id: 'contact-form', lead_topic: topic });
-          } else if (/activat/i.test(data.message || '')) {
+          } else if (!WEB3FORMS_KEY && /activat/i.test(data.message || '')) {
             // First-ever submission: FormSubmit emails TO an "Activate Form" link.
             setStatus('Almost ready: check ' + TO + ' for the FormSubmit "Activate Form" email, click it, then send again.', 'error');
           } else {

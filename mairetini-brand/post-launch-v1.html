@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mairetini launch post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0a3256; --mid:#1d6fc4; --olive:#7d8a14; --olive2:#a3ae2c; --muted:#5b7085; --line:#dce7f1; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { width:1080px; height:1080px; overflow:hidden; background:#fff; }
+  .post { position:relative; width:1080px; height:1080px; padding:72px 80px; font-family:"Poppins","Segoe UI",Arial,sans-serif; color:var(--navy); background:#fff; display:flex; flex-direction:column; }
+  .top { display:flex; align-items:center; justify-content:space-between; }
+  .brand { display:flex; align-items:center; gap:16px; font-size:30px; font-weight:700; letter-spacing:6px; }
+  .brand img { width:64px; height:64px; border-radius:50%; }
+  .launch { padding:10px 22px; border-radius:999px; background:#eef3d4; color:var(--olive); font-size:20px; font-weight:600; }
+  .kicker { margin-top:62px; font-size:24px; font-weight:600; letter-spacing:3px; color:var(--mid); }
+  h1 { margin-top:18px; font-size:90px; line-height:1.05; letter-spacing:-2px; font-weight:700; }
+  h1 .price { color:var(--olive); }
+  .list { margin-top:44px; display:grid; grid-template-columns:1fr 1fr; gap:22px 30px; }
+  .list div { display:flex; align-items:center; gap:14px; font-size:27px; font-weight:500; color:#27455f; }
+  .list div::before { content:""; flex:none; width:30px; height:30px; border-radius:50%; background:#eef3d4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237d8a14' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 12.5 4 4 8-9'/%3E%3C/svg%3E") center/18px no-repeat; }
+  .portfolio { margin-top:38px; padding:22px 28px; border-radius:16px; background:#f4f8fc; font-size:27px; color:#27455f; }
+  .portfolio b { color:var(--navy); }
+  .bottom { margin-top:auto; display:flex; align-items:flex-end; justify-content:space-between; gap:24px; }
+  .offer { padding:22px 28px; border-radius:20px; background:var(--navy); color:#fff; }
+  .offer b { display:block; font-size:30px; line-height:1.2; }
+  .offer span { display:block; margin-top:6px; font-size:20px; color:#c8daec; }
+  .cta { text-align:right; }
+  .cta b { display:block; font-size:28px; color:var(--navy); }
+  .cta span { display:block; margin-top:4px; font-size:21px; color:var(--mid); font-weight:500; }
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="top">
+    <div class="brand"><img src="mairetini-logo-circle.png" alt="">MAIRETINI</div>
+    <div class="launch">Launching this December</div>
+  </div>
+
+  <div class="kicker">WEBSITE DEVELOPMENT &middot; CAREER PORTFOLIOS</div>
+  <h1>Own your business website for only <span class="price">&#8369;5,000</span></h1>
+
+  <div class="list">
+    <div>Products, services &amp; reviews</div>
+    <div>Map &amp; opening hours</div>
+    <div>Google Business Profile</div>
+    <div>Mobile-friendly design</div>
+  </div>
+
+  <div class="portfolio">Students &amp; job seekers: <b>career portfolios from &#8369;200</b></div>
+
+  <div class="bottom">
+    <div class="offer"><b>Now accepting our<br>first 5 founding clients</b><span>with a special launch bonus</span></div>
+    <div class="cta"><b>Message us for a free quote</b><span>mairetinidigital.netlify.app</span></div>
+  </div>
+</div>
+</body>
+</html>

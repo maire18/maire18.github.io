@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mairetini launch post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0a3256; --olive:#7d8a14; --olive2:#b6c24a; --ink:#1f2f3f; --muted:#62778b; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { width:1080px; height:1080px; overflow:hidden; background:#fff; }
+  .post { position:relative; width:1080px; height:1080px; display:grid; grid-template-columns:640px 440px; font-family:"Poppins","Segoe UI",Arial,sans-serif; color:var(--ink); }
+
+  .left { padding:78px 64px 70px 80px; display:flex; flex-direction:column; }
+  .mark { display:flex; align-items:center; gap:14px; font-size:22px; font-weight:600; letter-spacing:7px; color:var(--navy); } .mark img { width:46px; height:46px; border-radius:50%; }
+  .place { color:#3f5568; margin-top:8px; margin-left:60px; font-size:16px; color:var(--muted); letter-spacing:.5px; }
+  h1 { margin-top:50px; font-family:"DM Serif Display", Georgia, serif; font-weight:400; font-size:88px; line-height:.98; letter-spacing:-1px; color:var(--navy); }
+  h1 em { font-style:italic; color:var(--olive); }
+  .intro { color:#3f5568; margin-top:22px; margin-bottom:24px; max-width:440px; font-size:22px; line-height:1.55; color:var(--muted); }
+  .items { margin-top:auto; display:grid; grid-template-columns:1fr 1fr; column-gap:28px; border-top:1px solid #d9e2ea; }
+  .items div { display:flex; justify-content:space-between; align-items:baseline; padding:10px 0; border-bottom:1px solid #d9e2ea; font-size:18px; color:var(--ink); }
+  .items span { color:var(--muted); font-size:14px; }
+
+  .right { position:relative; overflow:hidden; background:var(--navy); color:#fff; padding:78px 60px 70px; display:flex; flex-direction:column; }
+  .glass { position:absolute; right:-60px; top:110px; width:380px; opacity:.13; }
+  .right > *:not(.glass) { position:relative; }
+  .from { font-size:18px; letter-spacing:4px; text-transform:uppercase; color:#a9c3dc; }
+  .price { margin-top:10px; font-family:"DM Serif Display", Georgia, serif; font-size:128px; line-height:1; color:#fff; }
+  .price small { font-size:58px; vertical-align:top; position:relative; top:14px; margin-right:4px; }
+  .for { margin-top:14px; font-size:21px; line-height:1.45; color:#d6e3ef; }
+  .hr { width:56px; height:3px; margin:40px 0 34px; background:var(--olive2); }
+  .port { margin-top:40px; padding-top:0; font-size:21px; line-height:1.45; color:#d6e3ef; }
+  .port b { display:block; font-family:"DM Serif Display", Georgia, serif; font-weight:400; font-size:44px; color:#fff; margin-top:6px; }
+  .note { margin-top:auto; font-size:20px; line-height:1.5; color:#fff; }
+  .note span { display:block; margin-top:14px; font-size:17px; color:var(--olive2); letter-spacing:.3px; }
+  .deal { margin-top:auto; padding:22px 24px; border-radius:14px; background:var(--olive2); color:var(--navy); font-size:20px; font-weight:500; line-height:1.3; }
+  .deal b { display:block; font-family:"DM Serif Display", Georgia, serif; font-weight:400; font-size:54px; line-height:1; margin-bottom:4px; }
+  .deal + .note { margin-top:26px; }
+  .bg { position:absolute; inset:-40px; z-index:0; background:url("post-bg-beach.png") center / cover no-repeat; filter:blur(2.5px) saturate(1.15); }
+  .left, .right { position:relative; z-index:1; }
+  .left { background:linear-gradient(180deg, rgba(255,255,255,.62) 0%, rgba(255,255,255,.72) 55%, rgba(255,255,255,.86) 100%); }
+  .right { background:rgba(10,50,86,.70) !important; }
+  .post { overflow:hidden; }  .price2 { margin-top:6px; font-family:"DM Serif Display", Georgia, serif; font-size:80px; line-height:1; color:#fff; } .price2 small { font-size:38px; vertical-align:top; position:relative; top:10px; margin-right:4px; } .port .for span { display:block; margin-top:6px; font-size:17px; color:#b8cde0; }
+  .for.biz span { display:block; margin-top:6px; font-size:17px; color:#b8cde0; }
+  /* all-white version */
+  .bg { display:none; }
+  .left { background:#fff; }
+  .right { background:#fff !important; color:var(--navy); border-left:1px solid #e1e8ef; }
+  .right .from { color:var(--olive); }
+  .right .price, .right .price2 { color:var(--navy); }
+  .right .for { color:#3f5568; }
+  .right .for span, .port .for span, .for.biz span { color:var(--muted); }
+  .note { color:var(--navy); font-weight:500; }  /* blue right side */
+  .right { background:var(--navy) !important; color:#fff; border-left:0; }
+  .right .from { color:#a9c3dc; }
+  .right .price, .right .price2 { color:#fff; }
+  .right .for { color:#d6e3ef; }
+  .right .for span, .right .port .for span, .right .for.biz span { color:#b8cde0; }
+  .right .note { color:#fff; }</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><filter id="key" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  4 0 0 0 -0.78"/></filter></svg>
+<div class="post">
+  <div class="left">
+    <div class="mark"><img src="mairetini-logo-circle.png" alt="">MAIRETINI</div>
+    <div class="place">Baao, Camarines Sur</div>
+
+    <h1>Your business deserves <em>a website.</em></h1>
+    <p class="intro">We&rsquo;re a small web studio opening this December, and we&rsquo;re taking on our first five clients.</p>
+
+    <div class="items">
+      <div>Home<span>01</span></div>
+      <div>About<span>02</span></div>
+      <div>Products &amp; Services<span>03</span></div>
+      <div>Reviews &amp; Ratings<span>04</span></div>
+      <div>FAQs<span>05</span></div>
+      <div>Map &amp; Opening Hours<span>06</span></div>
+      <div>Inquiry Form<span>07</span></div>
+      <div>Google Business Profile<span>08</span></div>
+      <div>Social Media Buttons<span>09</span></div>
+      <div>SEO Basics<span>10</span></div>
+      <div>Mobile-Friendly Design<span>11</span></div>
+      <div>Free Revisions<span>12</span></div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="from">For only</div>
+    <div class="price"><small>&#8369;</small>5,000</div>
+    <div class="for biz">you can own your<br>business website.<span>For caf&eacute;s, shops, restaurants and local services.</span></div>
+    <div class="port"><div class="from">For only</div><div class="price2"><small>&#8369;</small>300</div><div class="for">you can own your career portfolio.<br><span>For students, job seekers, freelancers and creatives.</span></div></div>
+    <div class="deal"><b>20% off</b>for our first 5 clients</div>
+    <div class="note">Message us for<br>a free quote.</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,11 +1,11 @@
-/* Meirtini site scripts: no dependencies. */
+/* Mairetini site scripts: no dependencies. */
 
 /* ============ EDIT YOUR DETAILS HERE ============ */
 const CONFIG = {
-  email: "",      // e.g. "hello@meirtini.com"  -> shows an Email button and sends form requests by email
-  phone: "",      // e.g. "+63 900 000 0000"    -> shows a Call button
-  facebook: "",   // e.g. "https://facebook.com/yourpage" -> shows a Facebook button
-  messenger: "",  // e.g. "https://m.me/yourpage"          -> shows a Messenger button
+  email: "",      // e.g. "mairrmdd@gmail.com"  -> shows an Email button and sends form requests by email
+  phone: "",      // e.g. "+63 951 085 4202"    -> shows a Call button
+  facebook: "",   // e.g. "https://www.facebook.com/profile.php?id=61595537555949" -> shows a Facebook button
+  messenger: "",  // e.g. "https://business.facebook.com/latest/inbox/all/?nav_ref=manage_page_ap_plus_inbox_message_button&asset_id=1404159369448207"          -> shows a Messenger button
   // Real websites built by your developer. Leave empty to show the concept previews.
   // Example: { title: "Cafe Aria", type: "Cafe website", url: "https://example.com" }
   samples: []
@@ -81,54 +81,6 @@ function updateSteps() {
   stepEls.forEach((s, i) => s.classList.toggle("on", p >= i / stepEls.length + 0.04));
 }
 
-/* ---------- interactive dashboard demo ---------- */
-const demo = {
-  items: [
-    { id: 1, name: "Iced Latte", price: 120, sold: false },
-    { id: 2, name: "Caramel Macchiato", price: 140, sold: false },
-    { id: 3, name: "Butter Croissant", price: 85, sold: true }
-  ],
-  next: 4
-};
-const rowsEl = $("#rows"), prevEl = $("#menu-preview");
-const esc = s => s.replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const money = n => "\u20B1" + Number(n).toLocaleString();
-
-function drawDemo(animateId) {
-  rowsEl.innerHTML = demo.items.length ? demo.items.map(i => `
-    <div class="row" data-id="${i.id}" ${i.id === animateId ? "" : 'style="animation:none"'}>
-      <span class="nm">${esc(i.name)}</span><span class="pr">${money(i.price)}</span>
-      <button class="st" data-act="sold" title="Toggle sold out">${i.sold ? "Restock" : "Sold out"}</button>
-      <button class="rm" data-act="del" title="Delete item" aria-label="Delete ${esc(i.name)}">&#10005;</button>
-    </div>`).join("") : `<div class="empty">No items yet. Add your first one below.</div>`;
-  prevEl.innerHTML = demo.items.length ? demo.items.map(i => `
-    <div class="item ${i.sold ? "sold" : ""}" data-id="${i.id}" ${i.id === animateId ? "" : 'style="animation:none"'}>
-      <b>${esc(i.name)}</b><span>${i.sold ? "Sold out" : money(i.price)}</span>
-    </div>`).join("") : `<div class="empty">Your menu will appear here.</div>`;
-}
-drawDemo();
-
-rowsEl.addEventListener("click", e => {
-  const btn = e.target.closest("button[data-act]");
-  if (!btn) return;
-  const row = btn.closest(".row"), id = +row.dataset.id;
-  if (btn.dataset.act === "sold") {
-    const it = demo.items.find(i => i.id === id); it.sold = !it.sold; drawDemo();
-  } else {
-    row.classList.add("out");
-    $(`.item[data-id="${id}"]`, prevEl)?.classList.add("out");
-    setTimeout(() => { demo.items = demo.items.filter(i => i.id !== id); drawDemo(); }, reduce ? 0 : 280);
-  }
-});
-$("#addForm").addEventListener("submit", e => {
-  e.preventDefault();
-  const name = $("#addName").value.trim(), price = $("#addPrice").value;
-  if (!name || price === "" || demo.items.length >= 7) { if (demo.items.length >= 7) $("#addName").placeholder = "Demo is full, delete one"; return; }
-  const id = demo.next++;
-  demo.items.push({ id, name, price: Math.max(0, +price), sold: false });
-  e.target.reset(); drawDemo(id); $("#addName").focus();
-});
-
 /* ---------- packages / work cards pre-select the form ---------- */
 $$("[data-pick]").forEach(a => a.addEventListener("click", () => {
   const sel = $("#f-need"), v = a.dataset.pick;
@@ -177,18 +129,37 @@ if (!chan.children.length) chan.remove();
 
 $("#quoteForm").addEventListener("submit", async e => {
   e.preventDefault();
+  const form = e.target, st = $("#status"), btn = $("button[type=submit]", form);
   const name = $("#f-name").value.trim(), biz = $("#f-biz").value.trim(),
-        need = $("#f-need").value, msg = $("#f-msg").value.trim(), st = $("#status");
-  const body = `Hi Meirtini! I'd like a free quote.\n\nName: ${name}\nBusiness: ${biz || "-"}\nInterested in: ${need}\n\n${msg}`;
-  if (CONFIG.email) {
-    location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Quote request: " + need)}&body=${encodeURIComponent(body)}`;
-    st.textContent = "Opening your email app...";
-    return;
+        need = $("#f-need").value, msg = $("#f-msg").value.trim();
+  const body = `Hi Mairetini! I'd like a free quote.\n\nName: ${name}\nBusiness: ${biz || "-"}\nInterested in: ${need}\n\n${msg}`;
+  const label = btn.textContent;
+  btn.disabled = true; btn.textContent = "Sending...";
+  st.style.color = ""; st.textContent = "";
+  try {
+    // Netlify Forms: the form is detected at deploy time and submissions appear in your Netlify dashboard.
+    const res = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString()
+    });
+    if (!res.ok) throw new Error("Form request failed: " + res.status);
+    form.reset();
+    btn.textContent = "Sent \u2713";
+    st.textContent = "Thank you! We got your request and will reply soon.";
+    setTimeout(() => { btn.disabled = false; btn.textContent = label; }, 4000);
+  } catch (err) {
+    // Fallback (for example when previewing locally): email or copy the request instead.
+    btn.disabled = false; btn.textContent = label;
+    if (CONFIG.email) {
+      location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Quote request: " + need)}&body=${encodeURIComponent(body)}`;
+      st.textContent = "Opening your email app...";
+      return;
+    }
+    try { await navigator.clipboard.writeText(body); st.textContent = "We couldn't send it automatically. Your request is copied. Please paste it in a message to us."; }
+    catch { st.textContent = "We couldn't send it automatically. Please message us on Facebook with these details."; }
+    const dest = CONFIG.messenger || CONFIG.facebook;
+    if (dest) window.open(dest, "_blank", "noopener");
   }
-  try { await navigator.clipboard.writeText(body); st.textContent = "Your request is copied. Please paste it in a message to us."; }
-  catch { st.textContent = "Please send us a message with these details."; }
-  const dest = CONFIG.messenger || CONFIG.facebook;
-  if (dest) window.open(dest, "_blank", "noopener");
 });
-
 onScroll();
