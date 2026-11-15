@@ -231,6 +231,26 @@ h1, h2, h3, p, ul, ol, dl, figure { margin: 0; }
 .folder-text { padding: 18px 22px 22px; color: var(--body); font-size: 17px; line-height: 1.6; max-width: 46em; animation: pop-in .35s ease both .08s; }
 @keyframes pop-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
+/* Sample work: browser-window previews */
+.sample-grid { display: grid; gap: 28px 24px; }
+@media (min-width: 640px) { .sample-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 980px) { .sample-grid { grid-template-columns: repeat(3, 1fr); } }
+.sample-link { display: flex; flex-direction: column; height: 100%; color: inherit; }
+.sample-link:hover { color: inherit; }
+.browser { border: 1px solid var(--line); background: #fff; overflow: hidden; box-shadow: var(--shadow-soft); transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease; }
+.sample-link:hover .browser { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-4px); }
+.browser-bar { display: flex; align-items: center; gap: 7px; padding: 0 14px; height: 44px; background: var(--cream); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+.browser-bar i { width: 10px; height: 10px; background: #D3CBBE; flex: none; }
+.browser-bar span { margin-left: 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.browser img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; transition: transform .5s ease; }
+.sample-link:hover .browser img { transform: scale(1.03); }
+.sample-info { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; padding: 16px 2px 0; flex: 1; }
+.sample-info h3 { color: var(--ink); font-size: 20px; font-weight: 700; line-height: 1.3; }
+.sample-cat { color: var(--brown); font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 2px 0 6px; }
+.sample-info p:not(.sample-cat) { color: var(--body); font-size: 15px; line-height: 1.55; }
+.sample-tag { flex: none; padding: 6px 12px; background: var(--blue); color: #fff; font-size: 12.5px; font-weight: 700; white-space: nowrap; }
+.sample-link:hover .sample-tag { background: var(--brown); }
+
 /* Tools */
 .tool-cards { display: grid; gap: 16px; }
 @media (min-width: 640px) { .tool-cards { grid-template-columns: repeat(2, 1fr); } }

@@ -49,7 +49,7 @@
   onScroll();
 
   // Gentle fade-in for sections; grids reveal their items one after another
-  var GROUPS = '.cards, .folder-grid, .jobs, .tool-cards, .project-grid';
+  var GROUPS = '.cards, .folder-grid, .jobs, .tool-cards, .project-grid, .sample-grid';
   var items = [];
   document.querySelectorAll('.section .container > *').forEach(function (el) {
     if (!el.matches(GROUPS)) items.push(el);
