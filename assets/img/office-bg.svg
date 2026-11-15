@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F1E8DA"/><stop offset="1" stop-color="#E0CFB8"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9D0F5"/><stop offset="1" stop-color="#E4F1FC"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B8824F"/><stop offset="1" stop-color="#8F5A27"/></linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1976D2"/><stop offset="1" stop-color="#0F4C8F"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFE9B8" stop-opacity=".9"/><stop offset="1" stop-color="#FFE9B8" stop-opacity="0"/></radialGradient>
+    <path id="leaf" d="M0 0C16-26 16-62 0-92C-16-62-16-26 0 0Z"/>
+    <path id="leaf-s" d="M0 0C10-16 10-38 0-56C-10-38-10-16 0 0Z"/>
+    <g id="fan">
+      <use href="#leaf" fill="#4E7D3A" transform="rotate(-62)"/><use href="#leaf" fill="#6A9A4A" transform="rotate(-38) scale(1.1)"/>
+      <use href="#leaf" fill="#3C6630" transform="rotate(-14) scale(1.2)"/><use href="#leaf" fill="#5C8C42" transform="rotate(12) scale(1.15)"/>
+      <use href="#leaf" fill="#4E7D3A" transform="rotate(36) scale(1.05)"/><use href="#leaf" fill="#6A9A4A" transform="rotate(60)"/>
+    </g>
+    <g id="fan-s">
+      <use href="#leaf-s" fill="#5C8C42" transform="rotate(-50)"/><use href="#leaf-s" fill="#3C6630" transform="rotate(-20) scale(1.15)"/>
+      <use href="#leaf-s" fill="#6A9A4A" transform="rotate(8) scale(1.2)"/><use href="#leaf-s" fill="#4E7D3A" transform="rotate(34)"/><use href="#leaf-s" fill="#5C8C42" transform="rotate(58) scale(.9)"/>
+    </g>
+    <g id="vine">
+      <path d="M0 0C-6 60 8 110 -2 170C-8 210 4 240 0 280" fill="none" stroke="#3C6630" stroke-width="4" stroke-linecap="round"/>
+      <g fill="#5C8C42"><ellipse cx="-14" cy="40" rx="14" ry="8" transform="rotate(-30 -14 40)"/><ellipse cx="12" cy="70" rx="14" ry="8" transform="rotate(30 12 70)"/><ellipse cx="-14" cy="108" rx="14" ry="8" transform="rotate(-30 -14 108)"/><ellipse cx="12" cy="140" rx="14" ry="8" transform="rotate(30 12 140)"/><ellipse cx="-14" cy="176" rx="14" ry="8" transform="rotate(-30 -14 176)"/><ellipse cx="12" cy="208" rx="14" ry="8" transform="rotate(30 12 208)"/><ellipse cx="-12" cy="244" rx="13" ry="7" transform="rotate(-30 -12 244)"/><ellipse cx="10" cy="270" rx="12" ry="7" transform="rotate(30 10 270)"/></g>
+      <g fill="#4E7D3A"><ellipse cx="14" cy="22" rx="12" ry="7" transform="rotate(25 14 22)"/><ellipse cx="-12" cy="88" rx="12" ry="7" transform="rotate(-25 -12 88)"/><ellipse cx="14" cy="124" rx="12" ry="7" transform="rotate(25 14 124)"/><ellipse cx="-12" cy="158" rx="12" ry="7" transform="rotate(-25 -12 158)"/><ellipse cx="14" cy="190" rx="12" ry="7" transform="rotate(25 14 190)"/></g>
+    </g>
+  </defs>
+
+  <!-- wall and floor -->
+  <rect width="1600" height="900" fill="url(#wall)"/>
+  <rect y="560" width="1600" height="170" fill="#A1622B" opacity=".16"/>
+  <rect y="556" width="1600" height="6" fill="#FFFFFF" opacity=".8"/>
+  <rect y="728" width="1600" height="172" fill="url(#floor)"/>
+  <rect y="720" width="1600" height="12" fill="#FFFFFF"/>
+  <g stroke="#6F4318" stroke-opacity=".28" stroke-width="2"><path d="M0 770H1600M0 812H1600M0 858H1600"/><path d="M180 732V770M520 770V812M860 732V770M1220 770V812M1420 732V770M360 812V858M760 812V858M1100 812V858M1500 812V858"/></g>
+
+  <!-- window with garden view -->
+  <rect x="86" y="86" width="392" height="440" fill="#FFFFFF"/>
+  <rect x="104" y="104" width="356" height="404" fill="url(#glass)"/>
+  <ellipse cx="220" cy="470" rx="170" ry="60" fill="#8DB86B"/><ellipse cx="400" cy="480" rx="150" ry="52" fill="#6A9A4A"/>
+  <circle cx="250" cy="400" r="56" fill="#5C8C42"/><circle cx="196" cy="420" r="44" fill="#4E7D3A"/><circle cx="330" cy="414" r="50" fill="#6A9A4A"/>
+  <rect x="244" y="440" width="10" height="40" fill="#8F5A27"/>
+  <ellipse cx="380" cy="170" rx="60" ry="16" fill="#fff" opacity=".8"/><ellipse cx="330" cy="156" rx="40" ry="14" fill="#fff" opacity=".8"/>
+  <rect x="274" y="104" width="12" height="404" fill="#FFFFFF"/><rect x="104" y="296" width="356" height="12" fill="#FFFFFF"/>
+  <rect x="70" y="518" width="424" height="20" fill="#FFFFFF"/><rect x="70" y="538" width="424" height="6" fill="#000" opacity=".08"/>
+  <!-- sill plants -->
+  <g transform="translate(150 518)"><path d="M-26 0h52l-8 -48h-36z" fill="#A1622B"/><g transform="translate(0 -46)"><use href="#fan-s"/></g></g>
+  <g transform="translate(400 518)"><path d="M-22 0h44l-6 -40h-32z" fill="#FFFFFF"/><g transform="translate(0 -38)"><use href="#fan-s" transform="scale(.9)"/></g></g>
+  <!-- curtains -->
+  <path d="M40 60H120V560H40Z" fill="#1976D2" opacity=".9"/><path d="M60 60V560M84 60V560M104 60V560" stroke="#0F4C8F" stroke-opacity=".45" stroke-width="3"/>
+  <path d="M446 60H530V560H446Z" fill="#1976D2" opacity=".9"/><path d="M466 60V560M490 60V560M510 60V560" stroke="#0F4C8F" stroke-opacity=".45" stroke-width="3"/>
+  <rect x="24" y="52" width="522" height="10" fill="#A1622B"/>
+  <!-- sunlight on the floor -->
+  <polygon points="120,540 470,540 760,900 300,900" fill="url(#beam)" opacity=".55"/>
+
+  <!-- picture frames -->
+  <g><rect x="590" y="130" width="150" height="190" fill="#FFFFFF"/><rect x="604" y="144" width="122" height="162" fill="#F6F1EA"/><circle cx="665" cy="205" r="34" fill="#1976D2"/><path d="M604 306V252C640 226 690 236 726 262V306Z" fill="#A1622B"/><path d="M604 306V276C650 258 690 268 726 286V306Z" fill="#6F4318"/></g>
+  <g><rect x="770" y="170" width="110" height="110" fill="#FFFFFF"/><rect x="782" y="182" width="86" height="86" fill="#F6F1EA"/><path d="M825 262C800 232 800 210 825 190C850 210 850 232 825 262Z" fill="#4E7D3A"/><path d="M825 262V222" stroke="#3C6630" stroke-width="3"/></g>
+
+  <!-- hanging plants -->
+  <g stroke="#A1622B" stroke-width="3"><path d="M960 0V90M930 0L960 90M990 0L960 90"/></g>
+  <path d="M928 96h64l-10 46h-44z" fill="#FFFFFF"/><path d="M928 96h64l-4 18h-56z" fill="#1976D2"/>
+  <g transform="translate(960 98)"><use href="#fan-s" transform="scale(.9)"/></g>
+  <g transform="translate(944 138)"><use href="#vine" transform="scale(.8)"/></g><g transform="translate(978 138)"><use href="#vine" transform="scale(.6)"/></g>
+
+  <!-- wall shelf with books and pots -->
+  <rect x="1060" y="266" width="440" height="16" fill="#A1622B"/><rect x="1060" y="282" width="440" height="6" fill="#000" opacity=".12"/>
+  <path d="M1090 282v34h-14zM1470 282v34h14z" fill="#6F4318"/>
+  <g><rect x="1084" y="206" width="22" height="60" fill="#1976D2"/><rect x="1108" y="216" width="18" height="50" fill="#A1622B"/><rect x="1128" y="200" width="24" height="66" fill="#FFFFFF"/><rect x="1154" y="212" width="18" height="54" fill="#6F4318"/><rect x="1176" y="222" width="20" height="44" fill="#1976D2" opacity=".75"/></g>
+  <g transform="translate(1290 266)"><path d="M-24 0h48l-6-44h-36z" fill="#FFFFFF"/><g transform="translate(0 -42)"><use href="#fan-s"/></g></g>
+  <g transform="translate(1400 266)"><path d="M-22 0h44l-6 -36h-32z" fill="#A1622B"/><g transform="translate(0 -34)"><use href="#fan-s" transform="scale(.85)"/></g></g>
+  <g transform="translate(1458 282)"><use href="#vine" transform="scale(.85)"/></g>
+  <rect x="1224" y="236" width="44" height="30" fill="#F6F1EA"/><rect x="1230" y="242" width="32" height="6" fill="#1976D2"/>
+
+  <!-- pendant lamp -->
+  <path d="M780 0V70" stroke="#2B2B2B" stroke-width="3"/><path d="M742 118C742 88 764 72 780 72C796 72 818 88 818 118Z" fill="#A1622B"/>
+  <ellipse cx="780" cy="150" rx="150" ry="90" fill="url(#glow)" opacity=".55"/><ellipse cx="780" cy="120" rx="30" ry="6" fill="#FFE9B8"/>
+
+  <!-- rug -->
+  <ellipse cx="1030" cy="830" rx="470" ry="58" fill="#1976D2" opacity=".9"/><ellipse cx="1030" cy="830" rx="410" ry="46" fill="none" stroke="#F6F1EA" stroke-width="5" stroke-dasharray="26 14"/><ellipse cx="1030" cy="830" rx="320" ry="32" fill="#F6F1EA" opacity=".25"/>
+
+  <!-- desk -->
+  <g>
+    <rect x="720" y="610" width="760" height="24" fill="#A1622B"/><rect x="720" y="634" width="760" height="8" fill="#6F4318"/>
+    <rect x="744" y="642" width="22" height="110" fill="#6F4318"/><rect x="1434" y="642" width="22" height="110" fill="#6F4318"/>
+    <rect x="1230" y="642" width="204" height="40" fill="#8F5A27"/><rect x="1318" y="656" width="30" height="8" fill="#F6F1EA"/>
+    <!-- laptop -->
+    <path d="M900 604L1020 604L1050 606H870Z" fill="#000" opacity=".0"/>
+    <rect x="896" y="468" width="230" height="140" fill="#2B2B2B"/><rect x="906" y="478" width="210" height="120" fill="url(#screen)"/>
+    <rect x="922" y="494" width="104" height="10" fill="#fff" opacity=".9"/><rect x="922" y="514" width="150" height="6" fill="#fff" opacity=".55"/><rect x="922" y="528" width="120" height="6" fill="#fff" opacity=".55"/><rect x="922" y="552" width="64" height="22" fill="#A1622B"/>
+    <path d="M876 608h270l16 12H860z" fill="#DADADA"/><rect x="860" y="620" width="302" height="6" fill="#B5B5B5"/>
+    <!-- lamp -->
+    <g transform="translate(790 610)"><rect x="-26" y="-6" width="52" height="8" fill="#2B2B2B"/><path d="M0 -6L-8 -110L40 -150" fill="none" stroke="#2B2B2B" stroke-width="6" stroke-linejoin="round"/><path d="M22 -150L66 -170L82 -132L38 -118Z" fill="#A1622B"/><ellipse cx="70" cy="-120" rx="40" ry="26" fill="url(#glow)" opacity=".7"/></g>
+    <!-- mug, notebook, plant -->
+    <g transform="translate(1190 608)"><rect x="-18" y="-40" width="36" height="40" fill="#FFFFFF"/><path d="M18 -32h10a8 8 0 0 1 0 22h-10" fill="none" stroke="#FFFFFF" stroke-width="5"/><rect x="-18" y="-40" width="36" height="8" fill="#A1622B"/><path d="M-6 -52c-6-8 6-12 0-20M6 -52c-6-8 6-12 0-20" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="3"/></g>
+    <g transform="translate(1250 608)"><rect x="-6" y="-12" width="96" height="12" fill="#1976D2"/><rect x="-2" y="-18" width="92" height="7" fill="#F6F1EA"/></g>
+    <g transform="translate(1390 608)"><path d="M-26 0h52l-8 -46h-36z" fill="#FFFFFF"/><path d="M-26 0h52l-3 -14h-46z" fill="#1976D2"/><g transform="translate(0 -44)"><use href="#fan-s" transform="scale(1.05)"/></g></g>
+  </g>
+
+  <!-- chair -->
+  <g transform="translate(1010 560)">
+    <path d="M-70 -40C-70 -120 -60 -170 -48 -190H48C60 -170 70 -120 70 -40Z" fill="#1976D2"/><path d="M-70 -40C-70 -120 -60 -170 -48 -190H0V-40Z" fill="#fff" opacity=".1"/>
+    <rect x="-86" y="-40" width="172" height="26" fill="#0F4C8F"/><rect x="-6" y="-14" width="12" height="90" fill="#2B2B2B"/>
+    <path d="M-80 120L0 76L80 120" fill="none" stroke="#2B2B2B" stroke-width="8" stroke-linecap="round"/><circle cx="-80" cy="124" r="8" fill="#2B2B2B"/><circle cx="80" cy="124" r="8" fill="#2B2B2B"/><circle cx="0" cy="130" r="8" fill="#2B2B2B"/>
+  </g>
+  <!-- the laptop and desk sit in front of the chair back -->
+  <rect x="720" y="610" width="760" height="24" fill="#A1622B"/><rect x="720" y="634" width="760" height="8" fill="#6F4318"/>
+  <rect x="896" y="468" width="230" height="140" fill="#2B2B2B"/><rect x="906" y="478" width="210" height="120" fill="url(#screen)"/>
+  <rect x="922" y="494" width="104" height="10" fill="#fff" opacity=".9"/><rect x="922" y="514" width="150" height="6" fill="#fff" opacity=".55"/><rect x="922" y="528" width="120" height="6" fill="#fff" opacity=".55"/><rect x="922" y="552" width="64" height="22" fill="#A1622B"/>
+  <path d="M876 608h270l16 12H860z" fill="#DADADA"/><rect x="860" y="620" width="302" height="6" fill="#B5B5B5"/>
+
+  <!-- floor plants -->
+  <g transform="translate(1530 730)"><path d="M-46 0h92l-12 -110h-68z" fill="#A1622B"/><rect x="-50" y="-114" width="100" height="14" fill="#8F5A27"/>
+    <g transform="translate(0 -110)"><use href="#fan" transform="scale(1.7)"/><use href="#fan" transform="rotate(-18) scale(1.35)"/><use href="#fan" transform="rotate(20) scale(1.25)"/></g></g>
+  <g transform="translate(40 730)"><path d="M-40 0h80l-10 -90h-60z" fill="#FFFFFF"/><path d="M-40 0h80l-4 -26h-72z" fill="#1976D2"/>
+    <g transform="translate(0 -90)"><use href="#fan" transform="scale(1.5)"/><use href="#fan" transform="rotate(16) scale(1.2)"/></g></g>
+  <g transform="translate(640 730)"><path d="M-30 0h60l-8 -64h-44z" fill="#A1622B"/><g transform="translate(0 -62)"><use href="#fan" transform="scale(.95)"/></g></g>
+</svg>

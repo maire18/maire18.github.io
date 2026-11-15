@@ -224,13 +224,10 @@
     });
   });
 
-  // Contact form: GitHub Pages has no server, so messages are delivered
-  // by a form service straight to the inbox below. With a Web3Forms access
-  // key (free at web3forms.com) it uses Web3Forms; without one it uses
-  // FormSubmit (formsubmit.co). If the service can't be reached, the
-  // visitor's email app opens instead.
-  var form = document.getElementById('contact-form');
-  var status = document.getElementById('form-status');
+  // Forms (hero, pop-up and contact section). GitHub Pages has no server, so messages are delivered
+  // by a form service straight to the inbox below. With a Web3Forms access key (free at web3forms.com)
+  // it uses Web3Forms; without one it uses FormSubmit (formsubmit.co). If the service can't be
+  // reached, the visitor's email app opens instead.
   var TO = 'mairrmdd@gmail.com';
   var WEB3FORMS_KEY = ''; // paste your Web3Forms access key here
   var ENDPOINT = 'https://formsubmit.co/ajax/' + TO;
@@ -240,29 +237,67 @@
     window.dataLayer.push(Object.assign({ event: event }, params || {}));
   }
 
-  function setStatus(text, kind) {
-    status.textContent = text;
-    status.className = 'form-status' + (kind ? ' ' + kind : '');
+  var modal = document.getElementById('msg-modal');
+  var modalOpened = false;   // the pop-up opens by itself once per page load; a refresh resets this
+  var lastFocus = null;
+
+  function openModal() {
+    if (!modal || !modal.hidden) return;
+    modalOpened = true;
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    document.body.classList.add('modal-open');
+    var first = modal.querySelector('input[name="name"]');
+    if (first) first.focus({ preventScroll: true });
   }
-  if (form) {
+  function closeModal() {
+    if (!modal || modal.hidden) return;
+    modal.hidden = true;
+    document.body.classList.remove('modal-open');
+    if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+  }
+
+  function setupForm(form) {
+    var status = form.querySelector('.form-status');
+    var el = form.elements;
+    var otherField = form.querySelector('.other-field');
+    var inModal = modal && modal.contains(form);
+    var submitLabel = form.querySelector('button[type="submit"]').textContent;
+
+    function setStatus(text, kind) {
+      status.textContent = text;
+      status.className = 'form-status' + (kind ? ' ' + kind : '');
+    }
+    function syncOther() {
+      var isOther = el.topic.value === 'Others';
+      if (otherField) otherField.hidden = !isOther;
+      if (!isOther && el.other) el.other.value = '';
+    }
+    el.topic.addEventListener('change', syncOther);
+    syncOther();
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var el = form.elements;
       var name = el.name.value.trim();
       var email = el.email.value.trim();
       var topic = el.topic.value;
+      var other = el.other ? el.other.value.trim() : '';
       var message = el.message.value.trim();
+      var topicLabel = topic === 'Others' && other ? 'Others: ' + other : topic;
+
       var fields = [el.name, el.email, el.message];
-      fields.forEach(function (f) { f.classList.remove('invalid'); });
+      if (topic === 'Others') fields.push(el.other);
+      form.querySelectorAll('.invalid').forEach(function (f) { f.classList.remove('invalid'); });
 
       var bad = [];
       if (!name) bad.push(el.name);
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) bad.push(el.email);
+      if (topic === 'Others' && !other) bad.push(el.other);
       if (!message) bad.push(el.message);
       if (bad.length) {
         bad.forEach(function (f) { f.classList.add('invalid'); });
         bad[0].focus();
-        setStatus('Please fill in your name, a valid email and a message.', 'error');
+        setStatus('Please fill in your name, a valid email' + (topic === 'Others' ? ', what you need' : '') + ' and a message.', 'error');
         return;
       }
 
@@ -273,21 +308,21 @@
         return;
       }
 
-      var subject = topic + ' | Inquiry from ' + name;
+      var subject = topicLabel + ' | Inquiry from ' + name;
       var button = form.querySelector('button[type="submit"]');
       button.disabled = true;
       button.textContent = 'Sending...';
       setStatus('');
 
-      function openMailApp() {
+      function openMailApp(note) {
         var body = message + '\n\n' + name + '\n' + email;
         window.location.href = 'mailto:' + TO +
           '?subject=' + encodeURIComponent(subject) +
           '&body=' + encodeURIComponent(body);
-        setStatus('We could not send the form just now, so your email app should open with the message ready. You can also email ' + TO + ' directly.', 'error');
+        setStatus(note || 'We could not send the form just now, so your email app should open with the message ready. You can also email ' + TO + ' directly.', 'error');
       }
 
-      var payload = { name: name, email: email, topic: topic, message: message };
+      var payload = { name: name, email: email, topic: topicLabel, message: message };
       var request = WEB3FORMS_KEY
         ? fetch('https://api.web3forms.com/submit', {
             method: 'POST',
@@ -315,21 +350,39 @@
         .then(function (data) {
           if (String(data.success) === 'true') {
             form.reset();
+            syncOther();
             setStatus('Thank you, ' + name + '! Your message has been sent. I will reply to ' + email + ' soon.', 'success');
-            track('generate_lead', { form_id: 'contact-form', lead_topic: topic });
+            track('generate_lead', { form_id: form.id || (inModal ? 'popup-form' : 'hero-form'), lead_topic: topicLabel });
+            if (inModal) setTimeout(function () { closeModal(); setStatus(''); }, 3500);
           } else if (!WEB3FORMS_KEY && /activat/i.test(data.message || '')) {
             // First-ever submission: FormSubmit emails TO an "Activate Form" link.
-            setStatus('Almost ready: check ' + TO + ' for the FormSubmit "Activate Form" email, click it, then send again.', 'error');
+            openMailApp('Almost ready: check ' + TO + ' for the FormSubmit "Activate Form" email and click it. Until then your email app will open with the message ready to send.');
           } else {
             openMailApp();
           }
         })
-        .catch(openMailApp)
+        .catch(function () { openMailApp(); })
         .then(function () {
           button.disabled = false;
-          button.textContent = 'Send message';
+          button.textContent = submitLabel;
         });
     });
+  }
+  document.querySelectorAll('.va-form').forEach(setupForm);
+
+  // Pop-up: opens once on page load (after a short pause). Once closed it stays closed until the page is refreshed.
+  // The "Message me" buttons can still open it on demand.
+  document.querySelectorAll('[data-open-popup]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (links) { links.classList.remove('open'); if (toggle) toggle.setAttribute('aria-expanded', 'false'); }
+      openModal();
+    });
+  });
+  if (modal) {
+    modal.querySelector('.modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('mousedown', function (e) { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+    setTimeout(function () { if (!modalOpened) openModal(); }, 3500);
   }
 
   // Analytics events (picked up by Google Tag Manager)

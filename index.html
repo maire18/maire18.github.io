@@ -20,7 +20,7 @@
   <link rel="alternate" hreflang="x-default" href="https://maire18.github.io/">
   <!-- Google Search Console: if you verify with the "HTML tag" method, paste the meta tag Google gives you on the next line.
        (The "Google Tag Manager" method also works, since GTM is installed above.) -->
-  <meta name="theme-color" content="#F4F7FA">
+  <meta name="theme-color" content="#1976D2">
   <meta name="geo.region" content="PH-CAS">
   <meta name="geo.placename" content="Buhi">
 
@@ -174,12 +174,16 @@
 
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Soft animated background: sky-blue light, dot grid and floating shapes -->
-  <div class="bg-scene" aria-hidden="true">
-    <span class="bg-blob bg-blob-1"></span>
-    <span class="bg-blob bg-blob-2"></span>
-    <span class="bg-blob bg-blob-3"></span>
-    <span class="bg-grid"></span>
+  <!-- Top info bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p>Mary Rose Obsuna <span>Virtual Assistant &amp; Digital Productivity</span></p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><a href="tel:+639510854202">+63 951 085 4202</a></li>
+        <li><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Buhi, Camarines Sur, Philippines</li>
+        <li>Open to remote work</li>
+      </ul>
+    </div>
   </div>
 
   <header class="site-header" id="top">
@@ -198,10 +202,11 @@
         <a href="#tools">Tools</a>
         <a href="#projects">Work</a>
         <a href="#credentials">Education</a>
-        <a class="btn btn-small" href="#contact">Contact</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-phone" href="tel:+639510854202">+63 951 085 4202</a>
+        <button class="btn btn-brown btn-small" type="button" data-open-popup>Message me</button>
       </nav>
     </div>
-    <div class="scroll-progress" aria-hidden="true"></div>
   </header>
 
   <main id="main">
@@ -209,53 +214,69 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="badge"><span class="dot"></span>Open to remote work</p>
-          <p class="hello">Hello, I&rsquo;m</p>
-          <h1 class="name">Mary Rose Obsuna</h1>
-          <p class="role-banner"><span>Digital Productivity Enthusiast</span></p>
-          <p class="lead hero-quote">I don&rsquo;t aim to impress with complexity. I aim to earn trust through results.</p>
-          <div class="hero-actions">
-            <a class="btn" href="#contact">Work with me</a>
+          <div class="hero-id">
+            <img class="hero-photo" src="assets/img/mary-rose-obsuna-400.jpg" width="400" height="400" fetchpriority="high" alt="Portrait of Mary Rose Obsuna, Digital Productivity VA from Buhi, Camarines Sur, Philippines">
+            <div>
+              <p class="hello">Hello, I&rsquo;m</p>
+              <h1 class="name">Mary Rose Obsuna</h1>
+            </div>
           </div>
-          <div class="profiles">
-            <span class="profiles-label">Find me on</span>
-            <a class="profile-link" href="https://v2.onlinejobs.ph/jobseekers/info/4010242" target="_blank" rel="noopener me" data-profile="onlinejobs">
-              <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>OnlineJobs.ph<span class="sr-only"> (opens in a new tab)</span>
-            </a>
-            <a class="profile-link profile-li" href="https://www.linkedin.com/in/mary-rose-4541383a4/" target="_blank" rel="noopener me" data-profile="linkedin">
-              <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.54h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.02c0-1.2-.02-2.74-1.67-2.74-1.67 0-1.93 1.3-1.93 2.65V21h-4z"/></svg></span>LinkedIn<span class="sr-only"> (opens in a new tab)</span>
-            </a>
-          </div>
-          <ul class="hero-meta">
-            <li><a href="mailto:mairrmdd@gmail.com">mairrmdd@gmail.com</a></li>
-            <li><a href="tel:+639510854202">+63 951 085 4202</a></li>
-            <li>Buhi, Philippines</li>
+          <p class="role-banner">Digital Productivity Enthusiast</p>
+          <p class="hero-text">I don&rsquo;t aim to impress with complexity. I aim to earn trust through results. Hand me the admin, the inbox, the spreadsheets and the schedule, and I will keep your day running smoothly.</p>
+          <ul class="hero-list">
+            <li>Executive &amp; Admin Support</li>
+            <li>Calendar &amp; Email Management</li>
+            <li>Travel &amp; Booking Management</li>
+            <li>Records, Data Entry &amp; CRM</li>
+            <li>Reports, Presentations &amp; Research</li>
+            <li>Customer &amp; Team Coordination</li>
           </ul>
+          <p class="hero-cta-title">Message me now &#128188;</p>
+          <div class="hero-actions">
+            <a class="btn btn-blue" href="tel:+639510854202"><strong>CALL ME</strong> +63 951 085 4202</a>
+            <button class="btn btn-white" type="button" data-open-popup>SEND A MESSAGE</button>
+          </div>
         </div>
-        <div class="hero-visual">
-          <svg class="hero-art" viewBox="0 0 600 440" aria-hidden="true" focusable="false">
-            <g class="art-bars"><rect x="14" y="262" width="22" height="68" rx="5"/><rect x="46" y="222" width="22" height="108" rx="5"/><rect x="78" y="242" width="22" height="88" rx="5"/><rect x="110" y="182" width="22" height="148" rx="5"/></g>
-            <g class="art-doc">
-              <rect x="494" y="40" width="98" height="150" rx="12"/>
-              <path pathLength="1" d="M510 80h64"/><path pathLength="1" d="M510 102h64"/><path pathLength="1" d="M510 124h40"/><path pathLength="1" d="M510 146h54"/><path pathLength="1" d="M510 168h32"/>
-            </g>
-            <path class="art-line" pathLength="1" d="M6 238 C 50 214, 92 150, 132 152 S 230 120, 300 132 S 420 112, 494 112 S 560 84, 584 66"/>
-            <g class="art-rings"><circle cx="132" cy="152" r="6"/><circle cx="494" cy="112" r="6"/><circle cx="584" cy="66" r="6"/></g>
-            <g class="art-dots"><circle cx="132" cy="152" r="6"/><circle cx="494" cy="112" r="6"/><circle cx="584" cy="66" r="6"/></g>
-            <g class="art-check"><circle class="art-check-ring" cx="540" cy="330" r="30"/><circle cx="540" cy="330" r="30"/><path pathLength="1" d="M525 330l10 10 21-23"/></g>
-            <g class="art-pulse" opacity="0">
-              <circle r="13"/><circle r="5.5"/>
-              <animateMotion dur="9s" begin="3.4s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;.72;1" path="M6 238 C 50 214, 92 150, 132 152 S 230 120, 300 132 S 420 112, 494 112 S 560 84, 584 66"/>
-              <animate attributeName="opacity" dur="9s" begin="3.4s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;.04;.68;.72;1"/>
-            </g>
-          </svg>
-          <figure class="hero-photo">
-            <span class="photo-block" aria-hidden="true"></span>
-            <img src="assets/img/mary-rose-obsuna.jpg" srcset="assets/img/mary-rose-obsuna-400.jpg 400w, assets/img/mary-rose-obsuna.jpg 800w" sizes="(min-width: 768px) 214px, 60vw" width="800" height="800" fetchpriority="high" alt="Portrait of Mary Rose Obsuna, Digital Productivity VA from Buhi, Camarines Sur, Philippines">
-          </figure>
-        </div>
+        <form class="hero-form va-form" novalidate>
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input name="name" type="text" placeholder="Your Name" aria-label="Your name" autocomplete="name" required>
+          <input name="email" type="email" placeholder="Email Address" aria-label="Email address" autocomplete="email" required>
+          <select name="topic" aria-label="What do you need help with?">
+            <option>Virtual Assistant</option>
+            <option>Virtual Admin Assistant</option>
+            <option>Project-based</option>
+            <option>Data Management</option>
+            <option>Others</option>
+          </select>
+          <input name="other" type="text" class="other-field" placeholder="Please tell me what you need" aria-label="Other, please specify" hidden>
+          <textarea name="message" rows="4" placeholder="Your Message" aria-label="Your message" required></textarea>
+          <button class="btn btn-blue btn-block" type="submit">SUBMIT</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
+
+    <!-- Trust bar and quick actions -->
+    <div class="trust">
+      <div class="container">
+        <ul class="trust-bar">
+          <li>Reliable &amp; Trusted</li>
+          <li>Fast Response Time</li>
+          <li>Accurate Work</li>
+          <li>Clear Communication</li>
+        </ul>
+        <div class="quick-actions">
+          <button class="btn btn-blue" type="button" data-open-popup>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 9h14v11H5z"/></svg>
+            BOOK AN APPOINTMENT
+          </button>
+          <a class="btn btn-brown" href="tel:+639510854202">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            +63 951 085 4202
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!-- ABOUT -->
     <section class="section" id="about">
@@ -658,7 +679,7 @@
         <h2 class="section-title">Contact</h2>
         <div class="contact-grid">
           <div class="contact-info">
-            <p class="lead">Need a reliable hand behind the scenes? I&rsquo;m just a message away 💼</p>
+            <p class="lead">Need a reliable hand behind the scenes? Message me now &#128188;</p>
             <ul class="contact-list">
               <li><span class="label">Email</span><a href="mailto:mairrmdd@gmail.com">mairrmdd@gmail.com</a></li>
               <li><span class="label">Phone</span><a href="tel:+639510854202">+63 951 085 4202</a></li>
@@ -676,7 +697,7 @@
               </li>
             </ul>
           </div>
-          <form class="panel contact-form" id="contact-form" novalidate>
+          <form class="panel contact-form va-form" id="contact-form" novalidate>
             <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="field">
               <label for="cf-name">Your name</label>
@@ -689,18 +710,23 @@
             <div class="field">
               <label for="cf-topic">What do you need help with?</label>
               <select id="cf-topic" name="topic">
-                <option>Virtual Assistant Support</option>
-                <option>Admin Duties or Operations Role</option>
+                <option>Virtual Assistant</option>
+                <option>Virtual Admin Assistant</option>
                 <option>Project-based</option>
-                <option>Something else</option>
+                <option>Data Management</option>
+                <option>Others</option>
               </select>
+            </div>
+            <div class="field other-field" hidden>
+              <label for="cf-other">Please specify</label>
+              <input id="cf-other" name="other" type="text">
             </div>
             <div class="field">
               <label for="cf-message">Message</label>
               <textarea id="cf-message" name="message" rows="5" required></textarea>
             </div>
-            <button class="btn btn-block" type="submit">Send message</button>
-            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <button class="btn btn-blue btn-block" type="submit">Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </div>
@@ -722,6 +748,46 @@
   <a class="to-top" href="#top" aria-label="Back to top">
     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </a>
+
+  <!-- Message pop-up -->
+  <div class="modal" id="msg-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-box">
+      <div class="modal-head">
+        <h2 id="modal-title">Don&rsquo;t Miss Your Chance to Get Reliable VA Help</h2>
+        <span class="modal-badge">Open to remote work</span>
+        <button class="modal-close" type="button" aria-label="Close pop-up">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="modal-form va-form" novalidate>
+          <p class="modal-lead">I&rsquo;m ready to help with your admin and virtual assistant needs. Message me now &#128188; and I&rsquo;ll get back to you quickly.</p>
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input name="name" type="text" placeholder="Your Name" aria-label="Your name" autocomplete="name" required>
+          <input name="email" type="email" placeholder="Email Address" aria-label="Email address" autocomplete="email" required>
+          <select name="topic" aria-label="What do you need help with?">
+            <option>Virtual Assistant</option>
+            <option>Virtual Admin Assistant</option>
+            <option>Project-based</option>
+            <option>Data Management</option>
+            <option>Others</option>
+          </select>
+          <input name="other" type="text" class="other-field" placeholder="Please tell me what you need" aria-label="Other, please specify" hidden>
+          <textarea name="message" rows="4" placeholder="Your Message" aria-label="Your message" required></textarea>
+          <button class="btn btn-blue btn-block" type="submit">SUBMIT</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="modal-note">Your information is 100% private and confidential</p>
+        </form>
+        <div class="modal-side">
+          <img src="assets/img/mary-rose-obsuna.jpg" width="800" height="800" loading="lazy" alt="Mary Rose Obsuna, Virtual Assistant">
+          <a class="modal-call" href="tel:+639510854202">
+            <span class="modal-call-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>
+            <span><strong>Call Me Anytime</strong>+63 951 085 4202</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>
