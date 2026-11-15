@@ -318,7 +318,7 @@ h1, h2, h3, p, ul, ol, dl, figure { margin: 0; }
 .modal-close { display: grid; place-items: center; width: 40px; height: 40px; background: var(--cream); border: 0; color: var(--ink); cursor: pointer; flex: none; }
 .modal-close:hover { background: var(--brown); color: #fff; }
 .modal-body { display: grid; }
-@media (min-width: 820px) { .modal-body { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 820px) { .modal-body { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 .modal-form { padding: 24px; gap: 12px; }
 .modal-lead { text-align: center; color: var(--blue); font-weight: 700; font-size: 17px; line-height: 1.5; margin-bottom: 6px; }
 .modal-form input:not(.hp), .modal-form select, .modal-form textarea { color: var(--blue); background: #fff; border: 1px solid var(--blue); padding: 14px 16px; font-size: 16px; }
@@ -327,12 +327,12 @@ h1, h2, h3, p, ul, ol, dl, figure { margin: 0; }
 .modal-form .form-status { color: var(--blue); text-align: center; }
 .modal-form .form-status.error { color: #B42318; }
 .modal-note { text-align: center; color: var(--blue); font-size: 13px; }
-.modal-side { display: flex; flex-direction: column; background: var(--cream); }
-.poster { flex: 1; padding: 22px 22px 18px; }
+.modal-side { display: flex; flex-direction: column; min-width: 0; overflow: hidden; background: var(--cream); }
+.poster { flex: 1; min-width: 0; padding: 20px 22px 18px; }
 .poster-title { font-family: var(--display); font-weight: 600; font-size: 26px; letter-spacing: .06em; text-transform: uppercase; color: var(--brown); text-align: center; margin-bottom: 14px; }
-.poster-grid { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-.poster-grid li { background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow-soft); }
-.poster-grid img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; }
+.poster-grid { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.poster-grid li { min-width: 0; overflow: hidden; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow-soft); }
+.poster-grid img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top left; }
 .poster-grid span { display: block; padding: 6px 8px; font-size: 12.5px; font-weight: 700; color: var(--blue); text-align: center; }
 @media (max-width: 819px) { .poster { display: none; } }
 .modal-call { display: flex; align-items: center; justify-content: center; gap: 14px; padding: 18px; background: var(--brown); color: #fff; font-size: 22px; font-weight: 700; line-height: 1.2; }
