@@ -101,7 +101,7 @@ h1, h2, h3, p, ul, ol, dl, figure { margin: 0; }
 .hero-grid { display: grid; gap: 32px; background: rgba(30, 22, 16, 0.84); color: #fff; padding: 28px; max-width: 1100px; }
 @media (min-width: 900px) { .hero-grid { grid-template-columns: 1.25fr 1fr; gap: 36px; padding: 32px 34px; } .hero { padding: 64px 0 72px; } }
 .hero-id { display: flex; align-items: center; gap: 18px; }
-.hero-photo { width: 96px; height: 96px; object-fit: cover; border: 3px solid var(--brown); flex: none; }
+.hero-photo { width: 96px; height: 96px; object-fit: cover; flex: none; }
 .hello { font-family: var(--display); font-weight: 400; font-size: 18px; letter-spacing: .14em; text-transform: uppercase; color: #fff; line-height: 1.2; }
 .name { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: clamp(34px, 5.2vw, 56px); line-height: 1.05; color: #fff; }
 .role-banner { display: inline-block; margin-top: 18px; padding: 6px 16px; background: var(--brown); color: #fff; font-family: var(--display); font-weight: 600; font-size: 20px; letter-spacing: .05em; text-transform: uppercase; }
