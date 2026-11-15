@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mairetini desktop wallpaper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0a3256; --olive:#b6c24a; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { width:100vw; height:100vh; overflow:hidden; background:var(--navy); }
+  .wall { position:relative; width:100vw; height:100vh; background:var(--navy); font-family:"Poppins","Segoe UI",Arial,sans-serif; overflow:hidden; }
+  /* soft depth at the edges only, so the logo circle blends into the background */
+  .wall::before { content:""; position:absolute; inset:0; background:radial-gradient(ellipse 90% 80% at 50% 50%, transparent 55%, rgba(4,22,40,.55) 100%); }
+  .logo { position:absolute; left:50%; top:50%; height:78vh; width:78vh; transform:translate(-50%,-50%); }
+  .mark { position:absolute; left:6vw; bottom:8vh; color:#fff; }
+  .mark b { display:block; font-size:2.4vh; font-weight:600; letter-spacing:1.1vh; }
+  .mark i { display:block; width:4vh; height:.35vh; margin:1.8vh 0 1.6vh; background:var(--olive); border-radius:1px; }
+  .mark span { margin-top:1.6vh; display:block; font-size:1.45vh; font-weight:500; letter-spacing:.45vh; color:#9fb8cf; }
+</style>
+</head>
+<body>
+<div class="wall">
+  <img class="logo" src="mairetini-logo-circle.png" alt="">
+</div>
+</body>
+</html>
