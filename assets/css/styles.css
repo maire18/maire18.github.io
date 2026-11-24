@@ -98,7 +98,7 @@ h1, h2, h3, p, ul, ol, dl, figure { margin: 0; }
 .btn[disabled] { opacity: .7; cursor: progress; }
 
 /* ---------- Hero: cozy virtual-assistant office ---------- */
-.hero { position: relative; overflow: hidden; padding: 56px 0 64px; background: radial-gradient(700px 420px at 90% 10%, rgba(25, 118, 210, .12), transparent 70%), radial-gradient(520px 360px at 0% 100%, rgba(161, 98, 43, .10), transparent 70%), #fff; }
+.hero { position: relative; overflow: hidden; padding: 56px 0 64px; background: linear-gradient(90deg, rgba(255, 255, 255, .93) 0%, rgba(255, 255, 255, .82) 50%, rgba(255, 255, 255, .22) 100%), url("../img/office-bg.webp?v=3") center / cover no-repeat, #fff; }
 .hero-grid { position: relative; z-index: 1; display: grid; gap: 40px; align-items: center; color: var(--ink); }
 @media (min-width: 900px) { .hero-grid { grid-template-columns: 1.2fr 1fr; gap: 56px; } .hero { padding: 80px 0 88px; } }
 .hero-id { display: flex; align-items: center; gap: 18px; }
@@ -135,7 +135,7 @@ h1, h2, h3, p, ul, ol, dl, figure { margin: 0; }
 .hero-form .invalid { border-color: #B42318; outline: 2px solid #B42318; }
 
 /* Mairetini-style hero decoration: soft blue blur and dashed orbit rings */
-.hero::before { content: ""; position: absolute; z-index: 0; right: -140px; top: -160px; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(25, 118, 210, .30), transparent 66%); filter: blur(28px); animation: breathe 7s ease-in-out infinite; pointer-events: none; }
+.hero::before { content: ""; position: absolute; z-index: 0; right: -140px; top: -160px; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(25, 118, 210, .22), transparent 66%); filter: blur(28px); animation: breathe 7s ease-in-out infinite; pointer-events: none; }
 .hero::after { content: ""; position: absolute; z-index: 0; right: -190px; top: -210px; width: 660px; height: 660px; border-radius: 50%; border: 1.5px dashed rgba(25, 118, 210, .35); animation: spin 60s linear infinite; pointer-events: none; }
 .hero .container { position: relative; z-index: 1; }
 @keyframes breathe { 0%, 100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.08); opacity: 1; } }
