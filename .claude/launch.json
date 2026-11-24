@@ -1,11 +1,29 @@
-{
-  "version": "0.0.1",
-  "configurations": [
-    {
-      "name": "site",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["-y", "http-server", "-p", "8080", "-c-1"],
-      "port": 8080
-    }
-  ]
+﻿{
+    "version":  "0.0.1",
+    "configurations":  [
+                           {
+                               "name":  "site",
+                               "runtimeExecutable":  "npx",
+                               "runtimeArgs":  [
+                                                   "-y",
+                                                   "http-server",
+                                                   "-p",
+                                                   "8080",
+                                                   "-c-1"
+                                               ],
+                               "port":  8080
+                           },
+                           {
+                               "name":  "site-php",
+                               "runtimeExecutable":  "C:\\xampp 8.0.28 new\\php\\php.exe",
+                               "runtimeArgs":  [
+                                                   "-S",
+                                                   "localhost:8081",
+                                                   "-t",
+                                                   "C:\\xampp 8.0.28 new\\htdocs\\maire18.github.io"
+                                               ],
+                               "port":  8081
+                           }
+                       ]
 }
+
